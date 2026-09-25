@@ -70,8 +70,14 @@
     mergeNavbar: true,
     subMaxLevel: 2,
     auto2top: true,
+    // GitHub Pages lets a browser reuse a file for ten minutes without
+    // asking, so a saved edit did not show on reload. Every file is asked
+    // for again (a 304 when nothing changed), and the search index is
+    // rebuilt from them on each load instead of being kept for a day.
+    requestHeaders: { 'cache-control': 'max-age=0' },
     search: {
       paths: 'auto',
+      maxAge: 0,
       placeholder: { '/ja/': '検索', '/ko/': '검색', '/en/': 'Search' },
       noData: { '/ja/': '見つかりません', '/ko/': '결과 없음', '/en/': 'No results' },
     },
