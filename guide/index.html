@@ -78,6 +78,9 @@
     search: {
       paths: 'auto',
       maxAge: 0,
+      // Its own keys: every myoun99.github.io site shares one localStorage,
+      // and an index saved under the old keys would be trusted for a day.
+      namespace: 'anicel-guide',
       placeholder: { '/ja/': '検索', '/ko/': '검색', '/en/': 'Search' },
       noData: { '/ja/': '見つかりません', '/ko/': '결과 없음', '/en/': 'No results' },
     },
