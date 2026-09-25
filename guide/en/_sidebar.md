@@ -1,0 +1,6 @@
+- [About Anicel](/en/)
+- [Storyboarding](/en/storyboard)
+- [Layer colour labels](/en/layer-labels)
+- [Export](/en/export)
+- [Sound layers](/en/sound-layers)
+- [Canvas size per cut](/en/canvas-size)

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anicel — Guide</title>
+<meta name="description" content="Anicel guide / 使い方 / 사용법">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+<!--
+  One folder per language (ja/, ko/, en/), the same file names in each.
+  A folder's left menu is its own _sidebar.md; the language buttons at the
+  top are _navbar.md. Nothing is built: the browser renders the Markdown
+  when a page opens, and GitHub Pages publishes each commit in a minute.
+-->
+<div id="app"></div>
+<script>
+  // Which language a page is in, read off its path — the one answer the
+  // edit link and the search box both ask.
+  function langOf(file) {
+    var m = /^(ja|ko|en)\//.exec(file || '');
+    return m ? m[1] : 'ja';
+  }
+
+  var EDIT_LABEL = { ja: 'このページを編集', ko: '이 페이지 편집', en: 'Edit this page' };
+
+  // Every page ends with a link to its own file in GitHub's editor. Anyone
+  // may follow it; only the repository's collaborators can save — that is
+  // the admin gate, and it is GitHub's, not this page's.
+  function editLink(hook, vm) {
+    hook.beforeEach(function (md) {
+      var file = vm.route.file;
+      if (!file || file === 'README.md') return md;
+      var url = 'https://github.com/myoun99/anicel-site/edit/main/guide/' + file;
+      return md + '\n\n---\n\n[' + EDIT_LABEL[langOf(file)] + '](' + url + ')';
+    });
+  }
+
+  // The bare address opens in the reader's own language when there is
+  // one, English otherwise; a language picked from the buttons is kept.
+  function openInReadersLanguage(hook) {
+    hook.init(function () {
+      var h = location.hash;
+      var saved = null;
+      try { saved = localStorage.getItem('anicel-guide-lang'); } catch (_) {}
+      if (h && h !== '#/') return;
+      var l = (navigator.language || '').toLowerCase();
+      var pick = saved || (l.indexOf('ko') === 0 ? 'ko' : l.indexOf('ja') === 0 ? 'ja' : 'en');
+      location.replace('#/' + pick + '/');
+    });
+    hook.doneEach(function () {
+      var m = /^#\/(ja|ko|en)\//.exec(location.hash);
+      if (!m) return;
+      document.documentElement.lang = m[1];
+      try { localStorage.setItem('anicel-guide-lang', m[1]); } catch (_) {}
+    });
+  }
+
+  window.$docsify = {
+    name: 'Anicel',
+    nameLink: '../',
+    loadNavbar: true,
+    loadSidebar: true,
+    mergeNavbar: true,
+    subMaxLevel: 2,
+    auto2top: true,
+    search: {
+      paths: 'auto',
+      placeholder: { '/ja/': '検索', '/ko/': '검색', '/en/': 'Search' },
+      noData: { '/ja/': '見つかりません', '/ko/': '결과 없음', '/en/': 'No results' },
+    },
+    plugins: [editLink, openInReadersLanguage],
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>
