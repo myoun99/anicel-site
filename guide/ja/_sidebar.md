@@ -1,6 +1,16 @@
 - [Anicel について](/ja/)
-- [絵コンテ作業](/ja/storyboard)
-- [レイヤーの色ラベル](/ja/layer-labels)
-- [出力](/ja/export)
-- [サウンドレイヤー](/ja/sound-layers)
-- [カットごとのキャンバスサイズ](/ja/canvas-size)
+- [はじめに](/ja/start)
+- **パネル**
+  - [タイムライン](/ja/timeline)
+  - [コンテ](/ja/storyboard)
+  - [タイムシート・コンテ用紙](/ja/sheets)
+  - [メディアプール](/ja/media-pool)
+- **レイヤー**
+  - [カラーラベル](/ja/layer-labels)
+  - [アタッチレイヤー](/ja/attach-layers)
+  - [画像レイヤー](/ja/image-layers)
+  - [サウンドレイヤー](/ja/sound-layers)
+  - [カメラ・ディレクション・トランジション](/ja/camera-section)
+- **カットと書き出し**
+  - [カットごとのカンバスサイズ](/ja/canvas-size)
+  - [書き出し](/ja/export)

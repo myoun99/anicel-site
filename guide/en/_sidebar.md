@@ -1,6 +1,16 @@
 - [About Anicel](/en/)
-- [Storyboarding](/en/storyboard)
-- [Layer colour labels](/en/layer-labels)
-- [Export](/en/export)
-- [Sound layers](/en/sound-layers)
-- [Canvas size per cut](/en/canvas-size)
+- [Getting started](/en/start)
+- **Panels**
+  - [Timeline](/en/timeline)
+  - [Conte](/en/storyboard)
+  - [Timesheet & conte sheet](/en/sheets)
+  - [Media pool](/en/media-pool)
+- **Layers**
+  - [Colour labels](/en/layer-labels)
+  - [Attach layers](/en/attach-layers)
+  - [Image layers](/en/image-layers)
+  - [Sound layers](/en/sound-layers)
+  - [Camera, direction, transition](/en/camera-section)
+- **Cuts and export**
+  - [Canvas size per cut](/en/canvas-size)
+  - [Export](/en/export)

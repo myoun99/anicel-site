@@ -1,6 +1,16 @@
-- [Anicel 소개](/ko/)
-- [콘티 작업](/ko/storyboard)
-- [레이어 색 라벨](/ko/layer-labels)
-- [출력](/ko/export)
-- [사운드 레이어](/ko/sound-layers)
-- [컷별 캔버스 크기](/ko/canvas-size)
+- [소개](/ko/)
+- [시작하기](/ko/start)
+- **패널**
+  - [타임라인](/ko/timeline)
+  - [콘티](/ko/storyboard)
+  - [타임시트·콘티 용지](/ko/sheets)
+  - [미디어 풀](/ko/media-pool)
+- **레이어**
+  - [색 라벨](/ko/layer-labels)
+  - [어태치 레이어](/ko/attach-layers)
+  - [이미지 레이어](/ko/image-layers)
+  - [사운드 레이어](/ko/sound-layers)
+  - [카메라·디렉션·트랜지션](/ko/camera-section)
+- **컷과 출력**
+  - [컷별 캔버스 크기](/ko/canvas-size)
+  - [출력](/ko/export)
