@@ -6,4 +6,3 @@ Give each layer its stage (storyboard, layout, key, inbetween and so on) and its
 
 - Press the label slot at the far left of a row and pick the stage. **▸** offers Material and revision stages such as Direction and Animation Director.
 - Which stage a drawing is at reads at a glance on the timeline.
-- The **Cels** tab of [Export](/en/export) can pick drawings by label.

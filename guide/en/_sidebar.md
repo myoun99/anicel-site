@@ -7,6 +7,7 @@
   - [Media pool](/en/media-pool)
 - **Layers**
   - [Colour labels](/en/layer-labels)
+  - [Conte layer](/en/conte-layer)
   - [Attach layers](/en/attach-layers)
   - [Image layers](/en/image-layers)
   - [Sound layers](/en/sound-layers)

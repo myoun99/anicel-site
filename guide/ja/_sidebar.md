@@ -7,6 +7,7 @@
   - [メディアプール](/ja/media-pool)
 - **レイヤー**
   - [カラーラベル](/ja/layer-labels)
+  - [コンテレイヤー](/ja/conte-layer)
   - [アタッチレイヤー](/ja/attach-layers)
   - [画像レイヤー](/ja/image-layers)
   - [サウンドレイヤー](/ja/sound-layers)

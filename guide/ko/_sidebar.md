@@ -7,6 +7,7 @@
   - [미디어 풀](/ko/media-pool)
 - **레이어**
   - [색 라벨](/ko/layer-labels)
+  - [콘티 레이어](/ko/conte-layer)
   - [어태치 레이어](/ko/attach-layers)
   - [이미지 레이어](/ko/image-layers)
   - [사운드 레이어](/ko/sound-layers)
