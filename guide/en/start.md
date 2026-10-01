@@ -27,7 +27,12 @@ Using a short bouncing ball as the example, this is only what you need to start 
 
 ## Panel sizes
 
-Drag a panel's edge to resize it.
+Drag a panel's edge to resize it. The edge lights up when the mouse is on it.
+
+![](img/resize-bottom.png)
 
 - The bottom panel (timeline, conte): the edge toward the canvas sets its height, the left and right edges its width. A double click on a side edge puts the default width back.
+
+![](img/resize-side.png)
+
 - The side panels: the edge toward the canvas sets the width, the bottom edge the height. Panels on the same side share one width.
