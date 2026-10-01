@@ -24,3 +24,10 @@ Using a short bouncing ball as the example, this is only what you need to start 
 
 - **▶** at the bottom right of the timeline plays.
 - The **Project** (folder) button at the top left → **Save** saves.
+
+## Panel sizes
+
+Drag a panel's edge to resize it.
+
+- The bottom panel (timeline, conte): the edge toward the canvas sets its height, the left and right edges its width. A double click on a side edge puts the default width back.
+- The side panels: the edge toward the canvas sets the width, the bottom edge the height. Panels on the same side share one width.
