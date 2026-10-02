@@ -39,6 +39,29 @@
     .markdown-section table th,
     .markdown-section table td { width: auto; }
   }
+  /* The app's shortcut list writes each key twice, as a PC and as a Mac or
+     an iPad spells it; a class on <html> shows the reader's own (keySpelling
+     below). With no script the PC spelling stays. */
+  html:not(.keys-mac) .markdown-section .k-mac,
+  html.keys-mac .markdown-section .k-pc { display: none; }
+  .keys-switch {
+    display: inline-flex;
+    margin: 0 0 1em;
+    border: 1px solid #c9ced3;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .keys-switch button {
+    padding: .3em 1em;
+    border: 0;
+    background: #fff;
+    color: #34495e;
+    font: inherit;
+    font-size: .85em;
+    cursor: pointer;
+  }
+  .keys-switch button + button { border-left: 1px solid #c9ced3; }
+  .keys-switch button[aria-pressed="true"] { background: #42b983; color: #fff; }
 </style>
 </head>
 <body>
@@ -91,6 +114,55 @@
     });
   }
 
+  // A key reads the way the reader's own computer spells it: ⌘ and ⇧ on a
+  // Mac or an iPad (iPadOS reports itself as a Mac), Ctrl and Shift
+  // elsewhere. Both spellings are in the page; this picks one, and a pick
+  // from the switch above the tables is kept.
+  var KEYS_SAVED = 'anicel-guide-keys';
+
+  function readerOnApple() {
+    var p = (navigator.userAgentData && navigator.userAgentData.platform) ||
+      navigator.platform || '';
+    return /mac|iphone|ipad|ipod/i.test(p);
+  }
+
+  function showKeys(which) {
+    document.documentElement.classList.toggle('keys-mac', which === 'mac');
+    var buttons = document.querySelectorAll('.keys-switch button');
+    for (var i = 0; i < buttons.length; i++) {
+      var on = buttons[i].getAttribute('data-keys') === which;
+      buttons[i].setAttribute('aria-pressed', on ? 'true' : 'false');
+    }
+  }
+
+  function keySpelling(hook) {
+    var which = null;
+    try { which = localStorage.getItem(KEYS_SAVED); } catch (_) {}
+    if (which !== 'mac' && which !== 'pc') which = readerOnApple() ? 'mac' : 'pc';
+    showKeys(which);
+    hook.doneEach(function () {
+      var section = document.querySelector('.markdown-section');
+      if (!section || !section.querySelector('.k-mac')) return;
+      var bar = document.createElement('div');
+      bar.className = 'keys-switch';
+      [['pc', 'Windows'], ['mac', 'Mac']].forEach(function (pair) {
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.textContent = pair[1];
+        button.setAttribute('data-keys', pair[0]);
+        button.addEventListener('click', function () {
+          which = pair[0];
+          try { localStorage.setItem(KEYS_SAVED, which); } catch (_) {}
+          showKeys(which);
+        });
+        bar.appendChild(button);
+      });
+      var after = section.querySelector('h1 + p') || section.querySelector('h1');
+      after.parentNode.insertBefore(bar, after.nextSibling);
+      showKeys(which);
+    });
+  }
+
   window.$docsify = {
     name: 'Anicel',
     nameLink: '../',
@@ -113,7 +185,7 @@
       placeholder: { '/ja/': '検索', '/ko/': '검색', '/en/': 'Search' },
       noData: { '/ja/': '見つかりません', '/ko/': '결과 없음', '/en/': 'No results' },
     },
-    plugins: [editLink, openInReadersLanguage],
+    plugins: [editLink, openInReadersLanguage, keySpelling],
   };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
