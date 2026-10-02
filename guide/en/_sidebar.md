@@ -1,5 +1,6 @@
 - [About Anicel](/en/)
 - [Getting started](/en/start)
+- [Shortcuts](/en/shortcuts)
 - **Panels**
   - [Timeline](/en/timeline)
   - [Conte](/en/storyboard)

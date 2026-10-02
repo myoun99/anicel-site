@@ -1,5 +1,6 @@
 - [Anicel について](/ja/)
 - [はじめに](/ja/start)
+- [ショートカット](/ja/shortcuts)
 - **パネル**
   - [タイムライン](/ja/timeline)
   - [コンテ](/ja/storyboard)

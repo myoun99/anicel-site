@@ -1,5 +1,6 @@
 - [소개](/ko/)
 - [시작하기](/ko/start)
+- [단축키](/ko/shortcuts)
 - **패널**
   - [타임라인](/ko/timeline)
   - [콘티](/ko/storyboard)

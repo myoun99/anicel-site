@@ -10,6 +10,35 @@
   /* GitHub's editor pastes a screenshot as <img width height>; the theme
      caps only the width, so a wide one came out squashed. */
   .markdown-section img[height] { height: auto; }
+  /* The shortcut pages write keys as <kbd>; the theme leaves it plain,
+     so a key would read as ordinary text in the table. */
+  .markdown-section kbd {
+    display: inline-block;
+    min-width: 1.6em;
+    padding: 0 .4em;
+    border: 1px solid #c9ced3;
+    border-bottom-width: 2px;
+    border-radius: 4px;
+    background: #f6f8fa;
+    color: #34495e;
+    font-family: inherit;
+    font-size: .85em;
+    line-height: 1.7;
+    text-align: center;
+    white-space: nowrap;
+  }
+  /* Only the shortcut pages have tables, one per group of keys: given the
+     same column widths they line up and read as one list. */
+  .markdown-section table th:first-child,
+  .markdown-section table td:first-child { width: 14em; }
+  .markdown-section table th:last-child,
+  .markdown-section table td:last-child { width: 17em; }
+  /* A phone is narrower than the two widths together: there each table
+     fits its own words instead of scrolling sideways. */
+  @media (max-width: 640px) {
+    .markdown-section table th,
+    .markdown-section table td { width: auto; }
+  }
 </style>
 </head>
 <body>
