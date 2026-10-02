@@ -39,6 +39,9 @@
 |---|---|
 | 확대 | <kbd>Shift</kbd> + <kbd>E</kbd> |
 | 축소 | <kbd>Shift</kbd> + <kbd>Q</kbd> |
+| 캔버스 보기 왼쪽 회전 | <kbd>R</kbd> |
+| 캔버스 보기 오른쪽 회전 | <kbd>Shift</kbd> + <kbd>R</kbd> |
+| 캔버스 보기 좌우 반전 | <kbd>H</kbd> |
 | 어니언 스킨 켜기/끄기 | <kbd>Q</kbd> |
 | 활성 레이어 솔로 | <kbd>T</kbd> |
 

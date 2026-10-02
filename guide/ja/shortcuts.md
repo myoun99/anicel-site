@@ -39,6 +39,9 @@
 |---|---|
 | ズームイン | <kbd>Shift</kbd> + <kbd>E</kbd> |
 | ズームアウト | <kbd>Shift</kbd> + <kbd>Q</kbd> |
+| カンバス表示を左に回転 | <kbd>R</kbd> |
+| カンバス表示を右に回転 | <kbd>Shift</kbd> + <kbd>R</kbd> |
+| カンバス表示を左右反転 | <kbd>H</kbd> |
 | オニオンスキンの切り替え | <kbd>Q</kbd> |
 | アクティブレイヤーをソロ | <kbd>T</kbd> |
 

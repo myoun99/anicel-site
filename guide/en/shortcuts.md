@@ -39,6 +39,9 @@ These are the default keys. The arrows and **W A S D** do the same thing.
 |---|---|
 | Zoom In | <kbd>Shift</kbd> + <kbd>E</kbd> |
 | Zoom Out | <kbd>Shift</kbd> + <kbd>Q</kbd> |
+| Rotate Canvas View Left | <kbd>R</kbd> |
+| Rotate Canvas View Right | <kbd>Shift</kbd> + <kbd>R</kbd> |
+| Flip Canvas View Horizontal | <kbd>H</kbd> |
 | Toggle Onion Skin | <kbd>Q</kbd> |
 | Solo active layer | <kbd>T</kbd> |
 
