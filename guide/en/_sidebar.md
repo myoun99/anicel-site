@@ -15,4 +15,5 @@
   - [Camera, direction, transition](/en/camera-section)
 - **Cuts and export**
   - [Canvas size per cut](/en/canvas-size)
+  - [Linked cuts](/en/linked-cuts)
   - [Export](/en/export)

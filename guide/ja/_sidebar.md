@@ -15,4 +15,5 @@
   - [カメラ・ディレクション・トランジション](/ja/camera-section)
 - **カットと書き出し**
   - [カットごとのカンバスサイズ](/ja/canvas-size)
+  - [兼用カット](/ja/linked-cuts)
   - [書き出し](/ja/export)

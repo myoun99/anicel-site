@@ -15,4 +15,5 @@
   - [카메라·디렉션·트랜지션](/ko/camera-section)
 - **컷과 출력**
   - [컷별 캔버스 크기](/ko/canvas-size)
+  - [겸용컷](/ko/linked-cuts)
   - [출력](/ko/export)
