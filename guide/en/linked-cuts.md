@@ -10,8 +10,8 @@ Cuts that share the same drawings (kenyō cuts). The app calls them **linked cut
 
 ## Shared, and each cut's own
 
-- **Shared**: the drawings; the layers (adding, deleting, order, name, [colour label](/en/layer-labels)); folders and attaching; the FX set-up (which effects, in what order, on or off); the [canvas size](/en/canvas-size); the drawing guides; the cut's colour label
-- **Each cut's own**: the timing, the cut's length, a layer's visibility, opacity and blend mode, the camera's and the FX's keys and values, the SE and direction rows
+- **Shared**: the drawings; the layers (adding, deleting, order, name, [colour label](/en/layer-labels), opacity, blend mode); folders and attaching; the FX set-up (which effects, in what order, on or off); the [canvas size](/en/canvas-size); the drawing guides; the cut's colour label
+- **Each cut's own**: the timing, the cut's length, whether a layer shows, the camera's and the FX's keys and values, the SE and direction rows
 - Give a key a name (the [Edit button](/en/timeline?id=the-edit-button)), and keys with the same name share their value across linked cuts.
 
 ## Spotting one, and unlinking
