@@ -5,7 +5,9 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 <!-- The tables between the next two lines are made from the app's own shortcut list. An edit there is overwritten the next time they are made. -->
 <!-- shortcuts:begin -->
 
-## Navigation
+## Anicel
+
+### Navigation
 
 | Action | Key |
 |---|---|
@@ -16,19 +18,19 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Layer Up | <kbd>↑</kbd> or <kbd>W</kbd> |
 | Layer Down | <kbd>↓</kbd> or <kbd>S</kbd> |
 
-## View
+### View
 
 | Action | Key |
 |---|---|
 | Pan (hold) | <kbd>Space</kbd> |
-| Toggle Onion Skin | <kbd>Q</kbd> |
+| Toggle Onion Skin | <kbd>T</kbd> |
 | Rotate Canvas View Left | <kbd>R</kbd> |
 | Rotate Canvas View Right | <kbd class="k-pc">Shift+R</kbd><kbd class="k-mac">⇧R</kbd> |
 | Flip Canvas View Horizontal | <kbd>H</kbd> |
 | Zoom In | <kbd class="k-pc">Shift+E</kbd><kbd class="k-mac">⇧E</kbd> |
 | Zoom Out | <kbd class="k-pc">Shift+Q</kbd><kbd class="k-mac">⇧Q</kbd> |
 
-## Playback
+### Playback
 
 | Action | Key |
 |---|---|
@@ -36,7 +38,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | To Start | <kbd class="k-pc">Shift+Z</kbd><kbd class="k-mac">⇧Z</kbd> |
 | Record Voice (start/stop) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
 
-## Edit
+### Edit
 
 | Action | Key |
 |---|---|
@@ -47,18 +49,18 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Paste linked | <kbd class="k-pc">Ctrl+B</kbd><kbd class="k-mac">⌘B</kbd> |
 | Paste independent | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> |
 | Delete | <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> |
-| Edit | <kbd>X</kbd> |
+| Edit | <kbd class="k-pc">Shift+F</kbd><kbd class="k-mac">⇧F</kbd> |
 | Clear Pixels | <kbd class="k-pc">Backspace</kbd><kbd class="k-mac">⌫</kbd> |
 | Confirm | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> or <kbd>Numpad Enter</kbd> |
 
-## File
+### File
 
 | Action | Key |
 |---|---|
 | Save | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
 | Save as… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
 
-## Tools
+### Tools
 
 | Action | Key |
 |---|---|
@@ -66,8 +68,9 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Eraser Tool | <kbd>E</kbd> |
 | Eyedropper Tool | <kbd>I</kbd> |
 | Fill Tool | <kbd>F</kbd> |
+| Lasso Fill | <kbd>Y</kbd> |
 | Guide Tool | <kbd>G</kbd> |
-| Lasso Select | <kbd>Z</kbd> |
+| Lasso Select | <kbd>X</kbd> |
 | Normal Transform | <kbd class="k-pc">Ctrl+T</kbd><kbd class="k-mac">⌘T</kbd> |
 | Free Transform | <kbd class="k-pc">Ctrl+Y</kbd><kbd class="k-mac">⌘Y</kbd> |
 | Lasso Cut | <kbd>C</kbd> |
@@ -85,14 +88,14 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Blend: Overlay | <kbd>F11</kbd> |
 | Blend: Soft Light | <kbd>F12</kbd> |
 
-## Selection
+### Selection
 
 | Action | Key |
 |---|---|
 | Deselect | <kbd class="k-pc">Ctrl+D</kbd><kbd class="k-mac">⌘D</kbd> |
 | Cancel Transform | <kbd class="k-pc">Escape</kbd><kbd class="k-mac">⎋</kbd> |
 
-## Timeline
+### Timeline
 
 | Action | Key |
 |---|---|
@@ -101,7 +104,105 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Set 3 Commas | <kbd>3</kbd> |
 | Set 4 Commas | <kbd>4</kbd> |
 | Set N Commas… | <kbd>5</kbd> |
-| Solo active layer | <kbd>T</kbd> |
+| Solo active layer | <kbd>Q</kbd> |
+
+## Clip Studio based
+
+### Navigation
+
+| Action | Key |
+|---|---|
+| Previous Frame | <kbd class="k-pc">Shift+←</kbd><kbd class="k-mac">⇧←</kbd> or <kbd class="k-pc">Shift+A</kbd><kbd class="k-mac">⇧A</kbd> |
+| Next Frame | <kbd class="k-pc">Shift+→</kbd><kbd class="k-mac">⇧→</kbd> or <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
+| Previous Block | <kbd>←</kbd> or <kbd>A</kbd> |
+| Next Block | <kbd>→</kbd> or <kbd>D</kbd> |
+| Layer Up | <kbd class="k-pc">Alt+]</kbd><kbd class="k-mac">⌥]</kbd> |
+| Layer Down | <kbd class="k-pc">Alt+[</kbd><kbd class="k-mac">⌥[</kbd> |
+
+### View
+
+| Action | Key |
+|---|---|
+| Pan (hold) | <kbd>Space</kbd> |
+| Rotate Canvas View Left | <kbd>-</kbd> |
+| Rotate Canvas View Right | <kbd>^</kbd> |
+| Flip Canvas View Horizontal | <kbd>H</kbd> |
+| Zoom In | <kbd class="k-pc">Ctrl+Numpad Add</kbd><kbd class="k-mac">⌘Numpad Add</kbd> or <kbd class="k-pc">Ctrl+;</kbd><kbd class="k-mac">⌘;</kbd> |
+| Zoom Out | <kbd class="k-pc">Ctrl+Numpad Subtract</kbd><kbd class="k-mac">⌘Numpad Subtract</kbd> or <kbd class="k-pc">Ctrl+-</kbd><kbd class="k-mac">⌘-</kbd> |
+
+### Playback
+
+| Action | Key |
+|---|---|
+| Play / Pause | <kbd class="k-pc">Shift+X</kbd><kbd class="k-mac">⇧X</kbd> |
+| To Start | <kbd class="k-pc">Shift+Z</kbd><kbd class="k-mac">⇧Z</kbd> |
+| Record Voice (start/stop) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
+
+### Edit
+
+| Action | Key |
+|---|---|
+| Undo | <kbd class="k-pc">Ctrl+Z</kbd><kbd class="k-mac">⌘Z</kbd> |
+| Redo | <kbd class="k-pc">Ctrl+Y</kbd><kbd class="k-mac">⌘Y</kbd> or <kbd class="k-pc">Ctrl+Shift+Z</kbd><kbd class="k-mac">⇧⌘Z</kbd> |
+| Cut | <kbd class="k-pc">Ctrl+X</kbd><kbd class="k-mac">⌘X</kbd> or <kbd>F2</kbd> |
+| Copy | <kbd class="k-pc">Ctrl+C</kbd><kbd class="k-mac">⌘C</kbd> or <kbd>F3</kbd> |
+| Paste linked | <kbd class="k-pc">Ctrl+B</kbd><kbd class="k-mac">⌘B</kbd> |
+| Paste independent | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> or <kbd>F4</kbd> |
+| Edit | <kbd class="k-pc">Shift+F</kbd><kbd class="k-mac">⇧F</kbd> |
+| Clear Pixels | <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> or <kbd class="k-pc">Backspace</kbd><kbd class="k-mac">⌫</kbd> |
+| Confirm | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> or <kbd>Numpad Enter</kbd> |
+
+### File
+
+| Action | Key |
+|---|---|
+| Save | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
+| Save as… | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> or <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> or <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
+
+### Tools
+
+| Action | Key |
+|---|---|
+| Brush Tool | <kbd>B</kbd> or <kbd>P</kbd> |
+| Eraser Tool | <kbd>E</kbd> |
+| Eyedropper Tool | <kbd>I</kbd> |
+| Fill Tool | <kbd>G</kbd> |
+| Lasso Fill | <kbd>Y</kbd> |
+| Text Tool | <kbd>T</kbd> |
+| Shape Tool | <kbd>U</kbd> |
+| Select Tool | <kbd>M</kbd> |
+| Lasso Select | <kbd>X</kbd> |
+| Normal Transform | <kbd class="k-pc">Ctrl+T</kbd><kbd class="k-mac">⌘T</kbd> |
+| Free Transform | <kbd class="k-pc">Ctrl+Shift+T</kbd><kbd class="k-mac">⇧⌘T</kbd> |
+| Stamp | <kbd>V</kbd> |
+| Blend: Color | <kbd>F1</kbd> |
+| Blend: Erase | <kbd>C</kbd> |
+| Blend: Multiply | <kbd>F5</kbd> |
+| Blend: Color Burn | <kbd>F6</kbd> |
+| Blend: Lighten | <kbd>F7</kbd> |
+| Blend: Screen | <kbd>F8</kbd> |
+| Blend: Color Dodge | <kbd>F9</kbd> |
+| Blend: Add | <kbd>F10</kbd> |
+| Blend: Overlay | <kbd>F11</kbd> |
+| Blend: Soft Light | <kbd>F12</kbd> |
+
+### Selection
+
+| Action | Key |
+|---|---|
+| Deselect | <kbd class="k-pc">Ctrl+D</kbd><kbd class="k-mac">⌘D</kbd> |
+| Cancel Transform | <kbd class="k-pc">Escape</kbd><kbd class="k-mac">⎋</kbd> |
+
+### Timeline
+
+| Action | Key |
+|---|---|
+| Set 1 Comma | <kbd>1</kbd> |
+| Set 2 Commas | <kbd>2</kbd> |
+| Set 3 Commas | <kbd>3</kbd> |
+| Set 4 Commas | <kbd>4</kbd> |
+| Set N Commas… | <kbd>5</kbd> |
+| Solo active layer | <kbd>Q</kbd> |
 
 <!-- shortcuts:end -->
 
