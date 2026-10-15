@@ -7,60 +7,7 @@
 
 ## Anicel
 
-### 이동
-
-| 동작 | 키 |
-|---|---|
-| 이전 프레임 | <kbd class="k-pc">Shift+←</kbd><kbd class="k-mac">⇧←</kbd> 또는 <kbd class="k-pc">Shift+A</kbd><kbd class="k-mac">⇧A</kbd> |
-| 다음 프레임 | <kbd class="k-pc">Shift+→</kbd><kbd class="k-mac">⇧→</kbd> 또는 <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
-| 이전 블록 | <kbd>←</kbd> 또는 <kbd>A</kbd> |
-| 다음 블록 | <kbd>→</kbd> 또는 <kbd>D</kbd> |
-| 위 레이어 | <kbd>↑</kbd> 또는 <kbd>W</kbd> |
-| 아래 레이어 | <kbd>↓</kbd> 또는 <kbd>S</kbd> |
-
-### 보기
-
-| 동작 | 키 |
-|---|---|
-| 이동(누르는 동안) | <kbd>Space</kbd> |
-| 어니언 스킨 켜기/끄기 | <kbd>T</kbd> |
-| 캔버스 보기 왼쪽 회전 | <kbd>R</kbd> |
-| 캔버스 보기 오른쪽 회전 | <kbd class="k-pc">Shift+R</kbd><kbd class="k-mac">⇧R</kbd> |
-| 캔버스 보기 좌우 반전 | <kbd>H</kbd> |
-| 확대 | <kbd class="k-pc">Shift+E</kbd><kbd class="k-mac">⇧E</kbd> |
-| 축소 | <kbd class="k-pc">Shift+Q</kbd><kbd class="k-mac">⇧Q</kbd> |
-
-### 재생
-
-| 동작 | 키 |
-|---|---|
-| 재생 / 일시정지 | <kbd class="k-pc">Shift+X</kbd><kbd class="k-mac">⇧X</kbd> |
-| 처음으로 | <kbd class="k-pc">Shift+Z</kbd><kbd class="k-mac">⇧Z</kbd> |
-| 음성 녹음 (시작/정지) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
-
-### 편집
-
-| 동작 | 키 |
-|---|---|
-| 실행 취소 | <kbd class="k-pc">Ctrl+Z</kbd><kbd class="k-mac">⌘Z</kbd> |
-| 다시 실행 | <kbd class="k-pc">Ctrl+Shift+Z</kbd><kbd class="k-mac">⇧⌘Z</kbd> |
-| 잘라내기 | <kbd class="k-pc">Ctrl+X</kbd><kbd class="k-mac">⌘X</kbd> |
-| 복사 | <kbd class="k-pc">Ctrl+C</kbd><kbd class="k-mac">⌘C</kbd> |
-| 링크 붙여넣기 | <kbd class="k-pc">Ctrl+B</kbd><kbd class="k-mac">⌘B</kbd> |
-| 독립 붙여넣기 | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> |
-| 삭제 | <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> |
-| 편집 | <kbd class="k-pc">Shift+F</kbd><kbd class="k-mac">⇧F</kbd> |
-| 픽셀 비우기 | <kbd class="k-pc">Backspace</kbd><kbd class="k-mac">⌫</kbd> |
-| 확정 | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> 또는 <kbd>Numpad Enter</kbd> |
-
-### 파일
-
-| 동작 | 키 |
-|---|---|
-| 저장 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
-| 다른 이름으로 저장… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
-
-### 도구
+### 캔버스 › 도구
 
 | 동작 | 키 |
 |---|---|
@@ -68,13 +15,23 @@
 | 지우개 도구 | <kbd>E</kbd> |
 | 스포이트 도구 | <kbd>I</kbd> |
 | 채우기 도구 | <kbd>F</kbd> |
-| 올가미 채우기 | <kbd>Y</kbd> |
 | 가이드 도구 | <kbd>G</kbd> |
+
+### 캔버스 › 세부 도구
+
+| 동작 | 키 |
+|---|---|
+| 올가미 채우기 | <kbd>Y</kbd> |
 | 올가미 선택 | <kbd>X</kbd> |
 | 일반 변형 | <kbd class="k-pc">Ctrl+T</kbd><kbd class="k-mac">⌘T</kbd> |
 | 자유 변형 | <kbd class="k-pc">Ctrl+Y</kbd><kbd class="k-mac">⌘Y</kbd> |
 | 올가미 잘라내기 | <kbd>C</kbd> |
 | 스탬프 | <kbd>V</kbd> |
+
+### 캔버스 › 합성 모드
+
+| 동작 | 키 |
+|---|---|
 | 합성: 표준 | <kbd>F1</kbd> |
 | 합성: 배경 | <kbd>F2</kbd> |
 | 합성: 지우기 | <kbd>F3</kbd> |
@@ -88,14 +45,61 @@
 | 합성: 오버레이 | <kbd>F11</kbd> |
 | 합성: 소프트 라이트 | <kbd>F12</kbd> |
 
-### 선택
+### 캔버스 › 선택
 
 | 동작 | 키 |
 |---|---|
 | 선택 해제 | <kbd class="k-pc">Ctrl+D</kbd><kbd class="k-mac">⌘D</kbd> |
+| 확정 | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> 또는 <kbd>Numpad Enter</kbd> |
 | 변형 취소 | <kbd class="k-pc">Escape</kbd><kbd class="k-mac">⎋</kbd> |
 
-### 타임라인
+### 캔버스 › 편집
+
+| 동작 | 키 |
+|---|---|
+| 실행 취소 | <kbd class="k-pc">Ctrl+Z</kbd><kbd class="k-mac">⌘Z</kbd> |
+| 다시 실행 | <kbd class="k-pc">Ctrl+Shift+Z</kbd><kbd class="k-mac">⇧⌘Z</kbd> |
+
+### 캔버스 › 보기
+
+| 동작 | 키 |
+|---|---|
+| 이동(누르는 동안) | <kbd>Space</kbd> |
+| 회전(누르는 동안) | <kbd class="k-pc">Shift+Space</kbd><kbd class="k-mac">⇧Space</kbd> |
+| 어니언 스킨 켜기/끄기 | <kbd>T</kbd> |
+| 캔버스 보기 왼쪽 회전 | <kbd>R</kbd> |
+| 캔버스 보기 오른쪽 회전 | <kbd class="k-pc">Shift+R</kbd><kbd class="k-mac">⇧R</kbd> |
+| 캔버스 보기 좌우 반전 | <kbd>H</kbd> |
+| 확대 | <kbd class="k-pc">Shift+E</kbd><kbd class="k-mac">⇧E</kbd> |
+| 축소 | <kbd class="k-pc">Shift+Q</kbd><kbd class="k-mac">⇧Q</kbd> |
+| 활성 레이어 솔로 | <kbd>Q</kbd> |
+
+### 타임라인 · 콘티 › 이동
+
+| 동작 | 키 |
+|---|---|
+| 이전 프레임 | <kbd class="k-pc">Shift+←</kbd><kbd class="k-mac">⇧←</kbd> 또는 <kbd class="k-pc">Shift+A</kbd><kbd class="k-mac">⇧A</kbd> |
+| 다음 프레임 | <kbd class="k-pc">Shift+→</kbd><kbd class="k-mac">⇧→</kbd> 또는 <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
+| 이전 블록 | <kbd>←</kbd> 또는 <kbd>A</kbd> |
+| 다음 블록 | <kbd>→</kbd> 또는 <kbd>D</kbd> |
+| 위 레이어 | <kbd>↑</kbd> 또는 <kbd>W</kbd> |
+| 아래 레이어 | <kbd>↓</kbd> 또는 <kbd>S</kbd> |
+
+### 타임라인 · 콘티 › 재생
+
+| 동작 | 키 |
+|---|---|
+| 재생 / 일시정지 | <kbd class="k-pc">Shift+X</kbd><kbd class="k-mac">⇧X</kbd> |
+| 처음으로 | <kbd class="k-pc">Shift+Z</kbd><kbd class="k-mac">⇧Z</kbd> |
+| 음성 녹음 (시작/정지) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 레이어 알약
+
+| 동작 | 키 |
+|---|---|
+| 레이어 추가 | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 프레임 알약
 
 | 동작 | 키 |
 |---|---|
@@ -104,62 +108,35 @@
 | 3코마로 설정 | <kbd>3</kbd> |
 | 4코마로 설정 | <kbd>4</kbd> |
 | N코마로 설정… | <kbd>5</kbd> |
-| 활성 레이어 솔로 | <kbd>Q</kbd> |
+| 프레임 추가 | <kbd class="k-pc">Shift+I</kbd><kbd class="k-mac">⇧I</kbd> |
 
-## 클립 스튜디오 기반
-
-### 이동
+### 타임라인 · 콘티 › 알약 › 공용 알약
 
 | 동작 | 키 |
 |---|---|
-| 이전 프레임 | <kbd class="k-pc">Shift+←</kbd><kbd class="k-mac">⇧←</kbd> 또는 <kbd class="k-pc">Shift+A</kbd><kbd class="k-mac">⇧A</kbd> |
-| 다음 프레임 | <kbd class="k-pc">Shift+→</kbd><kbd class="k-mac">⇧→</kbd> 또는 <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
-| 이전 블록 | <kbd>←</kbd> 또는 <kbd>A</kbd> |
-| 다음 블록 | <kbd>→</kbd> 또는 <kbd>D</kbd> |
-| 위 레이어 | <kbd class="k-pc">Alt+]</kbd><kbd class="k-mac">⌥]</kbd> |
-| 아래 레이어 | <kbd class="k-pc">Alt+[</kbd><kbd class="k-mac">⌥[</kbd> |
-
-### 보기
-
-| 동작 | 키 |
-|---|---|
-| 이동(누르는 동안) | <kbd>Space</kbd> |
-| 캔버스 보기 왼쪽 회전 | <kbd>-</kbd> |
-| 캔버스 보기 오른쪽 회전 | <kbd>^</kbd> |
-| 캔버스 보기 좌우 반전 | <kbd>H</kbd> |
-| 확대 | <kbd class="k-pc">Ctrl+Numpad Add</kbd><kbd class="k-mac">⌘Numpad Add</kbd> 또는 <kbd class="k-pc">Ctrl+;</kbd><kbd class="k-mac">⌘;</kbd> |
-| 축소 | <kbd class="k-pc">Ctrl+Numpad Subtract</kbd><kbd class="k-mac">⌘Numpad Subtract</kbd> 또는 <kbd class="k-pc">Ctrl+-</kbd><kbd class="k-mac">⌘-</kbd> |
-
-### 재생
-
-| 동작 | 키 |
-|---|---|
-| 재생 / 일시정지 | <kbd class="k-pc">Shift+X</kbd><kbd class="k-mac">⇧X</kbd> |
-| 처음으로 | <kbd class="k-pc">Shift+Z</kbd><kbd class="k-mac">⇧Z</kbd> |
-| 음성 녹음 (시작/정지) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
-
-### 편집
-
-| 동작 | 키 |
-|---|---|
-| 실행 취소 | <kbd class="k-pc">Ctrl+Z</kbd><kbd class="k-mac">⌘Z</kbd> |
-| 다시 실행 | <kbd class="k-pc">Ctrl+Y</kbd><kbd class="k-mac">⌘Y</kbd> 또는 <kbd class="k-pc">Ctrl+Shift+Z</kbd><kbd class="k-mac">⇧⌘Z</kbd> |
-| 잘라내기 | <kbd class="k-pc">Ctrl+X</kbd><kbd class="k-mac">⌘X</kbd> 또는 <kbd>F2</kbd> |
-| 복사 | <kbd class="k-pc">Ctrl+C</kbd><kbd class="k-mac">⌘C</kbd> 또는 <kbd>F3</kbd> |
+| 잘라내기 | <kbd class="k-pc">Ctrl+X</kbd><kbd class="k-mac">⌘X</kbd> |
+| 복사 | <kbd class="k-pc">Ctrl+C</kbd><kbd class="k-mac">⌘C</kbd> |
 | 링크 붙여넣기 | <kbd class="k-pc">Ctrl+B</kbd><kbd class="k-mac">⌘B</kbd> |
-| 독립 붙여넣기 | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> 또는 <kbd>F4</kbd> |
+| 독립 붙여넣기 | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> |
+| 삭제 | <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> |
 | 편집 | <kbd class="k-pc">Shift+F</kbd><kbd class="k-mac">⇧F</kbd> |
-| 픽셀 비우기 | <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> 또는 <kbd class="k-pc">Backspace</kbd><kbd class="k-mac">⌫</kbd> |
-| 확정 | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> 또는 <kbd>Numpad Enter</kbd> |
 
-### 파일
+### 타임라인 · 콘티 › 알약 › 색 편집
+
+| 동작 | 키 |
+|---|---|
+| 픽셀 비우기 | <kbd class="k-pc">Backspace</kbd><kbd class="k-mac">⌫</kbd> |
+
+### 맨 위 띠 › 파일
 
 | 동작 | 키 |
 |---|---|
 | 저장 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
-| 다른 이름으로 저장… | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> 또는 <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> 또는 <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
+| 다른 이름으로 저장… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
 
-### 도구
+## 클립 스튜디오 기반
+
+### 캔버스 › 도구
 
 | 동작 | 키 |
 |---|---|
@@ -167,14 +144,24 @@
 | 지우개 도구 | <kbd>E</kbd> |
 | 스포이트 도구 | <kbd>I</kbd> |
 | 채우기 도구 | <kbd>G</kbd> |
-| 올가미 채우기 | <kbd>Y</kbd> |
 | 텍스트 도구 | <kbd>T</kbd> |
 | 도형 도구 | <kbd>U</kbd> |
 | 선택 도구 | <kbd>M</kbd> |
+
+### 캔버스 › 세부 도구
+
+| 동작 | 키 |
+|---|---|
+| 올가미 채우기 | <kbd>Y</kbd> |
 | 올가미 선택 | <kbd>X</kbd> |
 | 일반 변형 | <kbd class="k-pc">Ctrl+T</kbd><kbd class="k-mac">⌘T</kbd> |
 | 자유 변형 | <kbd class="k-pc">Ctrl+Shift+T</kbd><kbd class="k-mac">⇧⌘T</kbd> |
 | 스탬프 | <kbd>V</kbd> |
+
+### 캔버스 › 합성 모드
+
+| 동작 | 키 |
+|---|---|
 | 합성: 표준 | <kbd>F1</kbd> |
 | 합성: 지우기 | <kbd>C</kbd> |
 | 합성: 곱하기 | <kbd>F5</kbd> |
@@ -186,14 +173,65 @@
 | 합성: 오버레이 | <kbd>F11</kbd> |
 | 합성: 소프트 라이트 | <kbd>F12</kbd> |
 
-### 선택
+### 캔버스 › 선택
 
 | 동작 | 키 |
 |---|---|
 | 선택 해제 | <kbd class="k-pc">Ctrl+D</kbd><kbd class="k-mac">⌘D</kbd> |
+| 확정 | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> 또는 <kbd>Numpad Enter</kbd> |
 | 변형 취소 | <kbd class="k-pc">Escape</kbd><kbd class="k-mac">⎋</kbd> |
+| 선택 반전 | <kbd class="k-pc">Ctrl+Shift+I</kbd><kbd class="k-mac">⇧⌘I</kbd> 또는 <kbd class="k-pc">Shift+F7</kbd><kbd class="k-mac">⇧F7</kbd> |
 
-### 타임라인
+### 캔버스 › 편집
+
+| 동작 | 키 |
+|---|---|
+| 실행 취소 | <kbd class="k-pc">Ctrl+Z</kbd><kbd class="k-mac">⌘Z</kbd> |
+| 다시 실행 | <kbd class="k-pc">Ctrl+Y</kbd><kbd class="k-mac">⌘Y</kbd> 또는 <kbd class="k-pc">Ctrl+Shift+Z</kbd><kbd class="k-mac">⇧⌘Z</kbd> |
+
+### 캔버스 › 보기
+
+| 동작 | 키 |
+|---|---|
+| 이동(누르는 동안) | <kbd>Space</kbd> |
+| 회전(누르는 동안) | <kbd class="k-pc">Shift+Space</kbd><kbd class="k-mac">⇧Space</kbd> |
+| 캔버스 보기 왼쪽 회전 | <kbd>-</kbd> |
+| 캔버스 보기 오른쪽 회전 | <kbd>^</kbd> |
+| 캔버스 보기 좌우 반전 | <kbd>H</kbd> |
+| 캔버스 보기 기울기 초기화 | <kbd class="k-pc">Ctrl+@</kbd><kbd class="k-mac">⌘@</kbd> |
+| 캔버스 보기 화면에 맞추기 | <kbd class="k-pc">Ctrl+0</kbd><kbd class="k-mac">⌘0</kbd> |
+| 캔버스 보기 초기화 (100%) | <kbd class="k-pc">Ctrl+Alt+0</kbd><kbd class="k-mac">⌥⌘0</kbd> |
+| 확대 | <kbd class="k-pc">Ctrl+Numpad Add</kbd><kbd class="k-mac">⌘Numpad Add</kbd> 또는 <kbd class="k-pc">Ctrl+;</kbd><kbd class="k-mac">⌘;</kbd> |
+| 축소 | <kbd class="k-pc">Ctrl+Numpad Subtract</kbd><kbd class="k-mac">⌘Numpad Subtract</kbd> 또는 <kbd class="k-pc">Ctrl+-</kbd><kbd class="k-mac">⌘-</kbd> |
+| 활성 레이어 솔로 | <kbd>Q</kbd> |
+
+### 타임라인 · 콘티 › 이동
+
+| 동작 | 키 |
+|---|---|
+| 이전 프레임 | <kbd class="k-pc">Shift+←</kbd><kbd class="k-mac">⇧←</kbd> 또는 <kbd class="k-pc">Shift+A</kbd><kbd class="k-mac">⇧A</kbd> |
+| 다음 프레임 | <kbd class="k-pc">Shift+→</kbd><kbd class="k-mac">⇧→</kbd> 또는 <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
+| 이전 블록 | <kbd>←</kbd> 또는 <kbd>A</kbd> |
+| 다음 블록 | <kbd>→</kbd> 또는 <kbd>D</kbd> |
+| 위 레이어 | <kbd class="k-pc">Alt+]</kbd><kbd class="k-mac">⌥]</kbd> |
+| 아래 레이어 | <kbd class="k-pc">Alt+[</kbd><kbd class="k-mac">⌥[</kbd> |
+
+### 타임라인 · 콘티 › 재생
+
+| 동작 | 키 |
+|---|---|
+| 재생 / 일시정지 | <kbd class="k-pc">Shift+X</kbd><kbd class="k-mac">⇧X</kbd> |
+| 처음으로 | <kbd class="k-pc">Shift+Z</kbd><kbd class="k-mac">⇧Z</kbd> |
+| 음성 녹음 (시작/정지) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 레이어 알약
+
+| 동작 | 키 |
+|---|---|
+| 레이어 추가 | <kbd class="k-pc">Ctrl+Shift+N</kbd><kbd class="k-mac">⇧⌘N</kbd> |
+| 레이어 추가: 폴더 | <kbd class="k-pc">Ctrl+G</kbd><kbd class="k-mac">⌘G</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 프레임 알약
 
 | 동작 | 키 |
 |---|---|
@@ -202,7 +240,186 @@
 | 3코마로 설정 | <kbd>3</kbd> |
 | 4코마로 설정 | <kbd>4</kbd> |
 | N코마로 설정… | <kbd>5</kbd> |
-| 활성 레이어 솔로 | <kbd>Q</kbd> |
+| 프레임 추가 | <kbd class="k-pc">Shift+I</kbd><kbd class="k-mac">⇧I</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 공용 알약
+
+| 동작 | 키 |
+|---|---|
+| 잘라내기 | <kbd class="k-pc">Ctrl+X</kbd><kbd class="k-mac">⌘X</kbd> 또는 <kbd>F2</kbd> |
+| 복사 | <kbd class="k-pc">Ctrl+C</kbd><kbd class="k-mac">⌘C</kbd> 또는 <kbd>F3</kbd> |
+| 링크 붙여넣기 | <kbd class="k-pc">Ctrl+B</kbd><kbd class="k-mac">⌘B</kbd> |
+| 독립 붙여넣기 | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> 또는 <kbd>F4</kbd> |
+| 편집 | <kbd class="k-pc">Shift+F</kbd><kbd class="k-mac">⇧F</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 색 편집
+
+| 동작 | 키 |
+|---|---|
+| 픽셀 비우기 | <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> 또는 <kbd class="k-pc">Backspace</kbd><kbd class="k-mac">⌫</kbd> 또는 <kbd class="k-pc">Ctrl+Delete</kbd><kbd class="k-mac">⌘⌦</kbd> 또는 <kbd class="k-pc">Ctrl+Backspace</kbd><kbd class="k-mac">⌘⌫</kbd> |
+
+### 맨 위 띠 › 파일
+
+| 동작 | 키 |
+|---|---|
+| 새 프로젝트 | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
+| 파일 열기… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> |
+| 저장 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
+| 다른 이름으로 저장… | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> 또는 <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> 또는 <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
+
+### 맨 위 띠 › 설정
+
+| 동작 | 키 |
+|---|---|
+| 키보드 단축키… | <kbd class="k-pc">Ctrl+Alt+Shift+K</kbd><kbd class="k-mac">⌥⇧⌘K</kbd> |
+| 환경설정… | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
+
+## TVPaint 기반
+
+### 캔버스 › 도구
+
+| 동작 | 키 |
+|---|---|
+| 브러시 도구 | <kbd>D</kbd> |
+| 지우개 도구 | <kbd>E</kbd> |
+| 스포이트 도구 | <kbd>;</kbd> |
+| 텍스트 도구 | <kbd>T</kbd> |
+| 가이드 도구 | <kbd>G</kbd> |
+| 잘라내기 도구 | <kbd>B</kbd> |
+
+### 캔버스 › 세부 도구
+
+| 동작 | 키 |
+|---|---|
+| 채우기 | <kbd>F</kbd> |
+| 사각형 채우기 | <kbd class="k-pc">Shift+R</kbd><kbd class="k-mac">⇧R</kbd> |
+| 올가미 채우기 | <kbd>Y</kbd> |
+| 사각형 그리기 | <kbd>R</kbd> |
+| 직선 그리기 | <kbd>L</kbd> |
+| 올가미 선택 | <kbd>X</kbd> |
+| 일반 변형 | <kbd class="k-pc">Ctrl+T</kbd><kbd class="k-mac">⌘T</kbd> |
+| 올가미 잘라내기 | <kbd>C</kbd> |
+| 스탬프 | <kbd>V</kbd> |
+
+### 캔버스 › 합성 모드
+
+| 동작 | 키 |
+|---|---|
+| 합성: 표준 | <kbd>F2</kbd> |
+| 합성: 배경 | <kbd>F3</kbd> |
+| 합성: 지우기 | <kbd>F4</kbd> |
+| 합성: 어둡게 하기 | <kbd>F7</kbd> |
+| 합성: 곱하기 | <kbd>F5</kbd> |
+| 합성: 색상 번 | <kbd>F6</kbd> |
+| 합성: 밝게 하기 | <kbd>F8</kbd> |
+| 합성: 색상 닷지 | <kbd>F9</kbd> |
+| 합성: 선형 닷지(추가) | <kbd>F10</kbd> |
+| 합성: 오버레이 | <kbd>F11</kbd> |
+| 합성: 소프트 라이트 | <kbd>F12</kbd> |
+
+### 캔버스 › 선택
+
+| 동작 | 키 |
+|---|---|
+| 선택 해제 | <kbd class="k-pc">Ctrl+D</kbd><kbd class="k-mac">⌘D</kbd> |
+| 확정 | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> |
+| 변형 취소 | <kbd class="k-pc">Escape</kbd><kbd class="k-mac">⎋</kbd> |
+
+### 캔버스 › 편집
+
+| 동작 | 키 |
+|---|---|
+| 실행 취소 | <kbd class="k-pc">Ctrl+Z</kbd><kbd class="k-mac">⌘Z</kbd> 또는 <kbd>U</kbd> |
+| 다시 실행 | <kbd class="k-pc">Ctrl+Y</kbd><kbd class="k-mac">⌘Y</kbd> 또는 <kbd class="k-pc">Shift+U</kbd><kbd class="k-mac">⇧U</kbd> |
+
+### 캔버스 › 보기
+
+| 동작 | 키 |
+|---|---|
+| 회전(누르는 동안) | <kbd class="k-pc">Shift+Space</kbd><kbd class="k-mac">⇧Space</kbd> |
+| 어니언 스킨 켜기/끄기 | <kbd class="k-pc">Ctrl+L</kbd><kbd class="k-mac">⌘L</kbd> |
+| 캔버스 보기 왼쪽 회전 | <kbd class="k-pc">Shift+Page Up</kbd><kbd class="k-mac">⇧Page Up</kbd> |
+| 캔버스 보기 오른쪽 회전 | <kbd class="k-pc">Shift+Page Down</kbd><kbd class="k-mac">⇧Page Down</kbd> |
+| 캔버스 보기 좌우 반전 | <kbd>[</kbd> |
+| 캔버스 보기 상하 반전 | <kbd>]</kbd> |
+| 캔버스 보기 기울기 초기화 | <kbd>Insert</kbd> |
+| 캔버스 보기 화면에 맞추기 | <kbd class="k-pc">Shift+V</kbd><kbd class="k-mac">⇧V</kbd> 또는 <kbd class="k-pc">Shift+F11</kbd><kbd class="k-mac">⇧F11</kbd> |
+| 캔버스 보기 초기화 (100%) | <kbd class="k-pc">Ctrl+Numpad 0</kbd><kbd class="k-mac">⌘Numpad 0</kbd> |
+| 확대 | <kbd>&gt;</kbd> |
+| 축소 | <kbd>&lt;</kbd> |
+| 활성 레이어 솔로 | <kbd>=</kbd> |
+
+### 타임라인 · 콘티 › 이동
+
+| 동작 | 키 |
+|---|---|
+| 이전 프레임 | <kbd>←</kbd> |
+| 다음 프레임 | <kbd>→</kbd> |
+| 이전 블록 | <kbd class="k-pc">Ctrl+←</kbd><kbd class="k-mac">⌘←</kbd> |
+| 다음 블록 | <kbd class="k-pc">Ctrl+→</kbd><kbd class="k-mac">⌘→</kbd> |
+| 위 레이어 | <kbd>↑</kbd> |
+| 아래 레이어 | <kbd>↓</kbd> |
+
+### 타임라인 · 콘티 › 재생
+
+| 동작 | 키 |
+|---|---|
+| 재생 / 일시정지 | <kbd>Space</kbd> |
+| 처음으로 | <kbd class="k-pc">Shift+Home</kbd><kbd class="k-mac">⇧Home</kbd> 또는 <kbd>Home</kbd> |
+| 음성 녹음 (시작/정지) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 레이어 알약
+
+| 동작 | 키 |
+|---|---|
+| 레이어 추가 | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 프레임 알약
+
+| 동작 | 키 |
+|---|---|
+| 1코마로 설정 | <kbd>1</kbd> |
+| 2코마로 설정 | <kbd>2</kbd> |
+| 3코마로 설정 | <kbd>3</kbd> |
+| 4코마로 설정 | <kbd>4</kbd> |
+| N코마로 설정… | <kbd>5</kbd> |
+| 프레임 추가 | <kbd>I</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 공용 알약
+
+| 동작 | 키 |
+|---|---|
+| 잘라내기 | <kbd class="k-pc">Ctrl+X</kbd><kbd class="k-mac">⌘X</kbd> 또는 <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> |
+| 복사 | <kbd class="k-pc">Ctrl+C</kbd><kbd class="k-mac">⌘C</kbd> |
+| 링크 붙여넣기 | <kbd class="k-pc">Ctrl+B</kbd><kbd class="k-mac">⌘B</kbd> |
+| 독립 붙여넣기 | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> |
+| 삭제 | <kbd class="k-pc">Shift+F5</kbd><kbd class="k-mac">⇧F5</kbd> |
+| 편집 | <kbd class="k-pc">Shift+F</kbd><kbd class="k-mac">⇧F</kbd> |
+
+### 타임라인 · 콘티 › 알약 › 색 편집
+
+| 동작 | 키 |
+|---|---|
+| 픽셀 비우기 | <kbd class="k-pc">Backspace</kbd><kbd class="k-mac">⌫</kbd> 또는 <kbd class="k-pc">Shift+K</kbd><kbd class="k-mac">⇧K</kbd> |
+| 픽셀 복사 | <kbd class="k-pc">Ctrl+Shift+C</kbd><kbd class="k-mac">⇧⌘C</kbd> |
+| 픽셀 위 붙여넣기 | <kbd class="k-pc">Ctrl+Shift+V</kbd><kbd class="k-mac">⇧⌘V</kbd> |
+
+### 맨 위 띠 › 파일
+
+| 동작 | 키 |
+|---|---|
+| 새 프로젝트 | <kbd class="k-pc">Shift+N</kbd><kbd class="k-mac">⇧N</kbd> |
+| 파일 열기… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> 또는 <kbd class="k-pc">Shift+L</kbd><kbd class="k-mac">⇧L</kbd> |
+| 저장 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> 또는 <kbd class="k-pc">Shift+S</kbd><kbd class="k-mac">⇧S</kbd> |
+| 다른 이름으로 저장… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
+| 내보내기… | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
+
+### 맨 위 띠 › 설정
+
+| 동작 | 키 |
+|---|---|
+| 키보드 단축키… | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
+| 환경설정… | <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
 
 <!-- shortcuts:end -->
 
