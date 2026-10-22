@@ -59,6 +59,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 |---|---|
 | Undo | <kbd class="k-pc">Ctrl+Z</kbd><kbd class="k-mac">⌘Z</kbd> |
 | Redo | <kbd class="k-pc">Ctrl+Shift+Z</kbd><kbd class="k-mac">⇧⌘Z</kbd> |
+| Line from the Last Stroke (hold) | <kbd>Z</kbd> |
 
 ### Canvas › View
 
@@ -97,7 +98,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 
 | Action | Key |
 |---|---|
-| Add Layer | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
+| New Layer | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
 
 ### Timeline · Conte › Pills › Frame pill
 
@@ -108,7 +109,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Set 3 Commas | <kbd>3</kbd> |
 | Set 4 Commas | <kbd>4</kbd> |
 | Set N Commas… | <kbd>5</kbd> |
-| Add Frame | <kbd class="k-pc">Shift+I</kbd><kbd class="k-mac">⇧I</kbd> |
+| New Frame | <kbd class="k-pc">Shift+I</kbd><kbd class="k-mac">⇧I</kbd> |
 
 ### Timeline · Conte › Pills › Shared pill
 
@@ -152,35 +153,29 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 
 | Action | Key |
 |---|---|
-| Lasso Fill | <kbd>Y</kbd> |
-| Lasso Select | <kbd>X</kbd> |
+| Bucket | <kbd>F</kbd> |
+| Rectangle Fill | <kbd class="k-pc">Shift+R</kbd><kbd class="k-mac">⇧R</kbd> |
+| Draw Rectangle | <kbd>R</kbd> |
+| Draw Line | <kbd>L</kbd> |
 | Normal Transform | <kbd class="k-pc">Ctrl+T</kbd><kbd class="k-mac">⌘T</kbd> |
 | Free Transform | <kbd class="k-pc">Ctrl+Shift+T</kbd><kbd class="k-mac">⇧⌘T</kbd> |
-| Stamp | <kbd>V</kbd> |
 
 ### Canvas › Blend modes
 
 | Action | Key |
 |---|---|
-| Blend: Color | <kbd>F1</kbd> |
 | Blend: Erase | <kbd>C</kbd> |
-| Blend: Multiply | <kbd>F5</kbd> |
-| Blend: Color Burn | <kbd>F6</kbd> |
-| Blend: Lighten | <kbd>F7</kbd> |
-| Blend: Screen | <kbd>F8</kbd> |
-| Blend: Color Dodge | <kbd>F9</kbd> |
-| Blend: Add | <kbd>F10</kbd> |
-| Blend: Overlay | <kbd>F11</kbd> |
-| Blend: Soft Light | <kbd>F12</kbd> |
+| Blend: Darken | <kbd>F7</kbd> |
+| Blend: Lighten | <kbd>F8</kbd> |
 
 ### Canvas › Selection
 
 | Action | Key |
 |---|---|
 | Deselect | <kbd class="k-pc">Ctrl+D</kbd><kbd class="k-mac">⌘D</kbd> |
-| Confirm | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> or <kbd>Numpad Enter</kbd> |
+| Confirm | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> |
 | Cancel Transform | <kbd class="k-pc">Escape</kbd><kbd class="k-mac">⎋</kbd> |
-| Invert Selection | <kbd class="k-pc">Ctrl+Shift+I</kbd><kbd class="k-mac">⇧⌘I</kbd> or <kbd class="k-pc">Shift+F7</kbd><kbd class="k-mac">⇧F7</kbd> |
+| Invert Selection Beyond Canvas | <kbd class="k-pc">Ctrl+Shift+I</kbd><kbd class="k-mac">⇧⌘I</kbd> or <kbd class="k-pc">Shift+F7</kbd><kbd class="k-mac">⇧F7</kbd> |
 
 ### Canvas › Edit
 
@@ -195,24 +190,26 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 |---|---|
 | Pan (hold) | <kbd>Space</kbd> |
 | Rotate (hold) | <kbd class="k-pc">Shift+Space</kbd><kbd class="k-mac">⇧Space</kbd> |
+| Toggle Onion Skin | <kbd class="k-pc">Ctrl+L</kbd><kbd class="k-mac">⌘L</kbd> |
 | Rotate Canvas View Left | <kbd>-</kbd> |
 | Rotate Canvas View Right | <kbd>^</kbd> |
-| Flip Canvas View Horizontal | <kbd>H</kbd> |
+| Flip Canvas View Horizontal | <kbd>[</kbd> |
+| Flip Canvas View Vertical | <kbd>]</kbd> |
 | Straighten Canvas View | <kbd class="k-pc">Ctrl+@</kbd><kbd class="k-mac">⌘@</kbd> |
 | Fit Canvas View | <kbd class="k-pc">Ctrl+0</kbd><kbd class="k-mac">⌘0</kbd> |
-| Reset Canvas View (100%) | <kbd class="k-pc">Ctrl+Alt+0</kbd><kbd class="k-mac">⌥⌘0</kbd> |
+| Reset Canvas Zoom (100%) | <kbd class="k-pc">Ctrl+Alt+0</kbd><kbd class="k-mac">⌥⌘0</kbd> |
 | Zoom In | <kbd class="k-pc">Ctrl+Numpad Add</kbd><kbd class="k-mac">⌘Numpad Add</kbd> or <kbd class="k-pc">Ctrl+;</kbd><kbd class="k-mac">⌘;</kbd> |
 | Zoom Out | <kbd class="k-pc">Ctrl+Numpad Subtract</kbd><kbd class="k-mac">⌘Numpad Subtract</kbd> or <kbd class="k-pc">Ctrl+-</kbd><kbd class="k-mac">⌘-</kbd> |
-| Solo active layer | <kbd>Q</kbd> |
+| Solo active layer | <kbd>=</kbd> |
 
 ### Timeline · Conte › Navigation
 
 | Action | Key |
 |---|---|
-| Previous Frame | <kbd class="k-pc">Shift+←</kbd><kbd class="k-mac">⇧←</kbd> or <kbd class="k-pc">Shift+A</kbd><kbd class="k-mac">⇧A</kbd> |
-| Next Frame | <kbd class="k-pc">Shift+→</kbd><kbd class="k-mac">⇧→</kbd> or <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
-| Previous Block | <kbd>←</kbd> or <kbd>A</kbd> |
-| Next Block | <kbd>→</kbd> or <kbd>D</kbd> |
+| Previous Frame | <kbd>←</kbd> |
+| Next Frame | <kbd>→</kbd> |
+| Previous Block | <kbd class="k-pc">Ctrl+←</kbd><kbd class="k-mac">⌘←</kbd> |
+| Next Block | <kbd class="k-pc">Ctrl+→</kbd><kbd class="k-mac">⌘→</kbd> |
 | Layer Up | <kbd class="k-pc">Alt+]</kbd><kbd class="k-mac">⌥]</kbd> |
 | Layer Down | <kbd class="k-pc">Alt+[</kbd><kbd class="k-mac">⌥[</kbd> |
 
@@ -220,27 +217,14 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 
 | Action | Key |
 |---|---|
-| Play / Pause | <kbd class="k-pc">Shift+X</kbd><kbd class="k-mac">⇧X</kbd> |
-| To Start | <kbd class="k-pc">Shift+Z</kbd><kbd class="k-mac">⇧Z</kbd> |
-| Record Voice (start/stop) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
+| To Start | <kbd class="k-pc">Shift+Home</kbd><kbd class="k-mac">⇧Home</kbd> or <kbd>Home</kbd> |
 
 ### Timeline · Conte › Pills › Layer pill
 
 | Action | Key |
 |---|---|
-| Add Layer | <kbd class="k-pc">Ctrl+Shift+N</kbd><kbd class="k-mac">⇧⌘N</kbd> |
-| Add Layer: Folder | <kbd class="k-pc">Ctrl+G</kbd><kbd class="k-mac">⌘G</kbd> |
-
-### Timeline · Conte › Pills › Frame pill
-
-| Action | Key |
-|---|---|
-| Set 1 Comma | <kbd>1</kbd> |
-| Set 2 Commas | <kbd>2</kbd> |
-| Set 3 Commas | <kbd>3</kbd> |
-| Set 4 Commas | <kbd>4</kbd> |
-| Set N Commas… | <kbd>5</kbd> |
-| Add Frame | <kbd class="k-pc">Shift+I</kbd><kbd class="k-mac">⇧I</kbd> |
+| New Layer | <kbd class="k-pc">Ctrl+Shift+N</kbd><kbd class="k-mac">⇧⌘N</kbd> |
+| New Layer: Folder | <kbd class="k-pc">Ctrl+G</kbd><kbd class="k-mac">⌘G</kbd> |
 
 ### Timeline · Conte › Pills › Shared pill
 
@@ -248,15 +232,16 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 |---|---|
 | Cut | <kbd class="k-pc">Ctrl+X</kbd><kbd class="k-mac">⌘X</kbd> or <kbd>F2</kbd> |
 | Copy | <kbd class="k-pc">Ctrl+C</kbd><kbd class="k-mac">⌘C</kbd> or <kbd>F3</kbd> |
-| Paste linked | <kbd class="k-pc">Ctrl+B</kbd><kbd class="k-mac">⌘B</kbd> |
 | Paste independent | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> or <kbd>F4</kbd> |
-| Edit | <kbd class="k-pc">Shift+F</kbd><kbd class="k-mac">⇧F</kbd> |
+| Delete | <kbd class="k-pc">Shift+F5</kbd><kbd class="k-mac">⇧F5</kbd> |
 
 ### Timeline · Conte › Pills › Color Edit
 
 | Action | Key |
 |---|---|
 | Clear Pixels | <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> or <kbd class="k-pc">Backspace</kbd><kbd class="k-mac">⌫</kbd> or <kbd class="k-pc">Ctrl+Delete</kbd><kbd class="k-mac">⌘⌦</kbd> or <kbd class="k-pc">Ctrl+Backspace</kbd><kbd class="k-mac">⌘⌫</kbd> |
+| Copy Pixels | <kbd class="k-pc">Ctrl+Shift+C</kbd><kbd class="k-mac">⇧⌘C</kbd> |
+| Paste Pixels Above | <kbd class="k-pc">Ctrl+Shift+V</kbd><kbd class="k-mac">⇧⌘V</kbd> |
 
 ### Top strip › File
 
@@ -266,6 +251,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Open File… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> |
 | Save | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
 | Save as… | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> or <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> or <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
+| Export… | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
 
 ### Top strip › Settings
 
@@ -283,8 +269,9 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Brush Tool | <kbd>D</kbd> |
 | Eraser Tool | <kbd>E</kbd> |
 | Eyedropper Tool | <kbd>;</kbd> |
+| Fill Tool | <kbd>G</kbd> |
 | Text Tool | <kbd>T</kbd> |
-| Guide Tool | <kbd>G</kbd> |
+| Select Tool | <kbd>M</kbd> |
 | Cut Tool | <kbd>B</kbd> |
 
 ### Canvas › Sub tools
@@ -293,13 +280,10 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 |---|---|
 | Bucket | <kbd>F</kbd> |
 | Rectangle Fill | <kbd class="k-pc">Shift+R</kbd><kbd class="k-mac">⇧R</kbd> |
-| Lasso Fill | <kbd>Y</kbd> |
 | Draw Rectangle | <kbd>R</kbd> |
 | Draw Line | <kbd>L</kbd> |
-| Lasso Select | <kbd>X</kbd> |
 | Normal Transform | <kbd class="k-pc">Ctrl+T</kbd><kbd class="k-mac">⌘T</kbd> |
-| Lasso Cut | <kbd>C</kbd> |
-| Stamp | <kbd>V</kbd> |
+| Free Transform | <kbd class="k-pc">Ctrl+Shift+T</kbd><kbd class="k-mac">⇧⌘T</kbd> |
 
 ### Canvas › Blend modes
 
@@ -309,13 +293,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Blend: Behind | <kbd>F3</kbd> |
 | Blend: Erase | <kbd>F4</kbd> |
 | Blend: Darken | <kbd>F7</kbd> |
-| Blend: Multiply | <kbd>F5</kbd> |
-| Blend: Color Burn | <kbd>F6</kbd> |
 | Blend: Lighten | <kbd>F8</kbd> |
-| Blend: Color Dodge | <kbd>F9</kbd> |
-| Blend: Add | <kbd>F10</kbd> |
-| Blend: Overlay | <kbd>F11</kbd> |
-| Blend: Soft Light | <kbd>F12</kbd> |
 
 ### Canvas › Selection
 
@@ -324,6 +302,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Deselect | <kbd class="k-pc">Ctrl+D</kbd><kbd class="k-mac">⌘D</kbd> |
 | Confirm | <kbd class="k-pc">Enter</kbd><kbd class="k-mac">↩</kbd> |
 | Cancel Transform | <kbd class="k-pc">Escape</kbd><kbd class="k-mac">⎋</kbd> |
+| Invert Selection Beyond Canvas | <kbd class="k-pc">Ctrl+Shift+I</kbd><kbd class="k-mac">⇧⌘I</kbd> or <kbd class="k-pc">Shift+F7</kbd><kbd class="k-mac">⇧F7</kbd> |
 
 ### Canvas › Edit
 
@@ -344,7 +323,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Flip Canvas View Vertical | <kbd>]</kbd> |
 | Straighten Canvas View | <kbd>Insert</kbd> |
 | Fit Canvas View | <kbd class="k-pc">Shift+V</kbd><kbd class="k-mac">⇧V</kbd> or <kbd class="k-pc">Shift+F11</kbd><kbd class="k-mac">⇧F11</kbd> |
-| Reset Canvas View (100%) | <kbd class="k-pc">Ctrl+Numpad 0</kbd><kbd class="k-mac">⌘Numpad 0</kbd> |
+| Reset Canvas Zoom (100%) | <kbd class="k-pc">Ctrl+Numpad 0</kbd><kbd class="k-mac">⌘Numpad 0</kbd> |
 | Zoom In | <kbd>&gt;</kbd> |
 | Zoom Out | <kbd>&lt;</kbd> |
 | Solo active layer | <kbd>=</kbd> |
@@ -366,24 +345,19 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 |---|---|
 | Play / Pause | <kbd>Space</kbd> |
 | To Start | <kbd class="k-pc">Shift+Home</kbd><kbd class="k-mac">⇧Home</kbd> or <kbd>Home</kbd> |
-| Record Voice (start/stop) | <kbd class="k-pc">Ctrl+R</kbd><kbd class="k-mac">⌘R</kbd> |
 
 ### Timeline · Conte › Pills › Layer pill
 
 | Action | Key |
 |---|---|
-| Add Layer | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
+| New Layer | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
+| New Layer: Folder | <kbd class="k-pc">Ctrl+G</kbd><kbd class="k-mac">⌘G</kbd> |
 
 ### Timeline · Conte › Pills › Frame pill
 
 | Action | Key |
 |---|---|
-| Set 1 Comma | <kbd>1</kbd> |
-| Set 2 Commas | <kbd>2</kbd> |
-| Set 3 Commas | <kbd>3</kbd> |
-| Set 4 Commas | <kbd>4</kbd> |
-| Set N Commas… | <kbd>5</kbd> |
-| Add Frame | <kbd>I</kbd> |
+| New Frame | <kbd>I</kbd> |
 
 ### Timeline · Conte › Pills › Shared pill
 
@@ -391,10 +365,8 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 |---|---|
 | Cut | <kbd class="k-pc">Ctrl+X</kbd><kbd class="k-mac">⌘X</kbd> or <kbd class="k-pc">Delete</kbd><kbd class="k-mac">⌦</kbd> |
 | Copy | <kbd class="k-pc">Ctrl+C</kbd><kbd class="k-mac">⌘C</kbd> |
-| Paste linked | <kbd class="k-pc">Ctrl+B</kbd><kbd class="k-mac">⌘B</kbd> |
 | Paste independent | <kbd class="k-pc">Ctrl+V</kbd><kbd class="k-mac">⌘V</kbd> |
 | Delete | <kbd class="k-pc">Shift+F5</kbd><kbd class="k-mac">⇧F5</kbd> |
-| Edit | <kbd class="k-pc">Shift+F</kbd><kbd class="k-mac">⇧F</kbd> |
 
 ### Timeline · Conte › Pills › Color Edit
 
