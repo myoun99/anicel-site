@@ -32,18 +32,18 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 
 | Action | Key |
 |---|---|
-| Blend: Color | <kbd>F1</kbd> |
+| Blend: Normal | <kbd>F1</kbd> |
 | Blend: Behind | <kbd>F2</kbd> |
 | Blend: Erase | <kbd>F3</kbd> |
 | Blend: Darken | <kbd>F4</kbd> |
 | Blend: Multiply | <kbd>F5</kbd> |
 | Blend: Color Burn | <kbd>F6</kbd> |
-| Blend: Lighten | <kbd>F7</kbd> |
-| Blend: Screen | <kbd>F8</kbd> |
-| Blend: Color Dodge | <kbd>F9</kbd> |
-| Blend: Add | <kbd>F10</kbd> |
-| Blend: Overlay | <kbd>F11</kbd> |
-| Blend: Soft Light | <kbd>F12</kbd> |
+| Blend: Linear Burn | <kbd>F7</kbd> |
+| Blend: Subtract | <kbd>F8</kbd> |
+| Blend: Lighten | <kbd>F9</kbd> |
+| Blend: Screen | <kbd>F10</kbd> |
+| Blend: Color Dodge | <kbd>F11</kbd> |
+| Blend: Add | <kbd>F12</kbd> |
 
 ### Canvas › Selection
 
@@ -108,7 +108,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Set 2 Commas | <kbd>2</kbd> |
 | Set 3 Commas | <kbd>3</kbd> |
 | Set 4 Commas | <kbd>4</kbd> |
-| Set N Commas… | <kbd>5</kbd> |
+| Set N Commas | <kbd>5</kbd> |
 | New Frame | <kbd class="k-pc">Shift+I</kbd><kbd class="k-mac">⇧I</kbd> |
 
 ### Timeline · Conte › Pills › Shared pill
@@ -133,7 +133,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Action | Key |
 |---|---|
 | Save | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
-| Save as… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
+| Save as | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
 
 ## Clip Studio based
 
@@ -248,17 +248,17 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Action | Key |
 |---|---|
 | New project | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
-| Open File… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> |
+| Open File | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> |
 | Save | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
-| Save as… | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> or <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> or <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
-| Export… | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
+| Save as | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> or <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> or <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
+| Export | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
 
 ### Top strip › Settings
 
 | Action | Key |
 |---|---|
-| Keyboard shortcuts… | <kbd class="k-pc">Ctrl+Alt+Shift+K</kbd><kbd class="k-mac">⌥⇧⌘K</kbd> |
-| Preferences… | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
+| Keyboard shortcuts | <kbd class="k-pc">Ctrl+Alt+Shift+K</kbd><kbd class="k-mac">⌥⇧⌘K</kbd> |
+| Preferences | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
 
 ## TVPaint based
 
@@ -289,7 +289,7 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 
 | Action | Key |
 |---|---|
-| Blend: Color | <kbd>F2</kbd> |
+| Blend: Normal | <kbd>F2</kbd> |
 | Blend: Behind | <kbd>F3</kbd> |
 | Blend: Erase | <kbd>F4</kbd> |
 | Blend: Darken | <kbd>F7</kbd> |
@@ -381,17 +381,17 @@ These are the default keys. Opened on a Mac or an iPad, the page shows the Mac s
 | Action | Key |
 |---|---|
 | New project | <kbd class="k-pc">Shift+N</kbd><kbd class="k-mac">⇧N</kbd> |
-| Open File… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> or <kbd class="k-pc">Shift+L</kbd><kbd class="k-mac">⇧L</kbd> |
+| Open File | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> or <kbd class="k-pc">Shift+L</kbd><kbd class="k-mac">⇧L</kbd> |
 | Save | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> or <kbd class="k-pc">Shift+S</kbd><kbd class="k-mac">⇧S</kbd> |
-| Save as… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
-| Export… | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
+| Save as | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
+| Export | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
 
 ### Top strip › Settings
 
 | Action | Key |
 |---|---|
-| Keyboard shortcuts… | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
-| Preferences… | <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
+| Keyboard shortcuts | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
+| Preferences | <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
 
 <!-- shortcuts:end -->
 

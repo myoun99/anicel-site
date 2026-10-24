@@ -38,12 +38,12 @@
 | 合成: 比較（暗） | <kbd>F4</kbd> |
 | 合成: 乗算 | <kbd>F5</kbd> |
 | 合成: 焼き込みカラー | <kbd>F6</kbd> |
-| 合成: 比較（明） | <kbd>F7</kbd> |
-| 合成: スクリーン | <kbd>F8</kbd> |
-| 合成: 覆い焼きカラー | <kbd>F9</kbd> |
-| 合成: 加算 | <kbd>F10</kbd> |
-| 合成: オーバーレイ | <kbd>F11</kbd> |
-| 合成: ソフトライト | <kbd>F12</kbd> |
+| 合成: 焼き込み（リニア） | <kbd>F7</kbd> |
+| 合成: 減算 | <kbd>F8</kbd> |
+| 合成: 比較（明） | <kbd>F9</kbd> |
+| 合成: スクリーン | <kbd>F10</kbd> |
+| 合成: 覆い焼きカラー | <kbd>F11</kbd> |
+| 合成: 加算 | <kbd>F12</kbd> |
 
 ### カンバス › 選択
 
@@ -108,7 +108,7 @@
 | 2コマに設定 | <kbd>2</kbd> |
 | 3コマに設定 | <kbd>3</kbd> |
 | 4コマに設定 | <kbd>4</kbd> |
-| Nコマに設定… | <kbd>5</kbd> |
+| Nコマに設定 | <kbd>5</kbd> |
 | 新規フレーム | <kbd class="k-pc">Shift+I</kbd><kbd class="k-mac">⇧I</kbd> |
 
 ### タイムライン・コンテ › ピル › 共用のピル
@@ -133,7 +133,7 @@
 | 操作 | キー |
 |---|---|
 | 保存 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
-| 名前を付けて保存… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
+| 名前を付けて保存 | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
 
 ## CLIP STUDIO ベース
 
@@ -248,17 +248,17 @@
 | 操作 | キー |
 |---|---|
 | 新規プロジェクト | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
-| ファイルを開く… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> |
+| ファイルを開く | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> |
 | 保存 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
-| 名前を付けて保存… | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> または <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> または <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
-| 書き出し… | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
+| 名前を付けて保存 | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> または <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> または <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
+| 書き出し | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
 
 ### 上部のバー › 設定
 
 | 操作 | キー |
 |---|---|
-| キーボードショートカット… | <kbd class="k-pc">Ctrl+Alt+Shift+K</kbd><kbd class="k-mac">⌥⇧⌘K</kbd> |
-| 環境設定… | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
+| キーボードショートカット | <kbd class="k-pc">Ctrl+Alt+Shift+K</kbd><kbd class="k-mac">⌥⇧⌘K</kbd> |
+| 環境設定 | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
 
 ## TVPaint ベース
 
@@ -381,17 +381,17 @@
 | 操作 | キー |
 |---|---|
 | 新規プロジェクト | <kbd class="k-pc">Shift+N</kbd><kbd class="k-mac">⇧N</kbd> |
-| ファイルを開く… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> または <kbd class="k-pc">Shift+L</kbd><kbd class="k-mac">⇧L</kbd> |
+| ファイルを開く | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> または <kbd class="k-pc">Shift+L</kbd><kbd class="k-mac">⇧L</kbd> |
 | 保存 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> または <kbd class="k-pc">Shift+S</kbd><kbd class="k-mac">⇧S</kbd> |
-| 名前を付けて保存… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
-| 書き出し… | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
+| 名前を付けて保存 | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
+| 書き出し | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
 
 ### 上部のバー › 設定
 
 | 操作 | キー |
 |---|---|
-| キーボードショートカット… | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
-| 環境設定… | <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
+| キーボードショートカット | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
+| 環境設定 | <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
 
 <!-- shortcuts:end -->
 

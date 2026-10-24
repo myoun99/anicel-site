@@ -38,12 +38,12 @@
 | 합성: 어둡게 하기 | <kbd>F4</kbd> |
 | 합성: 곱하기 | <kbd>F5</kbd> |
 | 합성: 색상 번 | <kbd>F6</kbd> |
-| 합성: 밝게 하기 | <kbd>F7</kbd> |
-| 합성: 스크린 | <kbd>F8</kbd> |
-| 합성: 색상 닷지 | <kbd>F9</kbd> |
-| 합성: 선형 닷지(추가) | <kbd>F10</kbd> |
-| 합성: 오버레이 | <kbd>F11</kbd> |
-| 합성: 소프트 라이트 | <kbd>F12</kbd> |
+| 합성: 선형 번 | <kbd>F7</kbd> |
+| 합성: 빼기 | <kbd>F8</kbd> |
+| 합성: 밝게 하기 | <kbd>F9</kbd> |
+| 합성: 스크린 | <kbd>F10</kbd> |
+| 합성: 색상 닷지 | <kbd>F11</kbd> |
+| 합성: 선형 닷지(추가) | <kbd>F12</kbd> |
 
 ### 캔버스 › 선택
 
@@ -108,7 +108,7 @@
 | 2코마로 설정 | <kbd>2</kbd> |
 | 3코마로 설정 | <kbd>3</kbd> |
 | 4코마로 설정 | <kbd>4</kbd> |
-| N코마로 설정… | <kbd>5</kbd> |
+| N코마로 설정 | <kbd>5</kbd> |
 | 새 프레임 | <kbd class="k-pc">Shift+I</kbd><kbd class="k-mac">⇧I</kbd> |
 
 ### 타임라인 · 콘티 › 알약 › 공용 알약
@@ -133,7 +133,7 @@
 | 동작 | 키 |
 |---|---|
 | 저장 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
-| 다른 이름으로 저장… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
+| 다른 이름으로 저장 | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
 
 ## 클립 스튜디오 기반
 
@@ -248,17 +248,17 @@
 | 동작 | 키 |
 |---|---|
 | 새 프로젝트 | <kbd class="k-pc">Ctrl+N</kbd><kbd class="k-mac">⌘N</kbd> |
-| 파일 열기… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> |
+| 파일 열기 | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> |
 | 저장 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> |
-| 다른 이름으로 저장… | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> 또는 <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> 또는 <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
-| 내보내기… | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
+| 다른 이름으로 저장 | <kbd class="k-pc">Alt+Shift+S</kbd><kbd class="k-mac">⌥⇧S</kbd> 또는 <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> 또는 <kbd class="k-pc">Ctrl+Alt+S</kbd><kbd class="k-mac">⌥⌘S</kbd> |
+| 내보내기 | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
 
 ### 맨 위 띠 › 설정
 
 | 동작 | 키 |
 |---|---|
-| 키보드 단축키… | <kbd class="k-pc">Ctrl+Alt+Shift+K</kbd><kbd class="k-mac">⌥⇧⌘K</kbd> |
-| 환경설정… | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
+| 키보드 단축키 | <kbd class="k-pc">Ctrl+Alt+Shift+K</kbd><kbd class="k-mac">⌥⇧⌘K</kbd> |
+| 환경설정 | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
 
 ## TVPaint 기반
 
@@ -381,17 +381,17 @@
 | 동작 | 키 |
 |---|---|
 | 새 프로젝트 | <kbd class="k-pc">Shift+N</kbd><kbd class="k-mac">⇧N</kbd> |
-| 파일 열기… | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> 또는 <kbd class="k-pc">Shift+L</kbd><kbd class="k-mac">⇧L</kbd> |
+| 파일 열기 | <kbd class="k-pc">Ctrl+O</kbd><kbd class="k-mac">⌘O</kbd> 또는 <kbd class="k-pc">Shift+L</kbd><kbd class="k-mac">⇧L</kbd> |
 | 저장 | <kbd class="k-pc">Ctrl+S</kbd><kbd class="k-mac">⌘S</kbd> 또는 <kbd class="k-pc">Shift+S</kbd><kbd class="k-mac">⇧S</kbd> |
-| 다른 이름으로 저장… | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
-| 내보내기… | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
+| 다른 이름으로 저장 | <kbd class="k-pc">Ctrl+Shift+S</kbd><kbd class="k-mac">⇧⌘S</kbd> |
+| 내보내기 | <kbd class="k-pc">Ctrl+Shift+E</kbd><kbd class="k-mac">⇧⌘E</kbd> |
 
 ### 맨 위 띠 › 설정
 
 | 동작 | 키 |
 |---|---|
-| 키보드 단축키… | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
-| 환경설정… | <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
+| 키보드 단축키 | <kbd class="k-pc">Ctrl+K</kbd><kbd class="k-mac">⌘K</kbd> |
+| 환경설정 | <kbd class="k-pc">Shift+D</kbd><kbd class="k-mac">⇧D</kbd> |
 
 <!-- shortcuts:end -->
 
