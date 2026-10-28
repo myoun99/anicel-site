@@ -1,5 +1,7 @@
 # FAQ
 
+[](../../launch/latest/fr/notice.md ':include')
+
 ## Enregistrement et fichiers
 
 **L'application s'est fermée et mon travail a disparu.**

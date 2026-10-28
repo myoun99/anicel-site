@@ -1,5 +1,7 @@
 # 常见问题
 
+[](../../launch/latest/zhHans/notice.md ':include')
+
 ## 保存与文件
 
 **应用关掉了，作品不见了。**

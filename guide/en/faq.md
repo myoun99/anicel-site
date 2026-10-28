@@ -1,5 +1,7 @@
 # FAQ
 
+[](../../launch/latest/en/notice.md ':include')
+
 ## Saving and files
 
 **The app closed and my work is gone.**

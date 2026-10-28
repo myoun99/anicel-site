@@ -1,5 +1,7 @@
 # 자주 묻는 것
 
+[](../../launch/latest/ko/notice.md ':include')
+
 ## 저장 · 파일
 
 **앱이 꺼졌는데 작업이 없어졌어요.**
