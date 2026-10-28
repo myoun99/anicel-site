@@ -7,6 +7,20 @@ Le même fichier s'ouvre sur Windows, macOS, iPad, Android et Linux.
 
 ## Ce qu'elle fait
 
+<div class="pipeline">
+  <div class="pipeline-steps">
+    <a class="step" href="#/fr/storyboard"><b>Storyboard</b><span>Calque storyboard · Panneau Conte</span></a>
+    <a class="step" href="#/fr/animation-layers"><b>Animation clé</b><span>Calques d'animation · Feuille de temps</span></a>
+    <a class="step growing" href="#/fr/onion-skin"><b>Intervalles</b><span>Pelure d'oignon · Repères d'intervalle</span></a>
+    <a class="step growing" href="#/fr/color"><b>Finition</b><span>Remplissage · Palettes</span></a>
+    <a class="step growing" href="#/fr/camera-section"><b>Compositing</b><span>Caméra · Effets · Export vidéo</span></a>
+  </div>
+  <div class="pipeline-span">Dans un seul fichier de projet</div>
+  <p class="pipeline-legend"><span><i></i>Prêt</span><span><i class="growing"></i>Utilisable, en cours d'enrichissement</span></p>
+</div>
+
+Du storyboard au compositing, un plan se travaille dans un seul fichier de projet. Dans cette version, **les intervalles, la finition et le compositing** n'ont pas encore tout ce qu'il faut pour remplacer complètement des logiciels dédiés ; les fonctions s'étoffent à chaque mise à jour.
+
 - Garder plusieurs plans dans un projet, chacun avec sa propre taille de canevas — [Taille du canevas par plan](/fr/canvas-size)
 - Calques : animation, storyboard, image, dossier, réglage, SE, direction, caméra et transition, plus les attaches qui suivent un calque de base — [Les calques en bref](/fr/layers)
 - Mettre des étiquettes de couleur et des prises sur les calques et les plans — [Étiquettes de couleur et prises](/fr/layer-labels)

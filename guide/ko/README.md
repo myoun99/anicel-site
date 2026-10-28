@@ -7,6 +7,20 @@ Windows · macOS · iPad · Android · Linux 에서 같은 파일을 엽니다.
 
 ## 무엇을 할 수 있나
 
+<div class="pipeline">
+  <div class="pipeline-steps">
+    <a class="step" href="#/ko/storyboard"><b>콘티</b><span>콘티 레이어 · 콘티 패널</span></a>
+    <a class="step" href="#/ko/animation-layers"><b>원화</b><span>애니메이션 레이어 · 타임시트</span></a>
+    <a class="step growing" href="#/ko/onion-skin"><b>동화</b><span>어니언 스킨 · 중간나누기 마크</span></a>
+    <a class="step growing" href="#/ko/color"><b>시아게</b><span>채우기 · 팔레트</span></a>
+    <a class="step growing" href="#/ko/camera-section"><b>촬영</b><span>카메라 · 이펙트 · 동영상 출력</span></a>
+  </div>
+  <div class="pipeline-span">프로젝트 파일 하나로 이어서 작업</div>
+  <p class="pipeline-legend"><span><i></i>작업 가능</span><span><i class="growing"></i>작업 가능 · 기능 확장 중</span></p>
+</div>
+
+콘티부터 촬영까지, 한 컷을 프로젝트 파일 하나에서 이어서 작업합니다. 다만 **동화 · 시아게 · 촬영**은 지금 버전으로는 전용 프로그램을 완전히 대신하기에 아직 기능이 부족합니다. 기능은 업데이트마다 계속 늘어납니다.
+
 - 한 프로젝트에 컷을 여러 개 두고, 캔버스 크기를 컷마다 따로 정합니다 — [컷별 캔버스 크기](/ko/canvas-size)
 - 레이어: 애니메이션 · 콘티 · 이미지 · 폴더 · 조정 · SE · 디렉션 · 카메라 · 트랜지션, 그리고 본 레이어에 붙는 어태치 — [레이어 한눈에](/ko/layers)
 - 레이어와 컷에 색 라벨 · 테이크를 붙입니다 — [색 라벨과 테이크](/ko/layer-labels)

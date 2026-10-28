@@ -74,6 +74,71 @@
   }
   .keys-switch button + button { border-left: 1px solid #c9ced3; }
   .keys-switch button[aria-pressed="true"] { background: #42b983; color: #fff; }
+  /* The front page's production line (README, 유저 10-29): the steps a cut
+     goes through in Anicel, one project file under them all. A dashed step
+     is usable and still growing. Where the boxes would be squeezed (a phone, the
+     sidebar open, longer words) the line runs downward. */
+  .pipeline { margin: 1em 0 1.2em; container-type: inline-size; }
+  .pipeline-steps { display: flex; align-items: stretch; gap: 1.4em; }
+  .markdown-section .pipeline .step {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: .6em .7em;
+    border: 2px solid #42b983;
+    border-radius: 8px;
+    background: #f3fbf7;
+    color: #2c3e50;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  .pipeline .step b { display: block; font-size: 1.05em; }
+  .pipeline .step span { display: block; margin-top: .2em; font-size: .78em; line-height: 1.4; color: #5d6b78; overflow-wrap: anywhere; }
+  /* Korean breaks between its words; Japanese and Chinese have none to keep. */
+  .pipeline .step span:lang(ko) { word-break: keep-all; }
+  .markdown-section .pipeline .step.growing { border-style: dashed; background: #fff; }
+  .pipeline .step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    top: 50%;
+    right: -1.15em;
+    transform: translateY(-50%);
+    color: #9aa5ae;
+    font-weight: 600;
+  }
+  .pipeline-span {
+    margin-top: .5em;
+    padding: .35em;
+    border-radius: 6px;
+    background: #42b983;
+    color: #fff;
+    font-size: .85em;
+    font-weight: 600;
+    text-align: center;
+  }
+  .markdown-section p.pipeline-legend { display: flex; flex-wrap: wrap; gap: .4em 1.2em; margin: .5em 0 0; font-size: .8em; color: #5d6b78; }
+  .pipeline-legend i {
+    display: inline-block;
+    width: 1.2em;
+    height: .8em;
+    margin-right: .35em;
+    vertical-align: -.05em;
+    border: 2px solid #42b983;
+    border-radius: 3px;
+    background: #f3fbf7;
+  }
+  .pipeline-legend i.growing { border-style: dashed; background: #fff; }
+  @container (max-width: 720px) {
+    .pipeline-steps { flex-direction: column; gap: 1.1em; }
+    .pipeline .step:not(:last-child)::after {
+      content: '↓';
+      top: auto;
+      right: auto;
+      bottom: -1.2em;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 </style>
 </head>
 <body>
