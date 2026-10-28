@@ -1,24 +1,32 @@
-/* Anicel — the site reads like the room the tool is used in: a dark studio
-   with one lit surface. Nothing here is an image, so the page stays a few
-   kilobytes and never waits on a CDN. */
+/* Anicel — a sheet of paper and a pencil: dark text on an off-white page,
+   one red for the marks that matter (the red an animator times with).
+   Nothing here is an image or a web font, so the page is a few kilobytes
+   and never waits on a CDN. */
 
 :root {
-  --ink: #12100d;
-  --ink-raised: #1b1815;
-  --paper: #f6ecd9;
-  --paper-dim: #cfc5b3;
-  --glow: #f0b64e;
-  --glow-soft: rgba(240, 182, 78, 0.16);
-  --line: rgba(246, 236, 217, 0.13);
-  --text: #ded6c8;
-  --text-muted: #948c7e;
+  --page: #fbfaf6;
+  --text: #1f1e1c;
+  --text-muted: #6d6a63;
+  --line: #e3dfd6;
+  --mark: #c0392b;
 
-  --measure: 68ch;
-  --gutter: clamp(1.25rem, 5vw, 3rem);
+  --measure: 44rem;
+  --gutter: clamp(1.25rem, 5vw, 2.5rem);
 
   --font: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN",
-    "Yu Gothic", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    "Yu Gothic UI", "Yu Gothic", "Noto Sans JP", "Segoe UI", Roboto, sans-serif;
+}
+
+/* Each language reads in a face made for it. Chinese is left to the OS's own
+   face, as the app does (AppTypography.familyFor): a Japanese face would
+   draw the Han characters the two share in their Japanese forms. */
+html[lang="ko"] {
+  --font: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic",
+    "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+}
+html[lang="zh-Hans"] {
+  --font: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei",
+    "Noto Sans SC", "Segoe UI", Roboto, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -27,10 +35,10 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  background: var(--ink);
+  background: var(--page);
   color: var(--text);
   font-family: var(--font);
-  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  font-size: 1rem;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
@@ -43,19 +51,13 @@ html[lang="en"] [data-lang]:not([data-lang="en"]),
 html[lang="fr"] [data-lang]:not([data-lang="fr"]),
 html[lang="zh-Hans"] [data-lang]:not([data-lang="zhHans"]) { display: none; }
 
-/* Chinese is left to the OS's own face, as the app does
-   (AppTypography.familyFor): a Japanese face in front would draw the Han
-   characters the two share in their Japanese forms, and it lacks many
-   simplified ones outright, so one sentence would mix two faces. */
-html[lang="zh-Hans"] {
-  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: var(--text-muted); }
+a:hover { color: var(--mark); text-decoration-color: var(--mark); }
 
-a { color: var(--glow); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-a:hover { color: var(--paper); }
+h1, h2, h3 { font-weight: 600; line-height: 1.3; }
 
 .wrap {
-  width: min(100%, 72rem);
+  width: min(100%, calc(var(--measure) + 2 * var(--gutter)));
   margin-inline: auto;
   padding-inline: var(--gutter);
 }
@@ -67,338 +69,158 @@ a:hover { color: var(--paper); }
 .site-head {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  gap: 1rem;
-  padding-block: 1.5rem;
+  gap: 0.5rem 1.5rem;
+  padding-block: 1.75rem;
 }
 
 .wordmark {
   font-size: 1.05rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--paper);
   text-decoration: none;
 }
 
-.wordmark span { color: var(--text-muted); font-weight: 400; }
-
-.lang-switch {
-  display: flex;
-  gap: 1px;
-  padding: 1px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--ink-raised);
-}
+.lang-switch { display: flex; flex-wrap: wrap; gap: 0 1rem; }
 
 .lang-switch button {
-  padding: 0.3rem 0.85rem;
+  padding: 0;
   border: 0;
-  border-radius: 999px;
-  background: transparent;
+  background: none;
   color: var(--text-muted);
   font: inherit;
-  font-size: 0.8rem;
-  letter-spacing: 0.06em;
-  white-space: nowrap;
+  font-size: 0.875rem;
   cursor: pointer;
 }
 
-.lang-switch button[aria-pressed="true"] {
-  background: var(--paper);
-  color: var(--ink);
+.lang-switch button:hover { color: var(--text); }
+.lang-switch button[aria-pressed="true"] { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---- the page's own top ---------------------------------------------- */
+
+.intro { padding-block: clamp(3rem, 10vw, 6rem) clamp(2.5rem, 7vw, 4rem); }
+
+.intro h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3rem);
+  letter-spacing: -0.01em;
 }
 
-/* ---- hero ------------------------------------------------------------ */
-
-.hero {
-  display: grid;
-  gap: clamp(2.5rem, 6vw, 5rem);
-  align-items: center;
-  padding-block: clamp(3rem, 9vw, 7rem) clamp(3rem, 8vw, 6rem);
-}
-
-@media (min-width: 60rem) {
-  .hero { grid-template-columns: 1.15fr 1fr; }
-}
-
-.hero h1 {
-  margin: 0 0 1rem;
-  font-size: clamp(2.6rem, 1.6rem + 4.6vw, 4.75rem);
-  line-height: 1.02;
-  letter-spacing: -0.03em;
-  font-weight: 600;
-  color: var(--paper);
-}
-
-.hero .lede {
-  margin: 0 0 1.5rem;
-  max-width: 34ch;
-  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
-  line-height: 1.6;
-  color: var(--text);
-}
-
-.byline {
+.intro .lede {
   margin: 0;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
+  font-size: clamp(1.15rem, 1.05rem + 0.5vw, 1.35rem);
+  line-height: 1.6;
+}
+
+.intro .meta {
+  margin: 1.25rem 0 0;
+  font-size: 0.9rem;
   color: var(--text-muted);
 }
-
-.status-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1.75rem;
-  padding: 0.35rem 0.85rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  color: var(--text-muted);
-}
-
-.status-pill::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--glow);
-  box-shadow: 0 0 0 3px var(--glow-soft);
-}
-
-/* ---- the light table ------------------------------------------------- */
-
-/* Stacked cels over a lit surface. The frames sit at the same offsets an
-   onion skin would put them at, which is the whole idea of the picture. */
-
-.lighttable {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  display: grid;
-  place-items: center;
-  isolation: isolate;
-}
-
-/* The lit glass under the paper. Everything above it reads as translucent
-   only because this is genuinely brighter than the page. */
-.lighttable::before {
-  content: "";
-  position: absolute;
-  inset: 14% 10%;
-  border-radius: 6px;
-  background: radial-gradient(
-    ellipse at 50% 55%,
-    rgba(255, 226, 168, 0.5),
-    rgba(240, 182, 78, 0.16) 55%,
-    transparent 78%
-  );
-  filter: blur(18px);
-  z-index: -1;
-}
-
-.cel {
-  position: absolute;
-  width: 60%;
-  aspect-ratio: 4 / 3;
-  border: 1px solid rgba(246, 236, 217, 0.4);
-  border-radius: 3px;
-  background: linear-gradient(
-    150deg,
-    rgba(255, 244, 224, 0.26),
-    rgba(255, 240, 214, 0.1)
-  );
-}
-
-/* Three pegs along the bottom edge — the tap every sheet is punched for. */
-.cel::after {
-  content: "";
-  position: absolute;
-  bottom: 3px;
-  left: 50%;
-  translate: -50% 0;
-  width: 30%;
-  height: 6px;
-  background:
-    radial-gradient(circle at 10% 50%, rgba(18, 16, 13, 0.55) 46%, transparent 52%),
-    radial-gradient(circle at 50% 50%, rgba(18, 16, 13, 0.55) 34%, transparent 40%),
-    radial-gradient(circle at 90% 50%, rgba(18, 16, 13, 0.55) 46%, transparent 52%);
-}
-
-/* One drawing across three sheets: the ball everyone animates first. Seen
-   together they are an onion skin, which is the point of the picture. */
-.cel .ball {
-  position: absolute;
-  width: 13%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  border: 2px solid rgba(24, 20, 14, 0.75);
-}
-
-.cel:nth-of-type(1) { translate: -15% -11%; rotate: -3.4deg; opacity: 0.34; }
-.cel:nth-of-type(2) { translate: -6% -4%; rotate: -1.2deg; opacity: 0.58; }
-.cel:nth-of-type(3) {
-  translate: 5% 5%;
-  rotate: 1.5deg;
-  background: linear-gradient(150deg, rgba(255, 246, 229, 0.5), rgba(255, 240, 214, 0.24));
-  border-color: rgba(255, 248, 232, 0.6);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
-}
-
-.cel:nth-of-type(1) .ball { left: 16%; top: 16%; }
-.cel:nth-of-type(2) .ball { left: 40%; top: 40%; }
-.cel:nth-of-type(3) .ball {
-  left: 63%;
-  top: 64%;
-  border-color: rgba(24, 20, 14, 0.9);
-  background: rgba(24, 20, 14, 0.08);
-}
-
-/* The exposure ticks of a sheet, running down the right. */
-.sheet-ticks {
-  position: absolute;
-  top: 8%;
-  right: 4%;
-  display: grid;
-  gap: 7px;
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  color: var(--text-muted);
-  text-align: right;
-}
-
-.sheet-ticks span { display: block; }
-.sheet-ticks span::before {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 1px;
-  margin-right: 6px;
-  vertical-align: middle;
-  background: var(--line);
-}
-.sheet-ticks span.on { color: var(--glow); }
-.sheet-ticks span.on::before { background: var(--glow); width: 22px; }
 
 /* ---- sections -------------------------------------------------------- */
 
-section { padding-block: clamp(3rem, 7vw, 5.5rem); border-top: 1px solid var(--line); }
+section { padding-block: 2.5rem; border-top: 1px solid var(--line); }
 
+section > h2,
 .section-label {
-  margin: 0 0 2.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-h2 {
-  margin: 0 0 0.6rem;
-  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: var(--paper);
+  line-height: 1.3;
 }
 
-.features {
+section p { margin: 0 0 1rem; }
+
+.note { font-size: 0.9rem; color: var(--text-muted); }
+.note h3 { margin: 1.5rem 0 0.5rem; font-size: 0.95rem; color: var(--text); }
+.note p { margin: 0 0 0.6rem; }
+
+/* ---- the production line --------------------------------------------- */
+
+/* One row per step a cut goes through. A filled mark is ready to work in;
+   an open one works, and is still growing. */
+.steps { list-style: none; margin: 1.5rem 0; padding: 0; border-top: 1px solid var(--line); }
+
+.steps li {
   display: grid;
-  gap: clamp(1.75rem, 4vw, 3rem) clamp(2rem, 5vw, 4rem);
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
-}
-
-.feature h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--paper);
-}
-
-.feature p { margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
-
-.feature .kicker {
-  display: block;
-  margin-bottom: 0.7rem;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  color: var(--glow);
-}
-
-/* ---- downloads ------------------------------------------------------- */
-
-.platforms {
-  display: grid;
-  gap: 1px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  overflow: hidden;
-  background: var(--line);
-}
-
-.platform {
-  display: flex;
-  flex-wrap: wrap;
+  grid-template-columns: 8.5rem 1fr auto;
+  gap: 0.25rem 1.25rem;
   align-items: baseline;
-  gap: 0.5rem 1rem;
-  padding: 1.15rem clamp(1rem, 3vw, 1.75rem);
-  background: var(--ink-raised);
+  padding-block: 0.9rem;
+  border-bottom: 1px solid var(--line);
 }
 
-.platform .name { flex: 1 1 10rem; font-weight: 600; color: var(--paper); }
-.platform .detail { flex: 1 1 14rem; font-size: 0.88rem; color: var(--text-muted); }
+.steps .name { font-weight: 600; white-space: nowrap; }
 
-.platform .state {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  white-space: nowrap;
+.steps .name::before {
+  content: "";
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-right: 0.6rem;
+  border: 1.5px solid var(--mark);
+  border-radius: 50%;
+  background: var(--mark);
+  vertical-align: 0.08em;
 }
 
-.platform .state.ready { color: var(--glow); }
+.steps .growing .name::before { background: transparent; }
 
-.note {
-  margin: 1.5rem 0 0;
-  max-width: var(--measure);
-  font-size: 0.88rem;
-  color: var(--text-muted);
+.steps .what { color: var(--text); }
+
+.steps .state { font-size: 0.8rem; color: var(--text-muted); white-space: nowrap; }
+
+@media (max-width: 36rem) {
+  .steps li { grid-template-columns: 1fr auto; }
+  .steps .what { grid-column: 1 / -1; grid-row: 2; }
 }
-.note h3 { margin: 0 0 0.5rem; font-size: 0.95rem; color: var(--text); }
-.note p { margin: 0 0 0.5rem; }
 
-/* ---- prose (privacy) ------------------------------------------------- */
+/* ---- facts (also · download) ----------------------------------------- */
+
+.facts { margin: 0; display: grid; grid-template-columns: 8.5rem 1fr; gap: 0.75rem 1.25rem; }
+.facts dt { font-weight: 600; }
+.facts dd { margin: 0; }
+
+@media (max-width: 36rem) {
+  .facts { grid-template-columns: 1fr; gap: 0; }
+  .facts dd { margin-bottom: 0.9rem; }
+}
+
+.platforms { width: 100%; margin: 1.25rem 0 1.5rem; border-collapse: collapse; font-size: 0.95rem; }
+.platforms td { padding: 0.6rem 0; border-bottom: 1px solid var(--line); vertical-align: baseline; }
+.platforms tr:first-child td { border-top: 1px solid var(--line); }
+.platforms td:first-child { width: 8.5rem; font-weight: 600; }
+.platforms td:last-child { text-align: right; color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
+.platforms td.ready { color: var(--mark); }
+
+@media (max-width: 36rem) {
+  .platforms td:first-child { width: 5.5rem; }
+}
+
+/* ---- prose (privacy · updates) --------------------------------------- */
 
 .prose { max-width: var(--measure); }
-.prose h2 { margin-top: 2.5rem; font-size: 1.25rem; }
+.prose h2 { margin: 2.25rem 0 0.5rem; font-size: 1.1rem; }
 .prose h2:first-of-type { margin-top: 0; }
-.prose p, .prose li { color: var(--text); }
+.prose h3 { margin: 1.25rem 0 0.4rem; font-size: 1rem; }
 .prose ul { padding-left: 1.2rem; }
 .prose li { margin-bottom: 0.4rem; }
-.prose .updated { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); }
+.prose .updated { font-size: 0.85rem; color: var(--text-muted); }
 
 /* ---- footer ---------------------------------------------------------- */
 
 .site-foot {
-  padding-block: 2.5rem 3.5rem;
-  border-top: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem 2rem;
-  align-items: center;
+  gap: 0.5rem 1.5rem;
+  align-items: baseline;
   justify-content: space-between;
-  font-size: 0.85rem;
+  margin-top: 1rem;
+  padding-block: 2rem 3rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.875rem;
   color: var(--text-muted);
 }
 
-.site-foot nav { display: flex; gap: 1.5rem; }
-
-@media (prefers-reduced-motion: no-preference) {
-  .cel { transition: translate 0.5s ease, rotate 0.5s ease; }
-}
+.site-foot nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
