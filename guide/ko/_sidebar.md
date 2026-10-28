@@ -36,3 +36,4 @@
   - [환경설정](/ko/preferences)
   - [단축키](/ko/shortcuts)
   - [자주 묻는 것](/ko/faq)
+  - [의견 보내기](/ko/feedback)

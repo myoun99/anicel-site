@@ -36,3 +36,4 @@
   - [Preferences](/en/preferences)
   - [Shortcuts](/en/shortcuts)
   - [FAQ](/en/faq)
+  - [Send Feedback](/en/feedback)

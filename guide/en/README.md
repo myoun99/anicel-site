@@ -9,17 +9,17 @@ The same file opens on Windows, macOS, iPad, Android and Linux.
 
 <div class="pipeline">
   <div class="pipeline-steps">
-    <a class="step" href="#/en/storyboard"><b>Storyboard</b><span>Storyboard layer · Conte panel</span></a>
-    <a class="step" href="#/en/animation-layers"><b>Key animation</b><span>Animation layers · Timesheet</span></a>
-    <a class="step growing" href="#/en/onion-skin"><b>In-betweening</b><span>Onion skin · In-between marks</span></a>
-    <a class="step growing" href="#/en/color"><b>Finish</b><span>Fill · Palettes</span></a>
-    <a class="step growing" href="#/en/camera-section"><b>Compositing</b><span>Camera · Effects · Video export</span></a>
+    <a class="step" href="#/en/conte-layer"><b>Storyboard</b><span>Conte sheet · Dialogue recording</span></a>
+    <a class="step" href="#/en/sheets"><b>Key animation</b><span>Timesheet · Stage labels</span></a>
+    <a class="step growing" href="#/en/animation-layers"><b>In-betweening</b><span>CELL column · In-between marks · Onion skin</span></a>
+    <a class="step growing" href="#/en/color"><b>Finish</b><span>Binarize · Gap Close · Replace Color</span></a>
+    <a class="step growing" href="#/en/effects"><b>Compositing</b><span>Effects · Keyframes · Camera</span></a>
   </div>
   <div class="pipeline-span">All in one project file</div>
   <p class="pipeline-legend"><span><i></i>Ready to use</span><span><i class="growing"></i>Usable, still growing</span></p>
 </div>
 
-From storyboard to compositing, a cut is worked on in one project file. In this version, **in-betweening, finish and compositing** do not yet have everything it takes to fully replace dedicated software; features keep growing with each update. If there is a feature you want or anything you would like to tell us, send it through **Send Feedback** (in the ⚙ Settings menu) — we will give it serious consideration.
+From storyboard to compositing, a cut is worked on in one project file. In this version, **in-betweening, finish and compositing** do not yet have everything it takes to fully replace dedicated software; features keep growing with each update. If there is a feature you want or anything you would like to tell us, send it through [**Send Feedback**](/en/feedback) (in the ⚙ Settings menu) — we will give it serious consideration.
 
 - Keep many cuts in one project, each with its own canvas size — [Canvas size per cut](/en/canvas-size)
 - Layers: animation, storyboard, image, folder, adjustment, SE, direction, camera and transition, plus attaches that ride a base layer — [Layers at a glance](/en/layers)

@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anicel — 手描きアニメーションの制作ツール</title>
 <meta name="description" content="手描きアニメーションを、コンテから撮影まで一つのファイルで。Windows・macOS・iPad・Android・Linux。">
-<meta name="theme-color" content="#fbfaf6">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="Anicel">
 <meta property="og:description" content="手描きアニメーションの制作ツール">
 <meta property="og:type" content="website">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23fbfaf6'/><rect x='6.5' y='8.5' width='19' height='15' rx='1' fill='none' stroke='%231f1e1c' stroke-width='2'/><circle cx='22' cy='12' r='2.5' fill='%23c0392b'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23ffffff'/><rect x='6.5' y='8.5' width='19' height='15' rx='1' fill='none' stroke='%231f1f1f' stroke-width='2'/><circle cx='22' cy='12' r='2.5' fill='%23c0392b'/></svg>">
 </head>
 <body>
 
@@ -37,50 +37,253 @@
         <span data-lang="zhHans">手绘动画，从分镜到摄影，一个文件完成。</span>
       </p>
       <p class="meta">
-        <span data-lang="ja">開発中・クローズドテスト</span>
-        <span data-lang="ko">개발 중 · 비공개 테스트</span>
-        <span data-lang="en">In development · closed testing</span>
-        <span data-lang="fr">En développement · test fermé</span>
-        <span data-lang="zhHans">开发中 · 封闭测试</span>
+        <span data-lang="ja">開発中・正式リリース前</span>
+        <span data-lang="ko">개발 중 · 정식 출시 전</span>
+        <span data-lang="en">In development · before the official release</span>
+        <span data-lang="fr">En développement · avant la sortie officielle</span>
+        <span data-lang="zhHans">开发中 · 正式发布前</span>
         <br>Windows · macOS · iPad · Android · Linux
       </p>
+    </div>
+
+    <!-- The app's own screens, as the guide's shot generator draws them in
+         each language (test/guide_shots in the app): one picture per step
+         below, in the order a cut goes through them. -->
+    <div class="shots">
+      <div class="shots-nav">
+        <button type="button" data-shots="-1" aria-label="Previous">←</button>
+        <button type="button" data-shots="1" aria-label="Next">→</button>
+      </div>
+      <div class="shots-track">
+        <figure class="shot" style="--ar:1.778">
+          <img data-shot="overview" width="1920" height="1080" alt="">
+          <figcaption><span data-lang="ja">作業画面</span><span data-lang="ko">작업 화면</span><span data-lang="en">The workspace</span><span data-lang="fr">L'espace de travail</span><span data-lang="zhHans">工作界面</span></figcaption>
+        </figure>
+        <figure class="shot" style="--ar:0.884">
+          <img data-shot="conte-paper" width="1358" height="1536" alt="" loading="lazy">
+          <figcaption><span data-lang="ja">コンテ用紙 — セリフは SE ブロックからそのまま</span><span data-lang="ko">콘티 용지 — 대사는 SE 블록에서 그대로</span><span data-lang="en">The conte sheet — dialogue comes straight from the SE blocks</span><span data-lang="fr">La feuille de conte — les dialogues viennent tout droit des blocs SE</span><span data-lang="zhHans">分镜用纸 — 台词直接来自 SE 区块</span></figcaption>
+        </figure>
+        <figure class="shot" style="--ar:3.062">
+          <img data-shot="sound" width="2376" height="776" alt="" loading="lazy">
+          <figcaption><span data-lang="ja">セリフ・効果音を波形を見ながら絵に合わせる</span><span data-lang="ko">대사 · 효과음을 파형을 보며 그림에 맞춥니다</span><span data-lang="en">Time dialogue and sound effects to the drawings by their waveform</span><span data-lang="fr">Calez dialogues et bruitages sur les dessins grâce à leur forme d'onde</span><span data-lang="zhHans">对着波形，让台词和音效与画面对上时间</span></figcaption>
+        </figure>
+        <figure class="shot" style="--ar:0.884">
+          <img data-shot="timesheet" width="1358" height="1536" alt="" loading="lazy">
+          <figcaption><span data-lang="ja">タイムシート — 変えたことがその場で記入される</span><span data-lang="ko">타임시트 — 바꾼 것이 그 자리에서 찍힙니다</span><span data-lang="en">The timesheet — what you change is written on the spot</span><span data-lang="fr">La feuille de temps — ce que vous changez s'y écrit aussitôt</span><span data-lang="zhHans">摄影表 — 改动当场写上</span></figcaption>
+        </figure>
+        <figure class="shot" style="--ar:2.135">
+          <img data-shot="labels" width="1640" height="768" alt="" loading="lazy">
+          <figcaption><span data-lang="ja">工程ラベル — ラフ原・原画・動画・仕上げ</span><span data-lang="ko">공정 라벨 — 러프원화 · 원화 · 동화 · 시아게</span><span data-lang="en">Process labels — Rough Key, Key, Inbetween, Finish</span><span data-lang="fr">Étiquettes d'étape — Clé brute, Animation clé, Intervalles, Finition</span><span data-lang="zhHans">工序标签 — Rough Key · Key · Inbetween · Finish</span></figcaption>
+        </figure>
+        <figure class="shot" style="--ar:2.302">
+          <img data-shot="lane-graph" width="2376" height="1032" alt="" loading="lazy">
+          <figcaption><span data-lang="ja">エフェクトとキーフレーム、値・速度グラフ</span><span data-lang="ko">이펙트와 키프레임, 값 · 속도 그래프</span><span data-lang="en">Effects, keyframes, and value and speed graphs</span><span data-lang="fr">Effets, clés, et graphes de valeur et de vitesse</span><span data-lang="zhHans">效果、关键帧，以及数值和速度曲线</span></figcaption>
+        </figure>
+      </div>
     </div>
 
     <section id="process">
       <h2><span data-lang="ja">できること</span><span data-lang="ko">할 수 있는 것</span><span data-lang="en">What you can do</span><span data-lang="fr">Ce que vous pouvez faire</span><span data-lang="zhHans">能做什么</span></h2>
       <p>
-        <span data-lang="ja">ひとつのカットを、コンテから撮影まで同じプロジェクトファイルで続けて作業できます。</span>
-        <span data-lang="ko">한 컷을 콘티부터 촬영까지 같은 프로젝트 파일에서 이어서 작업합니다.</span>
-        <span data-lang="en">A cut goes from storyboard to compositing in the same project file.</span>
-        <span data-lang="fr">Un plan va du storyboard au compositing dans le même fichier de projet.</span>
-        <span data-lang="zhHans">同一个镜头，从分镜到摄影，都在同一个项目文件中连续完成。</span>
+        <span data-lang="ja">描いた絵・音・カメラが、タイムシートとコンテ用紙にその場で記入されます。出力されるそのままの姿を見ながら、ひとつのカットをコンテから撮影まで同じプロジェクトファイルで続けて作業できます。</span>
+        <span data-lang="ko">그린 그림 · 소리 · 카메라가 타임시트와 콘티 용지에 그 자리에서 찍힙니다. 출력될 모습 그대로 보면서, 한 컷을 콘티부터 촬영까지 같은 프로젝트 파일에서 이어서 작업합니다.</span>
+        <span data-lang="en">The drawings, sound and camera you lay down are written onto the timesheet and the conte sheet on the spot. You work while seeing exactly what will be exported, taking a cut from storyboard to compositing in the same project file.</span>
+        <span data-lang="fr">Les dessins, le son et la caméra s'écrivent aussitôt sur la feuille de temps et la feuille de conte. Vous travaillez en voyant exactement ce qui sera exporté, et un plan va du storyboard au compositing dans le même fichier de projet.</span>
+        <span data-lang="zhHans">画好的画稿、声音和摄像机会当场写到摄影表和分镜用纸上。一边看着导出后的样子一边工作，同一个镜头从分镜到摄影都在同一个项目文件中完成。</span>
       </p>
 
       <ol class="steps">
         <li>
-          <span class="name"><span data-lang="ja">コンテ</span><span data-lang="ko">콘티</span><span data-lang="en">Storyboard</span><span data-lang="fr">Storyboard</span><span data-lang="zhHans">分镜</span></span>
-          <span class="what"><span data-lang="ja">絵コンテレイヤーに描き、コンテパネルでカットごとに整えます。コンテ用紙は PDF で書き出せます。</span><span data-lang="ko">콘티 레이어에 그리고, 콘티 패널에서 컷별로 다듬습니다. 콘티 용지는 PDF로 냅니다.</span><span data-lang="en">Draw on storyboard layers and refine them cut by cut in the conte panel. Conte sheets export as PDF.</span><span data-lang="fr">Dessinez sur des calques storyboard et affinez-les plan par plan dans le panneau Conte. Les feuilles de conte s'exportent en PDF.</span><span data-lang="zhHans">在分镜图层上绘制，在分镜面板中逐个镜头整理。分镜用纸可导出为 PDF。</span></span>
-          <span class="state"></span>
+          <div class="head">
+            <span class="name"><span data-lang="ja">コンテ</span><span data-lang="ko">콘티</span><span data-lang="en">Storyboard</span><span data-lang="fr">Storyboard</span><span data-lang="zhHans">分镜</span></span>
+            <span class="state"></span>
+          </div>
+          <div>
+            <ul class="feats" data-lang="ja">
+              <li>コンテ用紙パネルで、出力されるそのままの姿を見ながら描きます。用紙の上に直接描くこともできます。</li>
+              <li>セリフはマイクでその場で録音するか、音声ファイルをタイムラインに置いて、絵とタイミングを合わせます。セリフはコンテ用紙のセリフ欄にそのまま入ります。</li>
+              <li>コンテパネルでカットを分け、O.L をかけ、再生して尺を確かめます。</li>
+            </ul>
+            <ul class="feats" data-lang="ko">
+              <li>콘티 용지 패널에서 출력될 모습 그대로 보며 그립니다. 용지 위에 바로 그려도 됩니다.</li>
+              <li>대사는 마이크로 바로 녹음하거나 소리 파일을 타임라인에 놓아 그림과 타이밍을 맞춥니다. 대사는 콘티 용지의 대사 칸에 그대로 들어갑니다.</li>
+              <li>콘티 패널에서 컷을 나누고 O.L 을 걸고, 재생해서 길이를 봅니다.</li>
+            </ul>
+            <ul class="feats" data-lang="en">
+              <li>Draw on the conte sheet panel, seeing it exactly as it will be exported — or draw right on the sheet.</li>
+              <li>Record dialogue with the microphone on the spot, or place sound files on the timeline, and time them to the drawings. The dialogue goes straight into the conte sheet's dialogue column.</li>
+              <li>Split cuts, add O.L overlaps and play the storyboard back to check its timing in the storyboard panel.</li>
+            </ul>
+            <ul class="feats" data-lang="fr">
+              <li>Dessinez dans le panneau de la feuille de conte en la voyant exactement telle qu'elle sera exportée — ou directement sur la feuille.</li>
+              <li>Enregistrez les dialogues au micro sur-le-champ, ou placez des fichiers son sur la timeline, et calez-les sur les dessins. Les dialogues vont directement dans la colonne dialogues de la feuille de conte.</li>
+              <li>Dans le panneau storyboard, découpez les plans, ajoutez des fondus enchaînés (O.L) et relisez le storyboard pour vérifier ses durées.</li>
+            </ul>
+            <ul class="feats" data-lang="zhHans">
+              <li>在分镜用纸面板上，一边看导出后的样子一边画，也可以直接画在用纸上。</li>
+              <li>台词可以用麦克风当场录音，也可以把声音文件放到时间轴上，与画面对上时间。台词会直接进入分镜用纸的台词栏。</li>
+              <li>在分镜面板中分镜头、加 O.L（叠化），播放确认长度。</li>
+            </ul>
+          </div>
         </li>
         <li>
-          <span class="name"><span data-lang="ja">原画</span><span data-lang="ko">원화</span><span data-lang="en">Key animation</span><span data-lang="fr">Animation clé</span><span data-lang="zhHans">原画</span></span>
-          <span class="what"><span data-lang="ja">アニメーションレイヤーにラフ原と原画を描き、タイムシートでタイミングを付けます。</span><span data-lang="ko">애니메이션 레이어에 러프원화와 원화를 그리고, 타임시트에 타이밍을 적습니다.</span><span data-lang="en">Draw rough keys and keys on animation layers, and time them on the timesheet.</span><span data-lang="fr">Dessinez clés brutes et clés sur des calques d'animation, et réglez le timing sur la feuille de temps.</span><span data-lang="zhHans">在动画图层上画粗原画和原画，并在摄影表上排定时间。</span></span>
-          <span class="state"></span>
+          <div class="head">
+            <span class="name"><span data-lang="ja">原画</span><span data-lang="ko">원화</span><span data-lang="en">Key animation</span><span data-lang="fr">Animation clé</span><span data-lang="zhHans">原画</span></span>
+            <span class="state"></span>
+          </div>
+          <div>
+            <ul class="feats" data-lang="ja">
+              <li>絵を変えると、タイムシートの ACTION 欄にその場で記入されます。シートを見ながらタイミングを取れます。</li>
+              <li>音の波形を見ながらタイミングを合わせ、SE の名前とセリフはシートの SE 欄に記入されます。</li>
+              <li>シートにも紙のように直接書き込めます。</li>
+              <li>レイヤーにラフ原・原画・作画監督修正などの工程ラベルを付けて分けます。</li>
+            </ul>
+            <ul class="feats" data-lang="ko">
+              <li>그림을 바꾸면 타임시트의 ACTION 칸에 그 자리에서 찍힙니다. 시트를 보면서 타이밍을 잡습니다.</li>
+              <li>소리 파형을 보며 타이밍을 맞추고, SE 이름과 대사는 시트의 SE 칸에 찍힙니다.</li>
+              <li>시트에도 종이처럼 바로 써넣습니다.</li>
+              <li>레이어에 러프원화 · 원화 · 작화감독 수정 같은 공정 라벨을 붙여 나눕니다.</li>
+            </ul>
+            <ul class="feats" data-lang="en">
+              <li>Change a drawing and it is written into the timesheet's ACTION column on the spot — time the cut while looking at the sheet.</li>
+              <li>Time to the sound by its waveform; SE names and dialogue go into the sheet's SE column.</li>
+              <li>Write on the sheet itself, as on paper.</li>
+              <li>Split layers by process with labels such as Rough Key, Key and Animation Director corrections.</li>
+            </ul>
+            <ul class="feats" data-lang="fr">
+              <li>Changez un dessin et il s'écrit aussitôt dans la colonne ACTION de la feuille de temps — réglez le timing en regardant la feuille.</li>
+              <li>Calez le timing sur la forme d'onde ; les noms des SE et les dialogues vont dans la colonne SE de la feuille.</li>
+              <li>Écrivez directement sur la feuille, comme sur du papier.</li>
+              <li>Séparez les calques par étape avec des étiquettes comme Clé brute, Animation clé ou corrections du directeur d'animation.</li>
+            </ul>
+            <ul class="feats" data-lang="zhHans">
+              <li>改动画稿会当场写进摄影表的 ACTION 栏，一边看摄影表一边排时间。</li>
+              <li>对着声音波形对时间，SE 的名称和台词写进摄影表的 SE 栏。</li>
+              <li>也可以像在纸上一样，直接在摄影表上书写。</li>
+              <li>给图层加上 Rough Key、Key、作画监督修正等工序标签来区分。</li>
+            </ul>
+          </div>
         </li>
         <li class="growing">
-          <span class="name"><span data-lang="ja">動画</span><span data-lang="ko">동화</span><span data-lang="en">In-betweening</span><span data-lang="fr">Intervalles</span><span data-lang="zhHans">动画</span></span>
-          <span class="what"><span data-lang="ja">オニオンスキンで前後の絵を透かしながら中割りを描きます。</span><span data-lang="ko">어니언 스킨으로 앞뒤 그림을 비춰 보며 중간 그림을 그립니다.</span><span data-lang="en">Draw the in-betweens with the drawings on either side shown through onion skin.</span><span data-lang="fr">Dessinez les intervalles en voyant les dessins voisins en pelure d'oignon.</span><span data-lang="zhHans">借助洋葱皮透看前后的画，绘制中间画。</span></span>
-          <span class="state"><span data-lang="ja">機能拡充中</span><span data-lang="ko">기능 확장 중</span><span data-lang="en">Growing</span><span data-lang="fr">En cours</span><span data-lang="zhHans">功能扩充中</span></span>
+          <div class="head">
+            <span class="name"><span data-lang="ja">動画</span><span data-lang="ko">동화</span><span data-lang="en">In-betweening</span><span data-lang="fr">Intervalles</span><span data-lang="zhHans">动画</span></span>
+            <span class="state"><span data-lang="ja">機能拡充中</span><span data-lang="ko">기능 확장 중</span><span data-lang="en">Growing</span><span data-lang="fr">En cours</span><span data-lang="zhHans">功能扩充中</span></span>
+          </div>
+          <div>
+            <ul class="feats" data-lang="ja">
+              <li>原画と同じ道具で描き、カラーラベルを動画にすると、タイムシートの CELL 欄とカット袋の動画枚数に入ります。</li>
+              <li>中割りマーク(○・●)をコマごとに、または n コマおきにまとめて付けます。</li>
+              <li>オニオンスキンで前後 8 枚まで、1 枚ごとの濃さと前・後の色を決めて透かして見ます。</li>
+              <li>ブラシのアンチエイリアスを「なし」にすると、2 値の線で描けます。</li>
+            </ul>
+            <ul class="feats" data-lang="ko">
+              <li>원화와 같은 도구로 그리고, 색 라벨을 동화로 붙이면 타임시트의 CELL 칸과 컷 봉투의 동화 매수에 들어갑니다.</li>
+              <li>중간나누기 마크(○ · ●)를 칸마다, 또는 n코마 간격으로 한 번에 찍습니다.</li>
+              <li>어니언 스킨으로 앞뒤 8장까지, 장마다 진하기와 앞 · 뒤 색을 정해 비춰 봅니다.</li>
+              <li>브러시의 안티앨리어스를 「없음」으로 두면 2치 선으로 그립니다.</li>
+            </ul>
+            <ul class="feats" data-lang="en">
+              <li>Draw with the same tools as the keys; label a layer Inbetween and it goes into the timesheet's CELL column and the cut envelope's in-between count.</li>
+              <li>Put in-between marks (○ · ●) cell by cell, or every n frames in one go.</li>
+              <li>See up to 8 drawings before and after through onion skin, each with its own strength, before and after in their own colors.</li>
+              <li>Set a brush's anti-aliasing to None to draw binary lines.</li>
+            </ul>
+            <ul class="feats" data-lang="fr">
+              <li>Dessinez avec les mêmes outils que les clés ; étiquetez un calque Intervalles et il va dans la colonne CELL de la feuille de temps et dans le nombre d'intervalles de l'enveloppe de plan.</li>
+              <li>Posez des repères d'intervalle (○ · ●) case par case, ou toutes les n images d'un coup.</li>
+              <li>Voyez jusqu'à 8 dessins avant et après en pelure d'oignon, chacun avec sa propre intensité, avant et après dans leurs propres couleurs.</li>
+              <li>Réglez l'anticrénelage d'une brosse sur Aucun pour tracer des traits binaires.</li>
+            </ul>
+            <ul class="feats" data-lang="zhHans">
+              <li>用与原画相同的工具绘制；把颜色标签设为 Inbetween，就会进入摄影表的 CELL 栏和卡袋的动画张数。</li>
+              <li>中间画标记（○ · ●）可以逐格加，也可以每隔 n 格一次加好。</li>
+              <li>用洋葱皮透看前后最多 8 张，每张的浓淡和前后的颜色都可以设定。</li>
+              <li>把笔刷的抗锯齿设为「无」，就能画二值线条。</li>
+            </ul>
+          </div>
         </li>
         <li class="growing">
-          <span class="name"><span data-lang="ja">仕上げ</span><span data-lang="ko">시아게</span><span data-lang="en">Finish</span><span data-lang="fr">Finition</span><span data-lang="zhHans">上色</span></span>
-          <span class="what"><span data-lang="ja">塗りつぶしツールとパレットで色を塗ります。</span><span data-lang="ko">채우기 도구와 팔레트로 칠합니다.</span><span data-lang="en">Paint with the fill tool and palettes.</span><span data-lang="fr">Mettez en couleur avec l'outil de remplissage et les palettes.</span><span data-lang="zhHans">用填充工具和色板上色。</span></span>
-          <span class="state"><span data-lang="ja">機能拡充中</span><span data-lang="ko">기능 확장 중</span><span data-lang="en">Growing</span><span data-lang="fr">En cours</span><span data-lang="zhHans">功能扩充中</span></span>
+          <div class="head">
+            <span class="name"><span data-lang="ja">仕上げ</span><span data-lang="ko">시아게</span><span data-lang="en">Finish</span><span data-lang="fr">Finition</span><span data-lang="zhHans">上色</span></span>
+            <span class="state"><span data-lang="ja">機能拡充中</span><span data-lang="ko">기능 확장 중</span><span data-lang="en">Growing</span><span data-lang="fr">En cours</span><span data-lang="zhHans">功能扩充中</span></span>
+          </div>
+          <div>
+            <ul class="feats" data-lang="ja">
+              <li>2 値化 — 半透明の縁をしきい値でなくします。</li>
+              <li>塗りつぶしの隙間閉じ(少し切れた線も閉じているとみなす)と展開(線の下まで埋める)。</li>
+              <li>色変換で線の色を変え(色トレス線)、色削除・色残しで選んだ色だけを消したり残したりします。</li>
+              <li>名前・並び順・ロックのあるパレットと、仕上げラベルのセル検査修正。</li>
+            </ul>
+            <ul class="feats" data-lang="ko">
+              <li>2치화 — 반투명한 가장자리를 임계값으로 없앱니다.</li>
+              <li>채우기의 틈 메우기(조금 끊긴 선도 막힌 것으로)와 펼치기(선 밑까지 메우기).</li>
+              <li>색 변환으로 선 색을 바꾸고(색 트레스선), 색 삭제 · 색 남기기로 고른 색만 지우거나 남깁니다.</li>
+              <li>이름 · 순서 · 잠금이 있는 팔레트와, 시아게 라벨의 셀검사 수정.</li>
+            </ul>
+            <ul class="feats" data-lang="en">
+              <li>Binarize — remove semi-transparent edges by a threshold.</li>
+              <li>Fill with Gap Close (a line with small breaks counts as closed) and Expand (fill under the line).</li>
+              <li>Change line colors with Replace Color (color trace lines), and erase or keep only a chosen color with Delete Color · Keep Color.</li>
+              <li>Palettes you can name, reorder and lock, and Cell Check corrections on the Finish label.</li>
+            </ul>
+            <ul class="feats" data-lang="fr">
+              <li>Binariser — retire les bords semi-transparents selon un seuil.</li>
+              <li>Remplissage avec Fermeture des trous (un trait un peu coupé compte comme fermé) et Déplier (remplir sous le trait).</li>
+              <li>Changez la couleur des traits avec Remplacer la couleur (traits de couleur), et effacez ou gardez une seule couleur avec Supprimer la couleur · Conserver la couleur.</li>
+              <li>Des palettes qu'on nomme, réordonne et verrouille, et les corrections Contrôle cellulos sur l'étiquette Finition.</li>
+            </ul>
+            <ul class="feats" data-lang="zhHans">
+              <li>二值化 — 按阈值去掉半透明的边缘。</li>
+              <li>填充的闭合缝隙（有小断口的线也当作闭合）和展开（填到线条下面）。</li>
+              <li>用替换颜色改线条颜色（色线），用删除颜色 · 保留颜色只擦掉或只留下选中的颜色。</li>
+              <li>可命名、排序、锁定的色板，以及 Finish 标签的 Cell Check 修正。</li>
+            </ul>
+          </div>
         </li>
         <li class="growing">
-          <span class="name"><span data-lang="ja">撮影</span><span data-lang="ko">촬영</span><span data-lang="en">Compositing</span><span data-lang="fr">Compositing</span><span data-lang="zhHans">摄影</span></span>
-          <span class="what"><span data-lang="ja">カメラワークとエフェクト、音を合わせて動画に書き出します。</span><span data-lang="ko">카메라 워크와 이펙트, 소리를 맞춰 동영상으로 냅니다.</span><span data-lang="en">Add camera moves, effects and sound, and export the cut as video.</span><span data-lang="fr">Ajoutez mouvements de caméra, effets et son, puis exportez le plan en vidéo.</span><span data-lang="zhHans">加上镜头运动、效果和声音，导出为视频。</span></span>
-          <span class="state"><span data-lang="ja">機能拡充中</span><span data-lang="ko">기능 확장 중</span><span data-lang="en">Growing</span><span data-lang="fr">En cours</span><span data-lang="zhHans">功能扩充中</span></span>
+          <div class="head">
+            <span class="name"><span data-lang="ja">撮影</span><span data-lang="ko">촬영</span><span data-lang="en">Compositing</span><span data-lang="fr">Compositing</span><span data-lang="zhHans">摄影</span></span>
+            <span class="state"><span data-lang="ja">機能拡充中</span><span data-lang="ko">기능 확장 중</span><span data-lang="en">Growing</span><span data-lang="fr">En cours</span><span data-lang="zhHans">功能扩充中</span></span>
+          </div>
+          <div>
+            <ul class="feats" data-lang="ja">
+              <li>レイヤーごとにエフェクトを重ねます:輝度＆コントラスト・色相/彩度・ブラー(ガウス・放射状・方向・カメラレンズ)・カラーキー・セル番号。調整レイヤーで下のすべてにかけます。</li>
+              <li>すべての値にキーフレーム — イージング(ゆっくり・急に・なめらか・ホールド)と値・速度グラフ。</li>
+              <li>カメラは位置・比率・回転のキーとベジェの経路で動かし、T.U・T.B・PAN はタイムシートの CAM 欄に自動で記入されます。</li>
+              <li>描画モード・クリッピング・トランジション(FI・FO)。</li>
+            </ul>
+            <ul class="feats" data-lang="ko">
+              <li>레이어마다 이펙트를 쌓습니다: 명도 및 대비 · 색조/채도 · 흐림(가우시안 · 방사형 · 방향 · 카메라 렌즈) · 색상 키 · 셀 번호. 조정 레이어로 아래 전체에 겁니다.</li>
+              <li>모든 값에 키프레임 — 이징(천천히 · 급하게 · 부드럽게 · 홀드)과 값 · 속도 그래프.</li>
+              <li>카메라는 위치 · 비율 · 회전 키와 베지어 경로로 움직이고, T.U · T.B · PAN 은 타임시트의 CAM 칸에 저절로 적힙니다.</li>
+              <li>블렌드 모드 · 클리핑 · 트랜지션(FI · FO).</li>
+            </ul>
+            <ul class="feats" data-lang="en">
+              <li>Stack effects on each layer: Brightness &amp; Contrast, Hue/Saturation, blurs (Gaussian, radial, directional, camera lens), Color Key, Cel Number. Adjustment layers apply them to everything below.</li>
+              <li>Keyframes on every value — easing (slow, fast, smooth, hold) and value and speed graphs.</li>
+              <li>Move the camera with position, scale and rotation keys along Bezier paths; T.U, T.B and PAN are written into the timesheet's CAM column for you.</li>
+              <li>Blend modes, clipping and transitions (FI · FO).</li>
+            </ul>
+            <ul class="feats" data-lang="fr">
+              <li>Empilez des effets sur chaque calque : Luminosité/Contraste, Teinte/Saturation, flous (gaussien, radial, directionnel, objectif), Masquage par couleur, Numéro de cellulo. Les calques de réglage les appliquent à tout ce qui est dessous.</li>
+              <li>Des clés sur chaque valeur — lissage (lent, rapide, doux, maintien) et graphes de valeur et de vitesse.</li>
+              <li>Animez la caméra par clés de position, d'échelle et de rotation sur des trajectoires de Bézier ; T.U, T.B et PAN s'écrivent seuls dans la colonne CAM de la feuille de temps.</li>
+              <li>Modes de fusion, masques d'écrêtage et transitions (FI · FO).</li>
+            </ul>
+            <ul class="feats" data-lang="zhHans">
+              <li>每个图层都可以叠加效果：亮度和对比度、色相/饱和度、模糊（高斯、径向、定向、相机镜头）、颜色键、赛璐珞编号。用调整图层作用于下方全部。</li>
+              <li>所有数值都能打关键帧 — 缓动（慢、快、平滑、保持）以及数值和速度曲线。</li>
+              <li>摄像机用位置、比例、旋转关键帧和贝塞尔路径来移动，T.U、T.B、PAN 会自动写进摄影表的 CAM 栏。</li>
+              <li>混合模式、剪贴和转场（FI · FO）。</li>
+            </ul>
+            <p class="aside">
+              <span data-lang="ja">After Effects と比べると、3D カメラ・パーティクル・モーショントラッキングはまだありません。</span>
+              <span data-lang="ko">After Effects 와 견주면 3D 카메라 · 파티클 · 모션 트래킹은 아직 없습니다.</span>
+              <span data-lang="en">Next to After Effects, there is no 3D camera, particles or motion tracking yet.</span>
+              <span data-lang="fr">Par rapport à After Effects, il n'y a pas encore de caméra 3D, de particules ni de suivi de mouvement.</span>
+              <span data-lang="zhHans">与 After Effects 相比，还没有 3D 摄像机、粒子和运动跟踪。</span>
+            </p>
+          </div>
         </li>
       </ol>
 
@@ -99,9 +302,7 @@
         <dt><span data-lang="ja">読み込み</span><span data-lang="ko">가져오기</span><span data-lang="en">Import</span><span data-lang="fr">Import</span><span data-lang="zhHans">导入</span></dt>
         <dd><span data-lang="ja">TVPaint（.tvpp）・CLIP STUDIO（.clip）のファイルをプロジェクトとして開き、Photoshop（.abr）・CLIP STUDIO（.sut）のブラシを読み込めます。</span><span data-lang="ko">TVPaint(.tvpp) · CLIP STUDIO(.clip) 파일을 프로젝트로 열고, Photoshop(.abr) · CLIP STUDIO(.sut) 브러시를 가져옵니다.</span><span data-lang="en">Open TVPaint (.tvpp) and CLIP STUDIO (.clip) files as projects, and bring in Photoshop (.abr) and CLIP STUDIO (.sut) brushes.</span><span data-lang="fr">Ouvrez des fichiers TVPaint (.tvpp) et CLIP STUDIO (.clip) comme projets, et importez des brosses Photoshop (.abr) et CLIP STUDIO (.sut).</span><span data-lang="zhHans">可将 TVPaint（.tvpp）和 CLIP STUDIO（.clip）文件作为项目打开，并导入 Photoshop（.abr）和 CLIP STUDIO（.sut）笔刷。</span></dd>
         <dt><span data-lang="ja">書き出し</span><span data-lang="ko">출력</span><span data-lang="en">Export</span><span data-lang="fr">Export</span><span data-lang="zhHans">导出</span></dt>
-        <dd><span data-lang="ja">動画（MP4・MOV）、連番画像、タイムシートとコンテ用紙（PDF）。</span><span data-lang="ko">동영상(MP4 · MOV), 연번 그림, 타임시트와 콘티 용지(PDF).</span><span data-lang="en">Video (MP4, MOV), image sequences, and timesheets and conte sheets as PDF.</span><span data-lang="fr">Vidéo (MP4, MOV), séquences d'images, feuilles de temps et feuilles de conte en PDF.</span><span data-lang="zhHans">视频（MP4、MOV）、序列图像，以及摄影表和分镜用纸（PDF）。</span></dd>
-        <dt><span data-lang="ja">音</span><span data-lang="ko">소리</span><span data-lang="en">Sound</span><span data-lang="fr">Son</span><span data-lang="zhHans">声音</span></dt>
-        <dd><span data-lang="ja">音声ファイルを置き、マイクでセリフを録音して、絵と合わせて確認できます。</span><span data-lang="ko">소리 파일을 놓고 마이크로 대사를 녹음해, 그림과 맞춰 봅니다.</span><span data-lang="en">Place sound files and record dialogue with a microphone, then check it against the picture.</span><span data-lang="fr">Placez des fichiers son et enregistrez les dialogues au micro, puis vérifiez-les avec l'image.</span><span data-lang="zhHans">放入声音文件、用麦克风录制台词，并与画面对照。</span></dd>
+        <dd><span data-lang="ja">動画（MP4・MOV）、連番画像、セル、タイムシートとコンテ用紙（PDF）。</span><span data-lang="ko">동영상(MP4 · MOV), 연번 그림, 셀, 타임시트와 콘티 용지(PDF).</span><span data-lang="en">Video (MP4, MOV), image sequences, cels, and timesheets and conte sheets as PDF.</span><span data-lang="fr">Vidéo (MP4, MOV), séquences d'images, cellulos, feuilles de temps et feuilles de conte en PDF.</span><span data-lang="zhHans">视频（MP4、MOV）、序列图像、赛璐珞，以及摄影表和分镜用纸（PDF）。</span></dd>
         <dt><span data-lang="ja">端末</span><span data-lang="ko">기기</span><span data-lang="en">Devices</span><span data-lang="fr">Appareils</span><span data-lang="zhHans">设备</span></dt>
         <dd><span data-lang="ja">Windows・macOS・iPad・Android・Linux で同じファイルを開けます。</span><span data-lang="ko">Windows · macOS · iPad · Android · Linux 에서 같은 파일을 엽니다.</span><span data-lang="en">The same file opens on Windows, macOS, iPad, Android and Linux.</span><span data-lang="fr">Le même fichier s'ouvre sur Windows, macOS, iPad, Android et Linux.</span><span data-lang="zhHans">同一个文件可在 Windows、macOS、iPad、Android 和 Linux 上打开。</span></dd>
       </dl>
@@ -110,38 +311,39 @@
     <section id="download">
       <h2><span data-lang="ja">ダウンロード</span><span data-lang="ko">다운로드</span><span data-lang="en">Download</span><span data-lang="fr">Téléchargement</span><span data-lang="zhHans">下载</span></h2>
       <p>
-        <span data-lang="ja">現在は招待された方のみお使いいただけます。公開時にはここにリンクを置きます。</span>
-        <span data-lang="ko">지금은 초대받은 분만 쓸 수 있습니다. 공개되면 여기에 링크를 둡니다.</span>
-        <span data-lang="en">For now Anicel is available by invitation only. Links will appear here when it is released.</span>
-        <span data-lang="fr">Pour l'instant, Anicel n'est disponible que sur invitation. Les liens apparaîtront ici à sa sortie.</span>
-        <span data-lang="zhHans">目前仅限受邀用户使用。正式发布后会在这里放置链接。</span>
+        <span data-lang="ja">Windows・macOS・Android・Linux 版は Google ドライブのフォルダから、iPad 版は TestFlight から入手できます。ファイルはビルドのたびに新しくなります。</span>
+        <span data-lang="ko">Windows · macOS · Android · Linux 판은 구글 드라이브 폴더에서, iPad 판은 TestFlight 에서 받습니다. 파일은 빌드가 나올 때마다 새것으로 바뀝니다.</span>
+        <span data-lang="en">Get the Windows, macOS, Android and Linux versions from the Google Drive folder, and the iPad version through TestFlight. The files are replaced with every build.</span>
+        <span data-lang="fr">Les versions Windows, macOS, Android et Linux se téléchargent depuis le dossier Google Drive, la version iPad via TestFlight. Les fichiers sont remplacés à chaque build.</span>
+        <span data-lang="zhHans">Windows、macOS、Android 和 Linux 版从 Google 云端硬盘文件夹下载，iPad 版通过 TestFlight 获取。每次出新版本时文件都会更新。</span>
       </p>
+      <p class="latest" id="latest"></p>
 
       <table class="platforms">
         <tr>
-          <td>iPad</td>
-          <td><span data-lang="ja">TestFlight（招待制）</span><span data-lang="ko">TestFlight (초대제)</span><span data-lang="en">TestFlight (by invitation)</span><span data-lang="fr">TestFlight (sur invitation)</span><span data-lang="zhHans">TestFlight（邀请制）</span></td>
-          <td class="ready"><span data-lang="ja">テスト中</span><span data-lang="ko">테스트 중</span><span data-lang="en">Testing</span><span data-lang="fr">En test</span><span data-lang="zhHans">测试中</span></td>
-        </tr>
-        <tr>
           <td>Windows</td>
-          <td><span data-lang="ja">直接ダウンロード</span><span data-lang="ko">직접 다운로드</span><span data-lang="en">Direct download</span><span data-lang="fr">Téléchargement direct</span><span data-lang="zhHans">直接下载</span></td>
-          <td><span data-lang="ja">準備中</span><span data-lang="ko">준비 중</span><span data-lang="en">Coming</span><span data-lang="fr">Bientôt</span><span data-lang="zhHans">即将推出</span></td>
+          <td><a data-get="drive"><span data-lang="ja">Google ドライブ</span><span data-lang="ko">구글 드라이브</span><span data-lang="en">Google Drive</span><span data-lang="fr">Google Drive</span><span data-lang="zhHans">Google 云端硬盘</span></a></td>
+          <td>.zip</td>
         </tr>
         <tr>
           <td>macOS</td>
-          <td><span data-lang="ja">直接ダウンロード</span><span data-lang="ko">직접 다운로드</span><span data-lang="en">Direct download</span><span data-lang="fr">Téléchargement direct</span><span data-lang="zhHans">直接下载</span></td>
-          <td><span data-lang="ja">準備中</span><span data-lang="ko">준비 중</span><span data-lang="en">Coming</span><span data-lang="fr">Bientôt</span><span data-lang="zhHans">即将推出</span></td>
+          <td><a data-get="drive"><span data-lang="ja">Google ドライブ</span><span data-lang="ko">구글 드라이브</span><span data-lang="en">Google Drive</span><span data-lang="fr">Google Drive</span><span data-lang="zhHans">Google 云端硬盘</span></a></td>
+          <td>.zip</td>
         </tr>
         <tr>
           <td>Android</td>
-          <td>Galaxy Store / APK</td>
-          <td><span data-lang="ja">準備中</span><span data-lang="ko">준비 중</span><span data-lang="en">Coming</span><span data-lang="fr">Bientôt</span><span data-lang="zhHans">即将推出</span></td>
+          <td><a data-get="drive"><span data-lang="ja">Google ドライブ</span><span data-lang="ko">구글 드라이브</span><span data-lang="en">Google Drive</span><span data-lang="fr">Google Drive</span><span data-lang="zhHans">Google 云端硬盘</span></a></td>
+          <td>.apk</td>
         </tr>
         <tr>
           <td>Linux</td>
-          <td><span data-lang="ja">直接ダウンロード</span><span data-lang="ko">직접 다운로드</span><span data-lang="en">Direct download</span><span data-lang="fr">Téléchargement direct</span><span data-lang="zhHans">直接下载</span></td>
-          <td><span data-lang="ja">準備中</span><span data-lang="ko">준비 중</span><span data-lang="en">Coming</span><span data-lang="fr">Bientôt</span><span data-lang="zhHans">即将推出</span></td>
+          <td><a data-get="drive"><span data-lang="ja">Google ドライブ</span><span data-lang="ko">구글 드라이브</span><span data-lang="en">Google Drive</span><span data-lang="fr">Google Drive</span><span data-lang="zhHans">Google 云端硬盘</span></a></td>
+          <td>.tar.gz</td>
+        </tr>
+        <tr>
+          <td>iPad</td>
+          <td><a data-get="testflight">TestFlight</a></td>
+          <td><span data-lang="ja">TestFlight アプリで</span><span data-lang="ko">TestFlight 앱으로</span><span data-lang="en">in the TestFlight app</span><span data-lang="fr">avec l'app TestFlight</span><span data-lang="zhHans">用 TestFlight 应用</span></td>
         </tr>
       </table>
 
@@ -161,8 +363,20 @@
 
 <script src="launch.js"></script>
 <script>
+  // Where the builds are (유저 10-29): the shared rel folder, which keeps one
+  // file per platform and replaces it every round, and the iPad's public
+  // TestFlight invitation — the same one rel's own note hands out.
+  const GET = {
+    drive: 'https://drive.google.com/drive/folders/1B5DWZO5KVEDaS6vJA7UOp4mR7mVH4zZJ',
+    testflight: 'https://testflight.apple.com/join/3cpY9P1S',
+  };
+  document.querySelectorAll('[data-get]').forEach((a) => { a.href = GET[a.dataset.get]; });
+
+  const shots = document.querySelectorAll('[data-shot]');
+
   // The switch only flips an attribute; every language is already in the
-  // page, so there is nothing to fetch and nothing to fall out of step.
+  // page, so there is nothing to fetch and nothing to fall out of step —
+  // but the screens, which are pictures of the app in that language.
   const buttons = document.querySelectorAll('[data-set-lang]');
   // A code is the app's own name for a language (AppLanguage.name, the
   // guide's folder names too); <html lang> takes its BCP 47 tag, which
@@ -171,19 +385,49 @@
   const apply = (lang) => {
     document.documentElement.lang = tagOf(lang);
     buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.setLang === lang)));
+    shots.forEach((img) => {
+      img.src = `guide/${lang}/img/${img.dataset.shot}.png`;
+      img.alt = img.closest('figure').querySelector(`[data-lang="${lang}"]`).textContent;
+    });
     try { localStorage.setItem('anicel-lang', lang); } catch (_) {}
   };
   buttons.forEach((b) => b.addEventListener('click', () => apply(b.dataset.setLang)));
+  let first = 'ja';
   try {
     const saved = localStorage.getItem('anicel-lang');
     const reader = navigator.language;
-    if (saved) apply(saved);
-    else if (reader.startsWith('ko')) apply('ko');
-    else if (reader.startsWith('fr')) apply('fr');
+    if (saved) first = saved;
+    else if (reader.startsWith('ko')) first = 'ko';
+    else if (reader.startsWith('fr')) first = 'fr';
     // Every Chinese reads 简体, as in the app (AppLanguage.languageCode, F-157).
-    else if (reader.startsWith('zh')) apply('zhHans');
-    else if (!reader.startsWith('ja')) apply('en');
+    else if (reader.startsWith('zh')) first = 'zhHans';
+    else if (!reader.startsWith('ja')) first = 'en';
   } catch (_) {}
+  apply(first);
+
+  // A step of the row per press, as a swipe would.
+  const track = document.querySelector('.shots-track');
+  document.querySelectorAll('[data-shots]').forEach((b) => b.addEventListener('click', () => {
+    const step = track.querySelector('.shot').getBoundingClientRect().width + 16;
+    track.scrollBy({ left: Number(b.dataset.shots) * step, behavior: 'smooth' });
+  }));
+
+  // The build in rel and its day, which the release round writes every
+  // round (launch/latest/build.json): a number alone says nothing to a
+  // reader about how new it is.
+  const { LANGS } = window.AnicelLaunch;
+  const LATEST = { ja: '現在のビルド', ko: '지금 빌드', en: 'Current build', fr: 'Build actuel', zhHans: '当前版本' };
+  const DATE = { ja: 'ja-JP', ko: 'ko-KR', en: 'en-GB', fr: 'fr-FR', zhHans: 'zh-Hans-CN' };
+  (async () => {
+    try {
+      const r = await fetch('launch/latest/build.json', { cache: 'no-cache' });
+      if (!r.ok) return;
+      const b = await r.json();
+      const when = new Date(`${b.date}T00:00:00`);
+      document.getElementById('latest').innerHTML = LANGS.map((l) =>
+        `<span data-lang="${l}">${LATEST[l]} ${b.n} · ${when.toLocaleDateString(DATE[l], { year: 'numeric', month: 'long', day: 'numeric' })}</span>`).join('');
+    } catch (_) {}
+  })();
 
   // The pre-release notice is the app's own words (launch/latest/, the
   // release round's copy of assets/launch/<language>/notice.md).

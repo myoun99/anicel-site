@@ -9,17 +9,17 @@ Le même fichier s'ouvre sur Windows, macOS, iPad, Android et Linux.
 
 <div class="pipeline">
   <div class="pipeline-steps">
-    <a class="step" href="#/fr/storyboard"><b>Storyboard</b><span>Calque storyboard · Panneau Conte</span></a>
-    <a class="step" href="#/fr/animation-layers"><b>Animation clé</b><span>Calques d'animation · Feuille de temps</span></a>
-    <a class="step growing" href="#/fr/onion-skin"><b>Intervalles</b><span>Pelure d'oignon · Repères d'intervalle</span></a>
-    <a class="step growing" href="#/fr/color"><b>Finition</b><span>Remplissage · Palettes</span></a>
-    <a class="step growing" href="#/fr/camera-section"><b>Compositing</b><span>Caméra · Effets · Export vidéo</span></a>
+    <a class="step" href="#/fr/conte-layer"><b>Storyboard</b><span>Feuille de conte · Enregistrement des dialogues</span></a>
+    <a class="step" href="#/fr/sheets"><b>Animation clé</b><span>Feuille de temps · Étiquettes d'étape</span></a>
+    <a class="step growing" href="#/fr/animation-layers"><b>Intervalles</b><span>Colonne CELL · Repères d'intervalle · Pelure d'oignon</span></a>
+    <a class="step growing" href="#/fr/color"><b>Finition</b><span>Binariser · Fermeture des trous · Remplacer la couleur</span></a>
+    <a class="step growing" href="#/fr/effects"><b>Compositing</b><span>Effets · Images clés · Caméra</span></a>
   </div>
   <div class="pipeline-span">Dans un seul fichier de projet</div>
   <p class="pipeline-legend"><span><i></i>Prêt</span><span><i class="growing"></i>Utilisable, en cours d'enrichissement</span></p>
 </div>
 
-Du storyboard au compositing, un plan se travaille dans un seul fichier de projet. Dans cette version, **les intervalles, la finition et le compositing** n'ont pas encore tout ce qu'il faut pour remplacer complètement des logiciels dédiés ; les fonctions s'étoffent à chaque mise à jour. Si vous souhaitez une fonction ou avez un avis, envoyez-le avec **Envoyer un avis** (menu ⚙ Paramètres) : nous l'étudierons attentivement.
+Du storyboard au compositing, un plan se travaille dans un seul fichier de projet. Dans cette version, **les intervalles, la finition et le compositing** n'ont pas encore tout ce qu'il faut pour remplacer complètement des logiciels dédiés ; les fonctions s'étoffent à chaque mise à jour. Si vous souhaitez une fonction ou avez un avis, envoyez-le avec [**Envoyer un avis**](/fr/feedback) (menu ⚙ Paramètres) : nous l'étudierons attentivement.
 
 - Garder plusieurs plans dans un projet, chacun avec sa propre taille de canevas — [Taille du canevas par plan](/fr/canvas-size)
 - Calques : animation, storyboard, image, dossier, réglage, SE, direction, caméra et transition, plus les attaches qui suivent un calque de base — [Les calques en bref](/fr/layers)

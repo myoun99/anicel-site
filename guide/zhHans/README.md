@@ -9,17 +9,17 @@
 
 <div class="pipeline">
   <div class="pipeline-steps">
-    <a class="step" href="#/zhHans/storyboard"><b>分镜</b><span>分镜图层 · 分镜面板</span></a>
-    <a class="step" href="#/zhHans/animation-layers"><b>原画</b><span>动画图层 · 摄影表</span></a>
-    <a class="step growing" href="#/zhHans/onion-skin"><b>动画</b><span>洋葱皮 · 中间画标记</span></a>
-    <a class="step growing" href="#/zhHans/color"><b>上色</b><span>填充 · 色板</span></a>
-    <a class="step growing" href="#/zhHans/camera-section"><b>摄影</b><span>摄像机 · 效果 · 视频导出</span></a>
+    <a class="step" href="#/zhHans/conte-layer"><b>分镜</b><span>分镜用纸 · 台词录音</span></a>
+    <a class="step" href="#/zhHans/sheets"><b>原画</b><span>摄影表 · 工序标签</span></a>
+    <a class="step growing" href="#/zhHans/animation-layers"><b>动画</b><span>CELL&nbsp;栏 · 中间画标记 · 洋葱皮</span></a>
+    <a class="step growing" href="#/zhHans/color"><b>上色</b><span>二值化 · 闭合缝隙 · 替换颜色</span></a>
+    <a class="step growing" href="#/zhHans/effects"><b>摄影</b><span>效果 · 关键帧 · 摄像机</span></a>
   </div>
   <div class="pipeline-span">在同一个项目文件中连续完成</div>
   <p class="pipeline-legend"><span><i></i>可以使用</span><span><i class="growing"></i>可以使用 · 功能扩充中</span></p>
 </div>
 
-从分镜到摄影，同一个镜头可以在一个项目文件中连续完成。不过在当前版本中，**动画、上色和摄影**的功能还不足以完全取代专用软件，功能会随着每次更新不断增加。如果您有想要的功能或任何意见，请通过**发送反馈**（⚙ 设置菜单）告诉我们，我们会认真考虑。
+从分镜到摄影，同一个镜头可以在一个项目文件中连续完成。不过在当前版本中，**动画、上色和摄影**的功能还不足以完全取代专用软件，功能会随着每次更新不断增加。如果您有想要的功能或任何意见，请通过[**发送反馈**](/zhHans/feedback)（⚙ 设置菜单）告诉我们，我们会认真考虑。
 
 - 一个项目里放多个镜头，每个镜头有自己的画布尺寸 — [各镜头的画布尺寸](/zhHans/canvas-size)
 - 图层：动画、分镜、图像、文件夹、调整、SE、Direction、Camera、Transition，以及附在主图层上的附属图层 — [图层一览](/zhHans/layers)

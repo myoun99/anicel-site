@@ -1,13 +1,13 @@
-/* Anicel — a sheet of paper and a pencil: dark text on an off-white page,
-   one red for the marks that matter (the red an animator times with).
-   Nothing here is an image or a web font, so the page is a few kilobytes
-   and never waits on a CDN. */
+/* Anicel — dark text on a white page, as the guide is (유저 10-29: the beige
+   still read as made by AI), and one red for the marks that matter (the red
+   an animator times with). No web font, so nothing waits on a CDN; the only
+   pictures are the app's own screens, drawn by the guide's shot generator. */
 
 :root {
-  --page: #fbfaf6;
-  --text: #1f1e1c;
-  --text-muted: #6d6a63;
-  --line: #e3dfd6;
+  --page: #ffffff;
+  --text: #1f1f1f;
+  --text-muted: #6b6b6b;
+  --line: #e6e6e6;
   --mark: #c0392b;
 
   --measure: 44rem;
@@ -28,6 +28,10 @@ html[lang="zh-Hans"] {
   --font: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei",
     "Noto Sans SC", "Segoe UI", Roboto, sans-serif;
 }
+
+/* Korean breaks between words, not inside one; a word longer than its line
+   (a file name, a link) may still break anywhere rather than overflow. */
+html[lang="ko"] body { word-break: keep-all; overflow-wrap: anywhere; }
 
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -98,7 +102,7 @@ h1, h2, h3 { font-weight: 600; line-height: 1.3; }
 
 /* ---- the page's own top ---------------------------------------------- */
 
-.intro { padding-block: clamp(3rem, 10vw, 6rem) clamp(2.5rem, 7vw, 4rem); }
+.intro { padding-block: clamp(2.5rem, 8vw, 5rem) clamp(1.5rem, 4vw, 2.5rem); }
 
 .intro h1 {
   margin: 0 0 0.75rem;
@@ -138,20 +142,31 @@ section p { margin: 0 0 1rem; }
 
 /* ---- the production line --------------------------------------------- */
 
-/* One row per step a cut goes through. A filled mark is ready to work in;
-   an open one works, and is still growing. */
+/* One row per step a cut goes through: the step on the left, what this app
+   has for it on the right. A filled mark is ready to work in; an open one
+   works, and is still growing. */
 .steps { list-style: none; margin: 1.5rem 0; padding: 0; border-top: 1px solid var(--line); }
 
-.steps li {
+.steps > li {
   display: grid;
-  grid-template-columns: 8.5rem 1fr auto;
+  grid-template-columns: 8.5rem 1fr;
   gap: 0.25rem 1.25rem;
   align-items: baseline;
-  padding-block: 0.9rem;
+  padding-block: 1.1rem;
   border-bottom: 1px solid var(--line);
 }
 
+.steps .head { display: flex; flex-direction: column; gap: 0.1rem; }
+
 .steps .name { font-weight: 600; white-space: nowrap; }
+
+/* Plain discs: a list inside a list defaults to open circles, which would
+   read as the open mark of a step still growing. */
+.steps .feats { margin: 0; padding-left: 1.1rem; list-style: disc; }
+.steps .feats li::marker { color: var(--text-muted); }
+.steps .feats li { margin-bottom: 0.3rem; }
+.steps .feats li:last-child { margin-bottom: 0; }
+.steps .aside { margin: 0.5rem 0 0; font-size: 0.85rem; color: var(--text-muted); }
 
 .steps .name::before {
   content: "";
@@ -167,14 +182,68 @@ section p { margin: 0 0 1rem; }
 
 .steps .growing .name::before { background: transparent; }
 
-.steps .what { color: var(--text); }
-
 .steps .state { font-size: 0.8rem; color: var(--text-muted); white-space: nowrap; }
 
 @media (max-width: 36rem) {
-  .steps li { grid-template-columns: 1fr auto; }
-  .steps .what { grid-column: 1 / -1; grid-row: 2; }
+  .steps > li { grid-template-columns: 1fr; }
+  .steps .head { flex-direction: row; align-items: baseline; justify-content: space-between; }
 }
+
+/* ---- the app's own screens ------------------------------------------- */
+
+/* A row to swipe through, as an app store shows one. Every picture stands at
+   one height; one wider than the row is cut at its right, where the
+   timeline runs on, so its left (the rows and their names) always shows. */
+.shots { --shot-h: clamp(13rem, 45vw, 21rem); margin-bottom: clamp(2.5rem, 7vw, 4rem); }
+
+.shots-nav { display: flex; justify-content: flex-end; gap: 0.5rem; margin-bottom: 0.6rem; }
+
+.shots-nav button {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--page);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.shots-nav button:hover { border-color: var(--text-muted); }
+
+.shots-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  padding-bottom: 0.75rem;
+}
+
+/* --ar is the picture's own width over its height, set on each figure: the
+   width comes from it, so the caption wraps to the picture and never
+   widens it. */
+.shot {
+  flex: none;
+  width: min(calc(var(--shot-h) * var(--ar)), calc(100% - 3rem));
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: var(--shot-h);
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 6px;
+  background: #1d1e20;
+}
+
+.shot figcaption { margin-top: 0.5rem; font-size: 0.85rem; line-height: 1.5; color: var(--text-muted); }
+
+.latest { min-height: 1.75em; margin: -0.25rem 0 0; font-size: 0.9rem; color: var(--text-muted); }
 
 /* ---- facts (also · download) ----------------------------------------- */
 
@@ -192,8 +261,6 @@ section p { margin: 0 0 1rem; }
 .platforms tr:first-child td { border-top: 1px solid var(--line); }
 .platforms td:first-child { width: 8.5rem; font-weight: 600; }
 .platforms td:last-child { text-align: right; color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
-.platforms td.ready { color: var(--mark); }
-
 @media (max-width: 36rem) {
   .platforms td:first-child { width: 5.5rem; }
 }

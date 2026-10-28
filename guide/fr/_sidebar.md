@@ -36,3 +36,4 @@
   - [Préférences](/fr/preferences)
   - [Raccourcis](/fr/shortcuts)
   - [FAQ](/fr/faq)
+  - [Envoyer un avis](/fr/feedback)

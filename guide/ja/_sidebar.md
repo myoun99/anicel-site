@@ -36,3 +36,4 @@
   - [環境設定](/ja/preferences)
   - [ショートカット](/ja/shortcuts)
   - [よくある質問](/ja/faq)
+  - [フィードバックを送る](/ja/feedback)

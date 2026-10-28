@@ -36,3 +36,4 @@
   - [偏好设置](/zhHans/preferences)
   - [快捷键](/zhHans/shortcuts)
   - [常见问题](/zhHans/faq)
+  - [发送反馈](/zhHans/feedback)
