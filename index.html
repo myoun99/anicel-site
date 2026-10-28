@@ -19,7 +19,10 @@
     <a class="wordmark" href="./">Anicel <span>/ MYOUN</span></a>
     <div class="lang-switch" role="group" aria-label="Language">
       <button type="button" data-set-lang="ja" aria-pressed="true">日本語</button>
+      <button type="button" data-set-lang="ko" aria-pressed="false">한국어</button>
       <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-set-lang="fr" aria-pressed="false">FR</button>
+      <button type="button" data-set-lang="zhHans" aria-pressed="false">中文</button>
     </div>
   </header>
 
@@ -28,12 +31,18 @@
       <div>
         <p class="status-pill">
           <span data-lang="ja">開発中 — クローズドテスト</span>
+          <span data-lang="ko">개발 중 — 비공개 테스트</span>
           <span data-lang="en">In development — closed testing</span>
+          <span data-lang="fr">En développement — test fermé</span>
+          <span data-lang="zhHans">开发中 — 封闭测试</span>
         </p>
         <h1>Anicel</h1>
         <p class="lede">
           <span data-lang="ja">タイムシートから作画、絵コンテ、音声同期まで。手描きアニメーションのための制作ツール。</span>
+          <span data-lang="ko">타임시트부터 작화, 콘티, 소리 맞추기까지. 손그림 애니메이션을 위한 제작 도구.</span>
           <span data-lang="en">Exposure sheet, drawing, storyboard and sound in one place — a production tool for hand-drawn animation.</span>
+          <span data-lang="fr">Feuille de temps, dessin, storyboard et son au même endroit — un outil de production pour l'animation dessinée à la main.</span>
+          <span data-lang="zhHans">摄影表、作画、分镜与声音集于一处 —— 面向手绘动画的制作工具。</span>
         </p>
         <p class="byline">CREATED BY MYOUN</p>
       </div>
@@ -53,61 +62,82 @@
     <section id="features">
       <p class="section-label">
         <span data-lang="ja">できること</span>
+        <span data-lang="ko">할 수 있는 것</span>
         <span data-lang="en">What it does</span>
+        <span data-lang="fr">Ce qu'il fait</span>
+        <span data-lang="zhHans">能做什么</span>
       </p>
 
       <div class="features">
         <div class="feature">
           <span class="kicker">SHEET</span>
-          <h3><span data-lang="ja">タイムシート</span><span data-lang="en">Exposure sheet</span></h3>
+          <h3><span data-lang="ja">タイムシート</span><span data-lang="ko">타임시트</span><span data-lang="en">Exposure sheet</span><span data-lang="fr">Feuille de temps</span><span data-lang="zhHans">摄影表</span></h3>
           <p>
             <span data-lang="ja">コマ打ちと露出をシート上で直接。オニオンスキン、リピート、コマ送り再生まで、タイミングを見るための道具として設計しています。</span>
+            <span data-lang="ko">코마 타이밍과 노출을 시트 위에서 바로. 어니언 스킨, 리피트, 한 프레임씩 재생까지 — 타이밍을 보기 위한 도구로 설계했습니다.</span>
             <span data-lang="en">Comma timing and exposure edited on the sheet itself, with onion skin, repeats and frame-by-frame playback — built to be read as timing, not as a track list.</span>
+            <span data-lang="fr">Le timing des commas et l'exposition se règlent sur la feuille elle-même, avec pelure d'oignon, répétitions et lecture image par image — une feuille conçue pour se lire comme un timing, pas comme une liste de pistes.</span>
+            <span data-lang="zhHans">直接在表上编辑逐格的时间节奏与曝光，配有洋葱皮、重复和逐帧播放 —— 设计为用来读时间节奏，而不是一张轨道列表。</span>
           </p>
         </div>
 
         <div class="feature">
           <span class="kicker">BRUSH</span>
-          <h3><span data-lang="ja">作画</span><span data-lang="en">Drawing</span></h3>
+          <h3><span data-lang="ja">作画</span><span data-lang="ko">작화</span><span data-lang="en">Drawing</span><span data-lang="fr">Dessin</span><span data-lang="zhHans">作画</span></h3>
           <p>
             <span data-lang="ja">筆圧と傾きに応じるネイティブのブラシエンジン。Photoshop の .abr と CLIP STUDIO の .sut を読み込めます。</span>
+            <span data-lang="ko">필압과 기울기에 반응하는 네이티브 브러시 엔진. Photoshop 의 .abr 와 CLIP STUDIO 의 .sut 를 그대로 가져옵니다.</span>
             <span data-lang="en">A native brush engine that answers to pressure and tilt. Photoshop <code>.abr</code> and CLIP STUDIO <code>.sut</code> brushes import directly.</span>
+            <span data-lang="fr">Un moteur de brosses natif qui répond à la pression et à l'inclinaison. Les brosses Photoshop <code>.abr</code> et CLIP STUDIO <code>.sut</code> s'importent directement.</span>
+            <span data-lang="zhHans">响应笔压与倾斜的原生笔刷引擎。Photoshop 的 <code>.abr</code> 与 CLIP STUDIO 的 <code>.sut</code> 笔刷可直接导入。</span>
           </p>
         </div>
 
         <div class="feature">
           <span class="kicker">CONTE</span>
-          <h3><span data-lang="ja">絵コンテ</span><span data-lang="en">Storyboard</span></h3>
+          <h3><span data-lang="ja">絵コンテ</span><span data-lang="ko">콘티</span><span data-lang="en">Storyboard</span><span data-lang="fr">Storyboard</span><span data-lang="zhHans">分镜</span></h3>
           <p>
             <span data-lang="ja">ストーリーボードとタイムラインが同じカットを見ています。A4・5コマの用紙にベクターPDFで出力できます。</span>
+            <span data-lang="ko">콘티와 타임라인이 같은 컷을 봅니다. A4・5칸 용지에 벡터 PDF 로 출력합니다.</span>
             <span data-lang="en">The board and the timeline look at the same cuts. Prints to the Japanese A4 five-panel sheet as a vector PDF.</span>
+            <span data-lang="fr">Le storyboard et la timeline regardent les mêmes plans. Sortie en PDF vectoriel sur la feuille japonaise A4 à cinq cases.</span>
+            <span data-lang="zhHans">分镜与时间轴看的是同一批镜头。可按日式 A4 五格分镜纸输出为矢量 PDF。</span>
           </p>
         </div>
 
         <div class="feature">
           <span class="kicker">SOUND</span>
-          <h3><span data-lang="ja">音声</span><span data-lang="en">Sound</span></h3>
+          <h3><span data-lang="ja">音声</span><span data-lang="ko">소리</span><span data-lang="en">Sound</span><span data-lang="fr">Son</span><span data-lang="zhHans">声音</span></h3>
           <p>
             <span data-lang="ja">セリフの録音、ノイズ抑制、シートへの同期。声を録ってそのままタイミングを取れます。</span>
+            <span data-lang="ko">대사 녹음, 잡음 제거, 시트에 맞추기. 목소리를 녹음해 그대로 타이밍을 잡습니다.</span>
             <span data-lang="en">Record dialogue, suppress noise, and lay it against the sheet — timing to a voice without leaving the tool.</span>
+            <span data-lang="fr">Enregistrer les dialogues, réduire le bruit et les caler sur la feuille — le timing se fait sur la voix sans quitter l'outil.</span>
+            <span data-lang="zhHans">录制台词、降噪，并对齐到摄影表 —— 不离开工具，就能对着人声定时间节奏。</span>
           </p>
         </div>
 
         <div class="feature">
           <span class="kicker">EXPORT</span>
-          <h3><span data-lang="ja">出力</span><span data-lang="en">Export</span></h3>
+          <h3><span data-lang="ja">出力</span><span data-lang="ko">출력</span><span data-lang="en">Export</span><span data-lang="fr">Export</span><span data-lang="zhHans">导出</span></h3>
           <p>
-            <span data-lang="ja">動画、連番PNG、タイムシート。OS のエンコーダをそのまま使うので、書き出しに外部ツールは要りません。</span>
-            <span data-lang="en">Video, PNG sequences and the sheet itself. Encoding runs on the operating system's own encoder, so nothing else has to be installed.</span>
+            <span data-lang="ja">動画、連番PNG、タイムシート。動画は OS のエンコーダで書き出します（OS にない形式は FFmpeg があれば使えます）。</span>
+            <span data-lang="ko">동영상, 연번 PNG, 타임시트. 동영상은 OS 의 인코더로 냅니다(OS 에 없는 형식은 FFmpeg 가 있으면 쓸 수 있습니다).</span>
+            <span data-lang="en">Video, PNG sequences and the sheet itself. Video is encoded with the operating system's own encoder; a format the OS lacks works when FFmpeg is installed.</span>
+            <span data-lang="fr">Vidéo, séquences PNG et la feuille elle-même. La vidéo est encodée par l'encodeur du système d'exploitation ; un format que le système n'a pas fonctionne si FFmpeg est installé.</span>
+            <span data-lang="zhHans">视频、PNG 序列以及摄影表本身。视频由操作系统自带的编码器编码；系统没有的格式，在装有 FFmpeg 时也能使用。</span>
           </p>
         </div>
 
         <div class="feature">
           <span class="kicker">EVERYWHERE</span>
-          <h3><span data-lang="ja">同じ一つのソフト</span><span data-lang="en">One codebase</span></h3>
+          <h3><span data-lang="ja">同じ一つのソフト</span><span data-lang="ko">같은 하나의 프로그램</span><span data-lang="en">One codebase</span><span data-lang="fr">Un seul et même logiciel</span><span data-lang="zhHans">同一个软件</span></h3>
           <p>
-            <span data-lang="ja">Windows・macOS・iPad・Android。机の上でも膝の上でも、同じファイルを同じ道具で開けます。</span>
-            <span data-lang="en">Windows, macOS, iPad and Android — the same file opened by the same tool at the desk or on your lap.</span>
+            <span data-lang="ja">Windows・macOS・iPad・Android・Linux。机の上でも膝の上でも、同じファイルを同じ道具で開けます。</span>
+            <span data-lang="ko">Windows・macOS・iPad・Android・Linux. 책상에서도 무릎 위에서도 같은 파일을 같은 도구로 엽니다.</span>
+            <span data-lang="en">Windows, macOS, iPad, Android and Linux — the same file opened by the same tool at the desk or on your lap.</span>
+            <span data-lang="fr">Windows, macOS, iPad, Android et Linux — le même fichier, ouvert avec le même outil, à la table de travail comme sur les genoux.</span>
+            <span data-lang="zhHans">Windows、macOS、iPad、Android、Linux —— 无论在桌前还是膝上，都用同一个工具打开同一个文件。</span>
           </p>
         </div>
       </div>
@@ -116,41 +146,55 @@
     <section id="download">
       <p class="section-label">
         <span data-lang="ja">ダウンロード</span>
+        <span data-lang="ko">다운로드</span>
         <span data-lang="en">Download</span>
+        <span data-lang="fr">Téléchargement</span>
+        <span data-lang="zhHans">下载</span>
       </p>
 
-      <h2><span data-lang="ja">まだ配布していません</span><span data-lang="en">Not released yet</span></h2>
+      <h2><span data-lang="ja">まだ配布していません</span><span data-lang="ko">아직 배포하지 않습니다</span><span data-lang="en">Not released yet</span><span data-lang="fr">Pas encore distribué</span><span data-lang="zhHans">尚未发布</span></h2>
       <p class="note">
         <span data-lang="ja">現在は招待制のクローズドテスト中です。公開の準備ができ次第、ここにリンクを置きます。</span>
+        <span data-lang="ko">지금은 초대제 비공개 테스트 중입니다. 공개 준비가 되는 대로 여기에 링크를 둡니다.</span>
         <span data-lang="en">Anicel is in invite-only closed testing. Links will appear here once it is ready to hand out.</span>
+        <span data-lang="fr">Anicel est en test fermé, sur invitation uniquement. Les liens apparaîtront ici dès qu'il sera prêt à être distribué.</span>
+        <span data-lang="zhHans">Anicel 目前处于仅限受邀的封闭测试中。准备好分发后，链接会放在这里。</span>
       </p>
 
       <div class="platforms" style="margin-top:2rem">
         <div class="platform">
           <span class="name">iPad</span>
-          <span class="detail"><span data-lang="ja">TestFlight・招待制</span><span data-lang="en">TestFlight, by invitation</span></span>
+          <span class="detail"><span data-lang="ja">TestFlight・招待制</span><span data-lang="ko">TestFlight・초대제</span><span data-lang="en">TestFlight, by invitation</span><span data-lang="fr">TestFlight, sur invitation</span><span data-lang="zhHans">TestFlight，邀请制</span></span>
           <span class="state">testing</span>
         </div>
         <div class="platform">
           <span class="name">Windows</span>
-          <span class="detail"><span data-lang="ja">直接ダウンロード</span><span data-lang="en">Direct download</span></span>
+          <span class="detail"><span data-lang="ja">直接ダウンロード</span><span data-lang="ko">직접 다운로드</span><span data-lang="en">Direct download</span><span data-lang="fr">Téléchargement direct</span><span data-lang="zhHans">直接下载</span></span>
           <span class="state">soon</span>
         </div>
         <div class="platform">
           <span class="name">Android</span>
-          <span class="detail"><span data-lang="ja">Galaxy Store / APK</span><span data-lang="en">Galaxy Store / APK</span></span>
+          <span class="detail"><span data-lang="ja">Galaxy Store / APK</span><span data-lang="ko">Galaxy Store / APK</span><span data-lang="en">Galaxy Store / APK</span><span data-lang="fr">Galaxy Store / APK</span><span data-lang="zhHans">Galaxy Store / APK</span></span>
           <span class="state">soon</span>
         </div>
         <div class="platform">
           <span class="name">macOS</span>
-          <span class="detail"><span data-lang="ja">直接ダウンロード</span><span data-lang="en">Direct download</span></span>
+          <span class="detail"><span data-lang="ja">直接ダウンロード</span><span data-lang="ko">직접 다운로드</span><span data-lang="en">Direct download</span><span data-lang="fr">Téléchargement direct</span><span data-lang="zhHans">直接下载</span></span>
+          <span class="state">soon</span>
+        </div>
+        <div class="platform">
+          <span class="name">Linux</span>
+          <span class="detail"><span data-lang="ja">直接ダウンロード</span><span data-lang="ko">직접 다운로드</span><span data-lang="en">Direct download</span><span data-lang="fr">Téléchargement direct</span><span data-lang="zhHans">直接下载</span></span>
           <span class="state">soon</span>
         </div>
       </div>
 
       <p class="note">
         <span data-lang="ja">開発中のため、保存形式は予告なく変わることがあります。本番の作業には使わないでください。</span>
+        <span data-lang="ko">개발 중이라 저장 형식이 예고 없이 바뀔 수 있습니다. 실제 납품 작업에는 쓰지 마세요.</span>
         <span data-lang="en">While in development the save format may change without notice. Please do not use it for production work.</span>
+        <span data-lang="fr">Pendant le développement, le format d'enregistrement peut changer sans préavis. Merci de ne pas l'utiliser pour un vrai travail de production.</span>
+        <span data-lang="zhHans">开发期间，保存格式可能会在不另行通知的情况下改变。请不要用于正式的制作工作。</span>
       </p>
     </section>
   </main>
@@ -158,26 +202,35 @@
   <footer class="site-foot">
     <p style="margin:0">© MYOUN</p>
     <nav>
-      <a href="privacy.html"><span data-lang="ja">プライバシーポリシー</span><span data-lang="en">Privacy</span></a>
-      <a href="guide/"><span data-lang="ja">使い方</span><span data-lang="en">Guide</span></a>
+      <a href="privacy.html"><span data-lang="ja">プライバシーポリシー</span><span data-lang="ko">개인정보처리방침</span><span data-lang="en">Privacy</span><span data-lang="fr">Confidentialité</span><span data-lang="zhHans">隐私政策</span></a>
+      <a href="guide/"><span data-lang="ja">使い方</span><span data-lang="ko">사용법</span><span data-lang="en">Guide</span><span data-lang="fr">Guide</span><span data-lang="zhHans">使用指南</span></a>
     </nav>
   </footer>
 </div>
 
 <script>
-  // The switch only flips an attribute; both languages are already in the
+  // The switch only flips an attribute; every language is already in the
   // page, so there is nothing to fetch and nothing to fall out of step.
   const buttons = document.querySelectorAll('[data-set-lang]');
+  // A code is the app's own name for a language (AppLanguage.name, the
+  // guide's folder names too); <html lang> takes its BCP 47 tag, which
+  // differs only for Chinese — the tag is what picks a Chinese face.
+  const tagOf = (lang) => (lang === 'zhHans' ? 'zh-Hans' : lang);
   const apply = (lang) => {
-    document.documentElement.lang = lang;
+    document.documentElement.lang = tagOf(lang);
     buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.setLang === lang)));
     try { localStorage.setItem('anicel-lang', lang); } catch (_) {}
   };
   buttons.forEach((b) => b.addEventListener('click', () => apply(b.dataset.setLang)));
   try {
     const saved = localStorage.getItem('anicel-lang');
+    const reader = navigator.language;
     if (saved) apply(saved);
-    else if (!navigator.language.startsWith('ja')) apply('en');
+    else if (reader.startsWith('ko')) apply('ko');
+    else if (reader.startsWith('fr')) apply('fr');
+    // Every Chinese reads 简体, as in the app (AppLanguage.languageCode, F-157).
+    else if (reader.startsWith('zh')) apply('zhHans');
+    else if (!reader.startsWith('ja')) apply('en');
   } catch (_) {}
 </script>
 

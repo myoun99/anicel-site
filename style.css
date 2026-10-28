@@ -35,10 +35,21 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* The language switch: both languages ship in the markup, and only one is
+/* The language switch: every language ships in the markup, and only one is
    ever shown. No round trip, no second page to keep in step. */
-html[lang="ja"] [data-lang="en"],
-html[lang="en"] [data-lang="ja"] { display: none; }
+html[lang="ja"] [data-lang]:not([data-lang="ja"]),
+html[lang="ko"] [data-lang]:not([data-lang="ko"]),
+html[lang="en"] [data-lang]:not([data-lang="en"]),
+html[lang="fr"] [data-lang]:not([data-lang="fr"]),
+html[lang="zh-Hans"] [data-lang]:not([data-lang="zhHans"]) { display: none; }
+
+/* Chinese is left to the OS's own face, as the app does
+   (AppTypography.familyFor): a Japanese face in front would draw the Han
+   characters the two share in their Japanese forms, and it lacks many
+   simplified ones outright, so one sentence would mix two faces. */
+html[lang="zh-Hans"] {
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
 
 a { color: var(--glow); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { color: var(--paper); }
@@ -51,8 +62,11 @@ a:hover { color: var(--paper); }
 
 /* ---- header ---------------------------------------------------------- */
 
+/* Five languages do not fit beside the wordmark on a phone: the switch
+   drops to its own line instead of folding each name into a column. */
 .site-head {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -88,6 +102,7 @@ a:hover { color: var(--paper); }
   font: inherit;
   font-size: 0.8rem;
   letter-spacing: 0.06em;
+  white-space: nowrap;
   cursor: pointer;
 }
 

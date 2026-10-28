@@ -1,0 +1,25 @@
+# Anicel
+
+Une application pour faire de l'animation dessinée à la main. Un projet = un fichier.
+Le même fichier s'ouvre sur Windows, macOS, iPad, Android et Linux.
+
+> ⚠️ Anicel est en développement (test fermé). Le format de fichier peut changer sans préavis : ne l'utilisez pas pour de vraies livraisons.
+
+## Ce qu'elle fait
+
+- Garder plusieurs plans dans un projet, chacun avec sa propre taille de canevas — [Taille du canevas par plan](/fr/canvas-size)
+- Calques : animation, storyboard, image, dossier, réglage, SE, direction, caméra et transition, plus les attaches qui suivent un calque de base — [Les calques en bref](/fr/layers)
+- Mettre des étiquettes de couleur et des prises sur les calques et les plans — [Étiquettes de couleur et prises](/fr/layer-labels)
+- Voir la feuille de temps, la feuille de conte et l'enveloppe de plan pendant le travail, et les exporter — [Feuille de temps, feuille de conte, enveloppe de plan](/fr/sheets)
+- Poser des fichiers son sur les calques SE, et enregistrer au micro — [Calques son (SE)](/fr/sound-layers) · [Lecture et enregistrement](/fr/playback)
+- Importer des pinceaux CLIP STUDIO (.sut) et Photoshop (.abr) — [Pinceaux](/fr/brushes)
+- Ouvrir des fichiers TVPaint (.tvpp) et CLIP STUDIO (.clip) comme projets — [Ouvrir et enregistrer](/fr/files)
+- Exporter des vidéos (MP4, MOV), des séquences d'images, des cellulos, des feuilles de temps et des feuilles de conte (PDF) — [Export](/fr/export)
+
+## Par où commencer
+
+1. [Premiers pas](/fr/start) — d'un nouveau projet jusqu'à dessiner, lire et enregistrer
+2. [Écran et panneaux](/fr/screen) — ouvrir, fermer et déplacer les panneaux
+3. [Les calques en bref](/fr/layers) — les types de calques et les cases d'une ligne de calque
+
+Pour une touche que vous ne connaissez pas, voir [Raccourcis](/fr/shortcuts). En cas de blocage, voir la [FAQ](/fr/faq).

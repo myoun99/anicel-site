@@ -1,0 +1,1424 @@
+{
+ "default": "clipStudio",
+ "presets": [
+  "anicel",
+  "clipStudio",
+  "tvpaint"
+ ],
+ "names": {
+  "ko": {
+   "anicel": "Anicel",
+   "clipStudio": "클립 스튜디오 기반",
+   "tvpaint": "TVPaint 기반"
+  },
+  "ja": {
+   "anicel": "Anicel",
+   "clipStudio": "CLIP STUDIO ベース",
+   "tvpaint": "TVPaint ベース"
+  },
+  "en": {
+   "anicel": "Anicel",
+   "clipStudio": "Clip Studio based",
+   "tvpaint": "TVPaint based"
+  },
+  "fr": {
+   "anicel": "Anicel",
+   "clipStudio": "Base Clip Studio",
+   "tvpaint": "Base TVPaint"
+  },
+  "zhHans": {
+   "anicel": "Anicel",
+   "clipStudio": "基于 CLIP STUDIO",
+   "tvpaint": "基于 TVPaint"
+  }
+ },
+ "or": {
+  "ko": "또는",
+  "ja": "または",
+  "en": "or",
+  "fr": "ou",
+  "zhHans": "或"
+ },
+ "keys": {
+  "frame-previous": {
+   "anicel": [
+    [
+     "Shift+←",
+     "⇧←"
+    ],
+    [
+     "Shift+A",
+     "⇧A"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "←",
+     "←"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "←",
+     "←"
+    ]
+   ]
+  },
+  "frame-next": {
+   "anicel": [
+    [
+     "Shift+→",
+     "⇧→"
+    ],
+    [
+     "Shift+D",
+     "⇧D"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "→",
+     "→"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "→",
+     "→"
+    ]
+   ]
+  },
+  "drawing-previous": {
+   "anicel": [
+    [
+     "←",
+     "←"
+    ],
+    [
+     "A",
+     "A"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+←",
+     "⌘←"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+←",
+     "⌘←"
+    ]
+   ]
+  },
+  "drawing-next": {
+   "anicel": [
+    [
+     "→",
+     "→"
+    ],
+    [
+     "D",
+     "D"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+→",
+     "⌘→"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+→",
+     "⌘→"
+    ]
+   ]
+  },
+  "layer-up": {
+   "anicel": [
+    [
+     "↑",
+     "↑"
+    ],
+    [
+     "W",
+     "W"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Alt+]",
+     "⌥]"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "↑",
+     "↑"
+    ]
+   ]
+  },
+  "layer-down": {
+   "anicel": [
+    [
+     "↓",
+     "↓"
+    ],
+    [
+     "S",
+     "S"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Alt+[",
+     "⌥["
+    ]
+   ],
+   "tvpaint": [
+    [
+     "↓",
+     "↓"
+    ]
+   ]
+  },
+  "canvas-pan-hold": {
+   "anicel": [
+    [
+     "Space",
+     "Space"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Space",
+     "Space"
+    ]
+   ]
+  },
+  "canvas-rotate-hold": {
+   "anicel": [
+    [
+     "Shift+Space",
+     "⇧Space"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Shift+Space",
+     "⇧Space"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+Space",
+     "⇧Space"
+    ]
+   ]
+  },
+  "playback-toggle": {
+   "anicel": [
+    [
+     "Shift+X",
+     "⇧X"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Space",
+     "Space"
+    ]
+   ]
+  },
+  "playback-to-start": {
+   "anicel": [
+    [
+     "Shift+Z",
+     "⇧Z"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Shift+Home",
+     "⇧Home"
+    ],
+    [
+     "Home",
+     "Home"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+Home",
+     "⇧Home"
+    ],
+    [
+     "Home",
+     "Home"
+    ]
+   ]
+  },
+  "voice-record-toggle": {
+   "anicel": [
+    [
+     "Ctrl+R",
+     "⌘R"
+    ]
+   ]
+  },
+  "edit-undo": {
+   "anicel": [
+    [
+     "Ctrl+Z",
+     "⌘Z"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+Z",
+     "⌘Z"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Z",
+     "⌘Z"
+    ],
+    [
+     "U",
+     "U"
+    ]
+   ]
+  },
+  "edit-redo": {
+   "anicel": [
+    [
+     "Ctrl+Shift+Z",
+     "⇧⌘Z"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+Y",
+     "⌘Y"
+    ],
+    [
+     "Ctrl+Shift+Z",
+     "⇧⌘Z"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Y",
+     "⌘Y"
+    ],
+    [
+     "Shift+U",
+     "⇧U"
+    ]
+   ]
+  },
+  "canvas-line-hold": {
+   "anicel": [
+    [
+     "Z",
+     "Z"
+    ]
+   ]
+  },
+  "edit-cut": {
+   "anicel": [
+    [
+     "Ctrl+X",
+     "⌘X"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+X",
+     "⌘X"
+    ],
+    [
+     "F2",
+     "F2"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+X",
+     "⌘X"
+    ],
+    [
+     "Delete",
+     "⌦"
+    ]
+   ]
+  },
+  "edit-copy": {
+   "anicel": [
+    [
+     "Ctrl+C",
+     "⌘C"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+C",
+     "⌘C"
+    ],
+    [
+     "F3",
+     "F3"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+C",
+     "⌘C"
+    ]
+   ]
+  },
+  "edit-paste-linked": {
+   "anicel": [
+    [
+     "Ctrl+B",
+     "⌘B"
+    ]
+   ]
+  },
+  "edit-paste-independent": {
+   "anicel": [
+    [
+     "Ctrl+V",
+     "⌘V"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+V",
+     "⌘V"
+    ],
+    [
+     "F4",
+     "F4"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+V",
+     "⌘V"
+    ]
+   ]
+  },
+  "edit-delete": {
+   "anicel": [
+    [
+     "Delete",
+     "⌦"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Shift+F5",
+     "⇧F5"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+F5",
+     "⇧F5"
+    ]
+   ]
+  },
+  "edit-instance": {
+   "anicel": [
+    [
+     "Shift+F",
+     "⇧F"
+    ]
+   ]
+  },
+  "edit-clear-pixels": {
+   "anicel": [
+    [
+     "Backspace",
+     "⌫"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Delete",
+     "⌦"
+    ],
+    [
+     "Backspace",
+     "⌫"
+    ],
+    [
+     "Ctrl+Delete",
+     "⌘⌦"
+    ],
+    [
+     "Ctrl+Backspace",
+     "⌘⌫"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Backspace",
+     "⌫"
+    ],
+    [
+     "Shift+K",
+     "⇧K"
+    ]
+   ]
+  },
+  "edit-copy-pixels": {
+   "clipStudio": [
+    [
+     "Ctrl+Shift+C",
+     "⇧⌘C"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Shift+C",
+     "⇧⌘C"
+    ]
+   ]
+  },
+  "edit-paste-pixels-above": {
+   "clipStudio": [
+    [
+     "Ctrl+Shift+V",
+     "⇧⌘V"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Shift+V",
+     "⇧⌘V"
+    ]
+   ]
+  },
+  "file-new": {
+   "clipStudio": [
+    [
+     "Ctrl+N",
+     "⌘N"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+N",
+     "⇧N"
+    ]
+   ]
+  },
+  "file-open": {
+   "clipStudio": [
+    [
+     "Ctrl+O",
+     "⌘O"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+O",
+     "⌘O"
+    ],
+    [
+     "Shift+L",
+     "⇧L"
+    ]
+   ]
+  },
+  "file-save": {
+   "anicel": [
+    [
+     "Ctrl+S",
+     "⌘S"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+S",
+     "⌘S"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+S",
+     "⌘S"
+    ],
+    [
+     "Shift+S",
+     "⇧S"
+    ]
+   ]
+  },
+  "file-save-as": {
+   "anicel": [
+    [
+     "Ctrl+Shift+S",
+     "⇧⌘S"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Alt+Shift+S",
+     "⌥⇧S"
+    ],
+    [
+     "Ctrl+Shift+S",
+     "⇧⌘S"
+    ],
+    [
+     "Ctrl+Alt+S",
+     "⌥⌘S"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Shift+S",
+     "⇧⌘S"
+    ]
+   ]
+  },
+  "file-export": {
+   "clipStudio": [
+    [
+     "Ctrl+Shift+E",
+     "⇧⌘E"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Shift+E",
+     "⇧⌘E"
+    ]
+   ]
+  },
+  "tool-brush": {
+   "anicel": [
+    [
+     "B",
+     "B"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "B",
+     "B"
+    ],
+    [
+     "P",
+     "P"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "D",
+     "D"
+    ]
+   ]
+  },
+  "tool-eraser": {
+   "anicel": [
+    [
+     "E",
+     "E"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "E",
+     "E"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "E",
+     "E"
+    ]
+   ]
+  },
+  "tool-eyedropper": {
+   "anicel": [
+    [
+     "I",
+     "I"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "I",
+     "I"
+    ]
+   ],
+   "tvpaint": [
+    [
+     ";",
+     ";"
+    ]
+   ]
+  },
+  "tool-fill": {
+   "anicel": [
+    [
+     "F",
+     "F"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "G",
+     "G"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "G",
+     "G"
+    ]
+   ]
+  },
+  "tool-fill-bucket": {
+   "clipStudio": [
+    [
+     "F",
+     "F"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "F",
+     "F"
+    ]
+   ]
+  },
+  "tool-fill-rect": {
+   "clipStudio": [
+    [
+     "Shift+R",
+     "⇧R"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+R",
+     "⇧R"
+    ]
+   ]
+  },
+  "tool-fill-lasso": {
+   "anicel": [
+    [
+     "Y",
+     "Y"
+    ]
+   ]
+  },
+  "tool-text": {
+   "clipStudio": [
+    [
+     "T",
+     "T"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "T",
+     "T"
+    ]
+   ]
+  },
+  "tool-shape": {
+   "clipStudio": [
+    [
+     "U",
+     "U"
+    ]
+   ]
+  },
+  "tool-shape-rect": {
+   "clipStudio": [
+    [
+     "R",
+     "R"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "R",
+     "R"
+    ]
+   ]
+  },
+  "tool-shape-line": {
+   "clipStudio": [
+    [
+     "L",
+     "L"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "L",
+     "L"
+    ]
+   ]
+  },
+  "tool-guide": {
+   "anicel": [
+    [
+     "G",
+     "G"
+    ]
+   ]
+  },
+  "tool-select": {
+   "clipStudio": [
+    [
+     "M",
+     "M"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "M",
+     "M"
+    ]
+   ]
+  },
+  "tool-select-lasso": {
+   "anicel": [
+    [
+     "X",
+     "X"
+    ]
+   ]
+  },
+  "tool-transform-normal": {
+   "anicel": [
+    [
+     "Ctrl+T",
+     "⌘T"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+T",
+     "⌘T"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+T",
+     "⌘T"
+    ]
+   ]
+  },
+  "tool-transform-free": {
+   "anicel": [
+    [
+     "Ctrl+Y",
+     "⌘Y"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+Shift+T",
+     "⇧⌘T"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Shift+T",
+     "⇧⌘T"
+    ]
+   ]
+  },
+  "tool-cut": {
+   "tvpaint": [
+    [
+     "B",
+     "B"
+    ]
+   ]
+  },
+  "tool-cut-lasso": {
+   "anicel": [
+    [
+     "C",
+     "C"
+    ]
+   ]
+  },
+  "tool-cut-stamp": {
+   "anicel": [
+    [
+     "V",
+     "V"
+    ]
+   ]
+  },
+  "tool-blend-color": {
+   "anicel": [
+    [
+     "F1",
+     "F1"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "F2",
+     "F2"
+    ]
+   ]
+  },
+  "tool-blend-behind": {
+   "anicel": [
+    [
+     "F2",
+     "F2"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "F3",
+     "F3"
+    ]
+   ]
+  },
+  "tool-blend-erase": {
+   "anicel": [
+    [
+     "F3",
+     "F3"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "C",
+     "C"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "F4",
+     "F4"
+    ]
+   ]
+  },
+  "tool-blend-darken": {
+   "anicel": [
+    [
+     "F4",
+     "F4"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "F7",
+     "F7"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "F7",
+     "F7"
+    ]
+   ]
+  },
+  "tool-blend-multiply": {
+   "anicel": [
+    [
+     "F5",
+     "F5"
+    ]
+   ]
+  },
+  "tool-blend-colorBurn": {
+   "anicel": [
+    [
+     "F6",
+     "F6"
+    ]
+   ]
+  },
+  "tool-blend-linearBurn": {
+   "anicel": [
+    [
+     "F7",
+     "F7"
+    ]
+   ]
+  },
+  "tool-blend-subtract": {
+   "anicel": [
+    [
+     "F8",
+     "F8"
+    ]
+   ]
+  },
+  "tool-blend-lighten": {
+   "anicel": [
+    [
+     "F9",
+     "F9"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "F8",
+     "F8"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "F8",
+     "F8"
+    ]
+   ]
+  },
+  "tool-blend-screen": {
+   "anicel": [
+    [
+     "F10",
+     "F10"
+    ]
+   ]
+  },
+  "tool-blend-colorDodge": {
+   "anicel": [
+    [
+     "F11",
+     "F11"
+    ]
+   ]
+  },
+  "tool-blend-add": {
+   "anicel": [
+    [
+     "F12",
+     "F12"
+    ]
+   ]
+  },
+  "selection-deselect": {
+   "anicel": [
+    [
+     "Ctrl+D",
+     "⌘D"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+D",
+     "⌘D"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+D",
+     "⌘D"
+    ]
+   ]
+  },
+  "edit-confirm": {
+   "anicel": [
+    [
+     "Enter",
+     "↩"
+    ],
+    [
+     "Numpad Enter",
+     "Numpad Enter"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Enter",
+     "↩"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Enter",
+     "↩"
+    ]
+   ]
+  },
+  "selection-transform-cancel": {
+   "anicel": [
+    [
+     "Escape",
+     "⎋"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Escape",
+     "⎋"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Escape",
+     "⎋"
+    ]
+   ]
+  },
+  "selection-invert": {
+   "clipStudio": [
+    [
+     "Ctrl+Shift+I",
+     "⇧⌘I"
+    ],
+    [
+     "Shift+F7",
+     "⇧F7"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Shift+I",
+     "⇧⌘I"
+    ],
+    [
+     "Shift+F7",
+     "⇧F7"
+    ]
+   ]
+  },
+  "onion-skin-toggle": {
+   "anicel": [
+    [
+     "T",
+     "T"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+L",
+     "⌘L"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+L",
+     "⌘L"
+    ]
+   ]
+  },
+  "canvas-rotate-ccw": {
+   "anicel": [
+    [
+     "R",
+     "R"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "-",
+     "-"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+Page Up",
+     "⇧Page Up"
+    ]
+   ]
+  },
+  "canvas-rotate-cw": {
+   "anicel": [
+    [
+     "Shift+R",
+     "⇧R"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "^",
+     "^"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+Page Down",
+     "⇧Page Down"
+    ]
+   ]
+  },
+  "canvas-flip-horizontal": {
+   "anicel": [
+    [
+     "H",
+     "H"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "[",
+     "["
+    ]
+   ],
+   "tvpaint": [
+    [
+     "[",
+     "["
+    ]
+   ]
+  },
+  "canvas-flip-vertical": {
+   "clipStudio": [
+    [
+     "]",
+     "]"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "]",
+     "]"
+    ]
+   ]
+  },
+  "canvas-straighten": {
+   "clipStudio": [
+    [
+     "Ctrl+@",
+     "⌘@"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Insert",
+     "Insert"
+    ]
+   ]
+  },
+  "canvas-fit": {
+   "clipStudio": [
+    [
+     "Ctrl+0",
+     "⌘0"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+V",
+     "⇧V"
+    ],
+    [
+     "Shift+F11",
+     "⇧F11"
+    ]
+   ]
+  },
+  "canvas-reset-view": {
+   "clipStudio": [
+    [
+     "Ctrl+Alt+0",
+     "⌥⌘0"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+Numpad 0",
+     "⌘Numpad 0"
+    ]
+   ]
+  },
+  "canvas-zoom-in": {
+   "anicel": [
+    [
+     "Shift+E",
+     "⇧E"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+Numpad Add",
+     "⌘Numpad Add"
+    ],
+    [
+     "Ctrl+;",
+     "⌘;"
+    ]
+   ],
+   "tvpaint": [
+    [
+     ">",
+     ">"
+    ]
+   ]
+  },
+  "canvas-zoom-out": {
+   "anicel": [
+    [
+     "Shift+Q",
+     "⇧Q"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+Numpad Subtract",
+     "⌘Numpad Subtract"
+    ],
+    [
+     "Ctrl+-",
+     "⌘-"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "<",
+     "<"
+    ]
+   ]
+  },
+  "timeline-comma-1": {
+   "anicel": [
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "timeline-comma-2": {
+   "anicel": [
+    [
+     "2",
+     "2"
+    ]
+   ]
+  },
+  "timeline-comma-3": {
+   "anicel": [
+    [
+     "3",
+     "3"
+    ]
+   ]
+  },
+  "timeline-comma-4": {
+   "anicel": [
+    [
+     "4",
+     "4"
+    ]
+   ]
+  },
+  "timeline-comma-n": {
+   "anicel": [
+    [
+     "5",
+     "5"
+    ]
+   ]
+  },
+  "frame-new-drawing": {
+   "anicel": [
+    [
+     "Shift+I",
+     "⇧I"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "I",
+     "I"
+    ]
+   ]
+  },
+  "layer-add": {
+   "anicel": [
+    [
+     "Ctrl+N",
+     "⌘N"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Ctrl+Shift+N",
+     "⇧⌘N"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+N",
+     "⌘N"
+    ]
+   ]
+  },
+  "layer-visibility-solo": {
+   "anicel": [
+    [
+     "Q",
+     "Q"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "=",
+     "="
+    ]
+   ],
+   "tvpaint": [
+    [
+     "=",
+     "="
+    ]
+   ]
+  },
+  "layer-add-folder": {
+   "clipStudio": [
+    [
+     "Ctrl+G",
+     "⌘G"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+G",
+     "⌘G"
+    ]
+   ]
+  },
+  "edit-keyboard-shortcuts": {
+   "clipStudio": [
+    [
+     "Ctrl+Alt+Shift+K",
+     "⌥⇧⌘K"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Ctrl+K",
+     "⌘K"
+    ]
+   ]
+  },
+  "edit-preferences": {
+   "clipStudio": [
+    [
+     "Ctrl+K",
+     "⌘K"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Shift+D",
+     "⇧D"
+    ]
+   ]
+  }
+ }
+}

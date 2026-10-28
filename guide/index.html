@@ -27,12 +27,13 @@
     text-align: center;
     white-space: nowrap;
   }
-  /* Only the shortcut pages have tables, one per group of keys: given the
-     same column widths they line up and read as one list. */
-  .markdown-section table th:first-child,
-  .markdown-section table td:first-child { width: 14em; }
-  .markdown-section table th:last-child,
-  .markdown-section table td:last-child { width: 17em; }
+  /* The shortcut pages' tables, one per group of keys, are the tables whose
+     last column holds the keys: given the same column widths they line up
+     and read as one list. Every other page's tables size to their words. */
+  .markdown-section table:has(td:last-child kbd) th:first-child,
+  .markdown-section table:has(td:last-child kbd) td:first-child { width: 14em; }
+  .markdown-section table:has(td:last-child kbd) th:last-child,
+  .markdown-section table:has(td:last-child kbd) td:last-child { width: 17em; }
   /* A phone is narrower than the two widths together: there each table
      fits its own words instead of scrolling sideways. */
   @media (max-width: 640px) {
@@ -44,9 +45,20 @@
      below). With no script the PC spelling stays. */
   html:not(.keys-mac) .markdown-section .k-mac,
   html.keys-mac .markdown-section .k-pc { display: none; }
+  .keys-bars { display: flex; flex-wrap: wrap; gap: .5em; margin: 0 0 1em; }
+  .markdown-section kbd.k-none { border-style: dashed; color: #9aa5ae; }
+  /* A button's face in a table row: the picture is the button itself, at
+     the size it stands in the app. */
+  .markdown-section td img.icon { height: 34px; width: auto; vertical-align: middle; border-radius: 6px; }
+  /* Buttons that stand side by side in the app (1 2 3 4 N) stay in a row. */
+  .markdown-section td:has(> img.icon) { white-space: nowrap; }
+  /* Two panels side by side, each shot at twice its size: shown at its own
+     size, and the shorter one hangs from the top beside the taller. */
+  .markdown-section td { vertical-align: top; }
+  .markdown-section img.panel { display: block; width: 328px; max-width: 100%; }
   .keys-switch {
     display: inline-flex;
-    margin: 0 0 1em;
+    margin: 0;
     border: 1px solid #c9ced3;
     border-radius: 6px;
     overflow: hidden;
@@ -66,7 +78,8 @@
 </head>
 <body>
 <!--
-  One folder per language (ja/, ko/, en/), the same file names in each.
+  One folder per language (ja/, ko/, en/, fr/, zhHans/), the same file names
+  in each — a folder is named by the app's own language name.
   A folder's left menu is its own _sidebar.md; the language buttons at the
   top are _navbar.md. Nothing is built: the browser renders the Markdown
   when a page opens, and GitHub Pages publishes each commit in a minute.
@@ -76,11 +89,14 @@
   // Which language a page is in, read off its path — the one answer the
   // edit link and the search box both ask.
   function langOf(file) {
-    var m = /^(ja|ko|en)\//.exec(file || '');
+    var m = /^(ja|ko|en|fr|zhHans)\//.exec(file || '');
     return m ? m[1] : 'ja';
   }
 
-  var EDIT_LABEL = { ja: 'このページを編集', ko: '이 페이지 편집', en: 'Edit this page' };
+  var EDIT_LABEL = {
+    ja: 'このページを編集', ko: '이 페이지 편집', en: 'Edit this page',
+    fr: 'Modifier cette page', zhHans: '编辑此页',
+  };
 
   // Every page ends with a link to its own file in GitHub's editor. Anyone
   // may follow it; only the repository's collaborators can save — that is
@@ -103,13 +119,16 @@
       try { saved = localStorage.getItem('anicel-guide-lang'); } catch (_) {}
       if (h && h !== '#/') return;
       var l = (navigator.language || '').toLowerCase();
-      var pick = saved || (l.indexOf('ko') === 0 ? 'ko' : l.indexOf('ja') === 0 ? 'ja' : 'en');
+      // Every Chinese reads the Simplified folder, as the app does (F-157).
+      var pick = saved || (l.indexOf('ko') === 0 ? 'ko' : l.indexOf('ja') === 0 ? 'ja' :
+        l.indexOf('fr') === 0 ? 'fr' : l.indexOf('zh') === 0 ? 'zhHans' : 'en');
       location.replace('#/' + pick + '/');
     });
     hook.doneEach(function () {
-      var m = /^#\/(ja|ko|en)\//.exec(location.hash);
+      var m = /^#\/(ja|ko|en|fr|zhHans)\//.exec(location.hash);
       if (!m) return;
-      document.documentElement.lang = m[1];
+      // The folder is the app's name; the page's lang is a language tag.
+      document.documentElement.lang = m[1] === 'zhHans' ? 'zh-Hans' : m[1];
       try { localStorage.setItem('anicel-guide-lang', m[1]); } catch (_) {}
     });
   }
@@ -128,38 +147,135 @@
 
   function showKeys(which) {
     document.documentElement.classList.toggle('keys-mac', which === 'mac');
-    var buttons = document.querySelectorAll('.keys-switch button');
+    var buttons = document.querySelectorAll('.keys-switch button[data-keys]');
     for (var i = 0; i < buttons.length; i++) {
       var on = buttons[i].getAttribute('data-keys') === which;
       buttons[i].setAttribute('aria-pressed', on ? 'true' : 'false');
     }
   }
 
-  function keySpelling(hook) {
+  // A page names an action, never its key: <span data-k="edit-undo">. Its
+  // keys come from keys.json, which the app's own shortcut list writes for
+  // every preset the app ships, and the reader picks the preset as they
+  // pick a language — the one an install opens on until they do.
+  var PRESET_SAVED = 'anicel-guide-preset';
+  var keymap = null;
+  var keymapLoad = null;
+
+  function loadKeymap() {
+    if (!keymapLoad) {
+      keymapLoad = fetch('keys.json', { cache: 'no-cache' })
+        .then(function (r) { return r.json(); })
+        .then(function (json) { keymap = json; return json; })
+        .catch(function () { keymapLoad = null; return null; });
+    }
+    return keymapLoad;
+  }
+
+  function pickedPreset() {
+    var saved = null;
+    try { saved = localStorage.getItem(PRESET_SAVED); } catch (_) {}
+    return keymap.presets.indexOf(saved) >= 0 ? saved : keymap['default'];
+  }
+
+  function kbd(text, cls) {
+    var k = document.createElement('kbd');
+    if (cls) k.className = cls;
+    k.textContent = text;
+    return k;
+  }
+
+  // Every named action on the page, written in the picked preset's keys:
+  // each as a PC and as a Mac or an iPad spell it, and a dash where the
+  // preset puts no key on it. A spot may name several actions, written
+  // one after another; one marked data-k-paren follows an action's name in
+  // a sentence, so it is the keys in brackets, or nothing when the preset
+  // has none.
+  function fillKeys(section, lang) {
+    var preset = pickedPreset();
+    var spots = section.querySelectorAll('[data-k]');
+    for (var i = 0; i < spots.length; i++) {
+      var spot = spots[i];
+      var groups = spot.getAttribute('data-k').split(/\s+/).map(function (id) {
+        return (keymap.keys[id] || {})[preset] || [];
+      });
+      var paren = spot.hasAttribute('data-k-paren');
+      var any = groups.some(function (pairs) { return pairs.length; });
+      spot.textContent = '';
+      if (!any) {
+        if (!paren) spot.appendChild(kbd('—', 'k-none'));
+        continue;
+      }
+      if (paren) spot.appendChild(document.createTextNode('('));
+      groups.forEach(function (pairs, g) {
+        if (g) spot.appendChild(document.createTextNode(' · '));
+        if (!pairs.length) spot.appendChild(kbd('—', 'k-none'));
+        pairs.forEach(function (pair, n) {
+          if (n) spot.appendChild(document.createTextNode(' ' + keymap.or[lang] + ' '));
+          if (pair[0] === pair[1]) {
+            spot.appendChild(kbd(pair[0]));
+          } else {
+            spot.appendChild(kbd(pair[0], 'k-pc'));
+            spot.appendChild(kbd(pair[1], 'k-mac'));
+          }
+        });
+      });
+      if (paren) spot.appendChild(document.createTextNode(')'));
+    }
+    var buttons = section.querySelectorAll('.keys-switch button[data-preset]');
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].setAttribute('aria-pressed',
+        buttons[j].getAttribute('data-preset') === preset ? 'true' : 'false');
+    }
+  }
+
+  function switchOf(pairs, onPick) {
+    var bar = document.createElement('div');
+    bar.className = 'keys-switch';
+    pairs.forEach(function (pair) {
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = pair[1];
+      button.setAttribute(pair[2], pair[0]);
+      button.addEventListener('click', function () { onPick(pair[0]); });
+      bar.appendChild(button);
+    });
+    return bar;
+  }
+
+  function keySpelling(hook, vm) {
     var which = null;
     try { which = localStorage.getItem(KEYS_SAVED); } catch (_) {}
     if (which !== 'mac' && which !== 'pc') which = readerOnApple() ? 'mac' : 'pc';
     showKeys(which);
     hook.doneEach(function () {
       var section = document.querySelector('.markdown-section');
-      if (!section || !section.querySelector('.k-mac')) return;
-      var bar = document.createElement('div');
-      bar.className = 'keys-switch';
-      [['pc', 'Windows'], ['mac', 'Mac']].forEach(function (pair) {
-        var button = document.createElement('button');
-        button.type = 'button';
-        button.textContent = pair[1];
-        button.setAttribute('data-keys', pair[0]);
-        button.addEventListener('click', function () {
-          which = pair[0];
+      if (!section || !section.querySelector('[data-k]')) return;
+      var lang = langOf(vm.route.file);
+      loadKeymap().then(function () {
+        if (!keymap) return;
+        var bars = document.createElement('div');
+        bars.className = 'keys-bars';
+        bars.appendChild(switchOf(keymap.presets.map(function (p) {
+          return [p, keymap.names[lang][p], 'data-preset'];
+        }), function (p) {
+          try { localStorage.setItem(PRESET_SAVED, p); } catch (_) {}
+          fillKeys(section, lang);
+          showKeys(which);
+        }));
+        bars.appendChild(switchOf([
+          ['pc', 'Windows', 'data-keys'],
+          ['mac', 'Mac', 'data-keys'],
+        ], function (w) {
+          which = w;
           try { localStorage.setItem(KEYS_SAVED, which); } catch (_) {}
           showKeys(which);
-        });
-        bar.appendChild(button);
+        }));
+        var after = section.querySelector('h1 + p') || section.querySelector('h1');
+        after.parentNode.insertBefore(bars, after.nextSibling);
+        fillKeys(section, lang);
+        showKeys(which);
       });
-      var after = section.querySelector('h1 + p') || section.querySelector('h1');
-      after.parentNode.insertBefore(bar, after.nextSibling);
-      showKeys(which);
     });
   }
 
@@ -182,8 +298,14 @@
       // Its own keys: every myoun99.github.io site shares one localStorage,
       // and an index saved under the old keys would be trusted for a day.
       namespace: 'anicel-guide',
-      placeholder: { '/ja/': '検索', '/ko/': '검색', '/en/': 'Search' },
-      noData: { '/ja/': '見つかりません', '/ko/': '결과 없음', '/en/': 'No results' },
+      placeholder: {
+        '/ja/': '検索', '/ko/': '검색', '/en/': 'Search',
+        '/fr/': 'Rechercher', '/zhHans/': '搜索',
+      },
+      noData: {
+        '/ja/': '見つかりません', '/ko/': '결과 없음', '/en/': 'No results',
+        '/fr/': 'Aucun résultat', '/zhHans/': '未找到结果',
+      },
     },
     plugins: [editLink, openInReadersLanguage, keySpelling],
   };

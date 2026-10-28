@@ -1,41 +1,46 @@
 # Getting started
 
-Using a short bouncing ball as the example, this is only what you need to start drawing.
+Step by step: open a new project, draw a few drawings, play them and save.
 
 ![](img/overview.png)
 
-## Cuts and layers
+## 1. A new project
+
+- When the app starts, a new project called **Untitled 1** opens. For another new project, use **Project** (folder icon) at the top left → **New project**.
+- A new project already holds one cut, a drawing layer **A** and a drawing in its first cell, so you can start drawing right away.
+- The middle of the screen is the **Canvas**, the bottom is the **Timeline**, and the vertical strip on the left holds the **Tools**. The name of each part is in [Screen and panels](/en/screen).
+
+## 2. Drawing
+
+- Pick the **Brush Tool** <span data-k="tool-brush" data-k-paren></span> on the tool strip at the left and draw on the canvas.
+- Pick the kind of brush in the **Tool library** panel at the top left (Basic · Pencil · Pen · Watercolor …). More in [Brushes](/en/brushes).
+- Change the brush **Size** and **Opacity** on the vertical pill at the left edge of the canvas. Drag the bar or press ±, and type a number with the pencil button beside it.
+- The eraser is the **Eraser Tool** <span data-k="tool-eraser" data-k-paren></span>. To undo, press <span data-k="edit-undo"></span> or the arrow at the top of the tool strip.
+- For a color, press the color button at the right edge (two overlapping circles) to open the [color panel](/en/color) and pick one.
+
+## 3. Making the next drawing
 
 ![](img/toolbar.png)
 
-- A new project opens with one cut, drawing layer A and a drawing on the first cell, so you can start drawing at once.
-- At the top of the timeline, **Cut ＋** makes a cut and **Layer ＋** makes a drawing layer. A new cut has no drawing layer; make one with **Layer ＋**.
+On the timeline, one row is one layer and across is time (frames). One colored **block** is one drawing.
 
-## Frames
+- On layer **A**'s row, press the cell for the new drawing, then press the **＋** of **Frame** at the top of the timeline: a new drawing appears in that cell.
+- With **✦** (Auto-create Frames) on, just drawing in an empty cell makes a drawing.
+- To see the previous drawing through while you draw, turn on **Toggle Onion Skin** <span data-k="onion-skin-toggle" data-k-paren></span> near the top of the tool strip. → [Onion skin](/en/onion-skin)
+- Drag the end of a block to change how long that drawing shows (its number of commas).
 
-- Pick a cell on a layer's row and press **Frame ＋** — a drawing appears there. Pick a range, and the whole range gets it.
-- With **✦** (Auto-create Frames) on, drawing on an empty cell makes one by itself. Draw on a cell that is not a block's head, and the block splits there into a new drawing.
+## 4. Playback
 
-## Drawing
+- Press **▶** (play) at the bottom of the timeline to play, and press it again to stop. The loop, camera view and record buttons are there too. → [Playback and recording](/en/playback)
 
-- Pick the brush on the tool bar at the left and draw on the canvas. Brush types are in the list at the top left.
-- Size and opacity are at the top right of the window. The pencil button lets you type a number. In a narrow window they move into the **⋯** button.
+## 5. Saving
 
-## Play and save
+- Save with **Project** → **Save** <span data-k="file-save" data-k-paren></span>. The first time, you choose a place and a name; the project is saved as one `.anicel` file.
+- **Autosave is off at first.** While it is off, work you close without saving is not kept. Turn it on and the project file itself is saved at the interval you set (3–60 minutes). → [Preferences](/en/preferences) → **Autosave**
+- To open it again, use **Project** → **Open File** or **Recent projects**. Dropping the file onto the window opens it too. → [Opening and saving](/en/files)
 
-- **▶** at the bottom right of the timeline plays. How it plays is set in ⚙ → **Project settings** → **Playback mode**.
-- The **Project** (folder) button at the top left → **Save** saves.
-- To open, use **Open File…** or **Open Folder…** in the same menu, or drag a file onto the window. Projects (.anicel, .tvpp, .clip) open in a new tab; images, sounds and movies go into the **Import** window.
+## Next
 
-## Panel sizes
-
-Drag a panel's edge to resize it. The edge lights up when the mouse is on it.
-
-![](img/resize-bottom.png)
-
-- The bottom panel (timeline, conte): the edge toward the canvas sets its height, the left and right edges its width. A double click on a side edge puts the default width back.
-
-![](img/resize-side.png)
-
-- The side panels: the edge toward the canvas sets the width, the bottom edge the height. Panels on the same side share one width.
-- Drag a corner to change the width and height at once.
+- Layer kinds and how to use them: [Layers at a glance](/en/layers)
+- Lining up cuts and building the conte: [Conte panel](/en/storyboard)
+- Exporting movies and cels: [Export](/en/export)
