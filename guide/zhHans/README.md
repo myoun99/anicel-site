@@ -10,8 +10,8 @@
 <div class="pipeline">
   <div class="pipeline-steps">
     <a class="step" href="#/zhHans/conte-layer"><b>分镜</b><span>分镜用纸 · 台词录音</span></a>
-    <a class="step" href="#/zhHans/sheets"><b>原画</b><span>摄影表 · 工序标签</span></a>
-    <a class="step growing" href="#/zhHans/animation-layers"><b>动画</b><span>CELL&nbsp;栏 · 中间画标记 · 洋葱皮</span></a>
+    <a class="step" href="#/zhHans/sheets"><b>原画</b><span>摄影表 · 中间画标记 · 工序标签</span></a>
+    <a class="step growing" href="#/zhHans/animation-layers"><b>动画</b><span>CELL&nbsp;栏 · 洋葱皮</span></a>
     <a class="step growing" href="#/zhHans/color"><b>上色</b><span>二值化 · 闭合缝隙 · 替换颜色</span></a>
     <a class="step growing" href="#/zhHans/effects"><b>摄影</b><span>效果 · 关键帧 · 摄像机</span></a>
   </div>

@@ -10,8 +10,8 @@ The same file opens on Windows, macOS, iPad, Android and Linux.
 <div class="pipeline">
   <div class="pipeline-steps">
     <a class="step" href="#/en/conte-layer"><b>Storyboard</b><span>Conte sheet · Dialogue recording</span></a>
-    <a class="step" href="#/en/sheets"><b>Key animation</b><span>Timesheet · Stage labels</span></a>
-    <a class="step growing" href="#/en/animation-layers"><b>In-betweening</b><span>CELL column · In-between marks · Onion skin</span></a>
+    <a class="step" href="#/en/sheets"><b>Key animation</b><span>Timesheet · In-between marks · Stage labels</span></a>
+    <a class="step growing" href="#/en/animation-layers"><b>In-betweening</b><span>CELL column · Onion skin</span></a>
     <a class="step growing" href="#/en/color"><b>Finish</b><span>Binarize · Gap Close · Replace Color</span></a>
     <a class="step growing" href="#/en/effects"><b>Compositing</b><span>Effects · Keyframes · Camera</span></a>
   </div>

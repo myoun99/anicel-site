@@ -10,8 +10,8 @@ Windows・macOS・iPad・Android・Linux で同じファイルを開けます。
 <div class="pipeline">
   <div class="pipeline-steps">
     <a class="step" href="#/ja/conte-layer"><b>コンテ</b><span>コンテ用紙・セリフ録音</span></a>
-    <a class="step" href="#/ja/sheets"><b>原画</b><span>タイムシート・工程ラベル</span></a>
-    <a class="step growing" href="#/ja/animation-layers"><b>動画</b><span>CELL&nbsp;欄・中割りマーク・オニオン</span></a>
+    <a class="step" href="#/ja/sheets"><b>原画</b><span>タイムシート・中割りマーク・工程ラベル</span></a>
+    <a class="step growing" href="#/ja/animation-layers"><b>動画</b><span>CELL&nbsp;欄・オニオン</span></a>
     <a class="step growing" href="#/ja/color"><b>仕上げ</b><span>2値化・隙間閉じ・色変換</span></a>
     <a class="step growing" href="#/ja/effects"><b>撮影</b><span>エフェクト・キーフレーム・カメラ</span></a>
   </div>

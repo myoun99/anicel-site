@@ -10,8 +10,8 @@ Windows · macOS · iPad · Android · Linux 에서 같은 파일을 엽니다.
 <div class="pipeline">
   <div class="pipeline-steps">
     <a class="step" href="#/ko/conte-layer"><b>콘티</b><span>콘티&nbsp;용지 · 대사&nbsp;녹음</span></a>
-    <a class="step" href="#/ko/sheets"><b>원화</b><span>타임시트 · 공정&nbsp;라벨</span></a>
-    <a class="step growing" href="#/ko/animation-layers"><b>동화</b><span>CELL&nbsp;칸 · 중간나누기&nbsp;마크 · 어니언</span></a>
+    <a class="step" href="#/ko/sheets"><b>원화</b><span>타임시트 · 중간나누기&nbsp;마크 · 공정&nbsp;라벨</span></a>
+    <a class="step growing" href="#/ko/animation-layers"><b>동화</b><span>CELL&nbsp;칸 · 어니언</span></a>
     <a class="step growing" href="#/ko/color"><b>시아게</b><span>2치화 · 틈&nbsp;메우기 · 색&nbsp;변환</span></a>
     <a class="step growing" href="#/ko/effects"><b>촬영</b><span>이펙트 · 키프레임 · 카메라</span></a>
   </div>

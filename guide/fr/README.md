@@ -10,8 +10,8 @@ Le même fichier s'ouvre sur Windows, macOS, iPad, Android et Linux.
 <div class="pipeline">
   <div class="pipeline-steps">
     <a class="step" href="#/fr/conte-layer"><b>Storyboard</b><span>Feuille de conte · Enregistrement des dialogues</span></a>
-    <a class="step" href="#/fr/sheets"><b>Animation clé</b><span>Feuille de temps · Étiquettes d'étape</span></a>
-    <a class="step growing" href="#/fr/animation-layers"><b>Intervalles</b><span>Colonne CELL · Repères d'intervalle · Pelure d'oignon</span></a>
+    <a class="step" href="#/fr/sheets"><b>Animation clé</b><span>Feuille de temps · Repères d'intervalle · Étiquettes d'étape</span></a>
+    <a class="step growing" href="#/fr/animation-layers"><b>Intervalles</b><span>Colonne CELL · Pelure d'oignon</span></a>
     <a class="step growing" href="#/fr/color"><b>Finition</b><span>Binariser · Fermeture des trous · Remplacer la couleur</span></a>
     <a class="step growing" href="#/fr/effects"><b>Compositing</b><span>Effets · Images clés · Caméra</span></a>
   </div>
