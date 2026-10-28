@@ -3,7 +3,7 @@
 Une application pour faire de l'animation dessinée à la main. Un projet = un fichier.
 Le même fichier s'ouvre sur Windows, macOS, iPad, Android et Linux.
 
-> ⚠️ Anicel est en développement (test fermé). Le format de fichier peut changer sans préavis : ne l'utilisez pas pour de vraies livraisons.
+[](../../launch/latest/fr/notice.md ':include')
 
 ## Ce qu'elle fait
 

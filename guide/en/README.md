@@ -3,7 +3,7 @@
 An app for making hand-drawn animation. One project is one file.
 The same file opens on Windows, macOS, iPad, Android and Linux.
 
-> ⚠️ Anicel is in development (closed testing). The file format may change without notice, so don't use it for real delivery work.
+[](../../launch/latest/en/notice.md ':include')
 
 ## What it does
 

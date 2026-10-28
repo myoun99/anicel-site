@@ -189,13 +189,7 @@
         </div>
       </div>
 
-      <p class="note">
-        <span data-lang="ja">開発中のため、保存形式は予告なく変わることがあります。本番の作業には使わないでください。</span>
-        <span data-lang="ko">개발 중이라 저장 형식이 예고 없이 바뀔 수 있습니다. 실제 납품 작업에는 쓰지 마세요.</span>
-        <span data-lang="en">While in development the save format may change without notice. Please do not use it for production work.</span>
-        <span data-lang="fr">Pendant le développement, le format d'enregistrement peut changer sans préavis. Merci de ne pas l'utiliser pour un vrai travail de production.</span>
-        <span data-lang="zhHans">开发期间，保存格式可能会在不另行通知的情况下改变。请不要用于正式的制作工作。</span>
-      </p>
+      <div class="note" id="pre-release"></div>
     </section>
   </main>
 
@@ -209,6 +203,7 @@
   </footer>
 </div>
 
+<script src="launch.js"></script>
 <script>
   // The switch only flips an attribute; every language is already in the
   // page, so there is nothing to fetch and nothing to fall out of step.
@@ -233,6 +228,10 @@
     else if (reader.startsWith('zh')) apply('zhHans');
     else if (!reader.startsWith('ja')) apply('en');
   } catch (_) {}
+
+  // The pre-release notice is the app's own words (launch/latest/, the
+  // release round's copy of assets/launch/<language>/notice.md).
+  AnicelLaunch.fill(document.getElementById('pre-release'), (l) => `launch/latest/${l}/notice.md`);
 </script>
 
 </body>

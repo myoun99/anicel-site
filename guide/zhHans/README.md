@@ -3,7 +3,7 @@
 用于制作手绘动画的应用。一个项目就是一个文件。
 同一个文件可以在 Windows、macOS、iPad、Android 和 Linux 上打开。
 
-> ⚠️ Anicel 正在开发中（封闭测试）。文件格式可能会在不通知的情况下变更，请不要用于正式交付的工作。
+[](../../launch/latest/zhHans/notice.md ':include')
 
 ## 能做什么
 

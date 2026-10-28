@@ -370,6 +370,8 @@ h2 {
   font-size: 0.88rem;
   color: var(--text-muted);
 }
+.note h3 { margin: 0 0 0.5rem; font-size: 0.95rem; color: var(--text); }
+.note p { margin: 0 0 0.5rem; }
 
 /* ---- prose (privacy) ------------------------------------------------- */
 
