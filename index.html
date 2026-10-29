@@ -441,9 +441,11 @@
       const r = await fetch('launch/latest/build.json', { cache: 'no-cache' });
       if (!r.ok) return;
       const b = await r.json();
-      // The round's release: tag build-<n>, the rel files under their names.
+      // The round's release: tag build-<n>, the rel files under their names;
+      // a platform that follows later names its own (build-<m>/<file>).
       for (const [platform, name] of Object.entries(b.files || {})) {
-        if (platform in GET) GET[platform] = `${RELEASES}/download/build-${b.n}/${encodeURIComponent(name)}`;
+        const [tag, file] = name.includes('/') ? name.split('/') : [`build-${b.n}`, name];
+        if (platform in GET) GET[platform] = `${RELEASES}/download/${tag}/${encodeURIComponent(file)}`;
       }
       link();
       const when = new Date(`${b.date}T00:00:00`);
