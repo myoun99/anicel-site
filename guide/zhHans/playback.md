@@ -9,7 +9,7 @@
 | ![](img/icon-playback-skip-to-start-button.png ':class=icon :no-zoom') | 回到开头 | <span data-k="playback-to-start"></span> | 回到镜头的开头（在分镜面板上则是轨道的开头） |
 | ![](img/icon-playback-play-button.png ':class=icon :no-zoom') | 播放 / 暂停 | <span data-k="playback-toggle"></span> |  |
 | ![](img/icon-playback-loop-toggle.png ':class=icon :no-zoom') | 循环 / 单次播放 | <span data-k="playback-loop-toggle"></span> | 播到结尾时是否回到开头 |
-| ![](img/icon-timeline-camera-view-button.png ':class=icon :no-zoom') | 摄像机视图 | <span data-k="camera-view-toggle"></span> | 遮住摄像机框以外的部分，并按框的大小播放 → [画布视图](/zhHans/canvas-view) |
+| ![](img/icon-timeline-camera-view-button.png ':class=icon :no-zoom') | 摄影机视图 | <span data-k="camera-view-toggle"></span> | 遮住摄影机框以外的部分，并按框的大小播放 → [画布视图](/zhHans/canvas-view) |
 | ![](img/icon-playback-record-voice-button.png ':class=icon :no-zoom') | 录音 | <span data-k="voice-record-toggle"></span> | 见下面的“录音” |
 |  | 音频电平表 |  | 当前播放的声音有多大 |
 

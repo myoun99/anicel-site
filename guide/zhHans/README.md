@@ -13,7 +13,7 @@
     <a class="step" href="#/zhHans/sheets"><b>原画</b><span>摄影表 · 中间画标记 · 工序标签</span></a>
     <a class="step growing" href="#/zhHans/animation-layers"><b>动画</b><span>CELL&nbsp;栏 · 洋葱皮</span></a>
     <a class="step growing" href="#/zhHans/color"><b>上色</b><span>二值化 · 闭合缝隙 · 替换颜色</span></a>
-    <a class="step growing" href="#/zhHans/effects"><b>摄影</b><span>效果 · 关键帧 · 摄像机</span></a>
+    <a class="step growing" href="#/zhHans/effects"><b>摄影</b><span>效果 · 关键帧 · 摄影机</span></a>
   </div>
   <div class="pipeline-span">在同一个项目文件中连续完成</div>
   <p class="pipeline-legend"><span><i></i>可以使用</span><span><i class="growing"></i>可以使用 · 功能扩充中</span></p>

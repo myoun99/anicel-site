@@ -4,7 +4,7 @@
 
 | 区段 | 在界面上的位置 | 放在这里的图层 |
 |---|---|---|
-| **CAM**（摄像机） | 上 | Camera · Transition · Direction |
+| **CAM**（摄影机） | 上 | Camera · Transition · Direction |
 | **SE**（音效 · 台词） | 中 | SE |
 | **ACTION**（画） | 下 | 动画 · 分镜 · 图像 · 文件夹 · 调整图层 |
 
@@ -20,8 +20,8 @@
 | **文件夹** | 把图层编成组，一起显示、隐藏和移动 | [文件夹](/zhHans/folders) |
 | **调整图层** | 对它下面所有图层加效果（亮度 · 色相 · 模糊 …） | [调整图层](/zhHans/adjustment-layers) |
 | **SE** | 声音和台词。对着波形对时间 | [声音（SE）图层](/zhHans/sound-layers) |
-| **Direction** | 在摄影表上写 PAN、FIX 等摄像机指示 | [Camera · Direction · Transition](/zhHans/camera-section) |
-| **Camera** | 摄像机运动（位置 · 缩放 · 旋转）。每个镜头一个，自动存在 | 〃 |
+| **Direction** | 在摄影表上写 PAN、FIX 等摄影机指示 | [Camera · Direction · Transition](/zhHans/camera-section) |
+| **Camera** | 摄影机运动（位置 · 缩放 · 旋转）。每个镜头一个，自动存在 | 〃 |
 | **Transition** | FI · FO · O.L. 等转场。每条轨道一个，自动存在 | 〃 |
 | **附属**（不是种类，而是一种附着方式） | 附在主图层上、跟随其运动和效果的图层（阴影、高光） | [附属图层](/zhHans/attach-layers) |
 

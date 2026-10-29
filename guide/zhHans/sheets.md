@@ -14,8 +14,8 @@
 
 ## 摄影表
 
-- 在时间轴上修改画稿、台词或摄像机，摄影表会当场写好。[颜色标签](/zhHans/layer-labels) 为 Inbetween 的行进入 CELL 栏；其他绘画行进入 ACTION 栏。
-- SE 栏写入 [SE](/zhHans/sound-layers) 的名称和台词；CAM 栏写入摄像机关键帧的名称和运动（PAN · T.U · T.B），以及 [Direction](/zhHans/camera-section) 和 [Transition](/zhHans/camera-section) 行。
+- 在时间轴上修改画稿、台词或摄影机，摄影表会当场写好。[颜色标签](/zhHans/layer-labels) 为 Inbetween 的行进入 CELL 栏；其他绘画行进入 ACTION 栏。
+- SE 栏写入 [SE](/zhHans/sound-layers) 的名称和台词；CAM 栏写入摄影机关键帧的名称和运动（PAN · T.U · T.B），以及 [Direction](/zhHans/camera-section) 和 [Transition](/zhHans/camera-section) 行。
 - 哪些行放上摄影表，用各图层行上的摄影表箭头设定。→ [图层一览](/zhHans/layers)
 - 可以在两种显示之间切换：**标注表**（用重复、停格（止め）等文字缩写） / **数据表**（一格一格，与导出完全一致）。
 

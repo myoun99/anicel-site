@@ -8,7 +8,7 @@
 
 | 行 | 内容 |
 |---|---|
-| **Camera**（Camera 行） | 各镜头的摄像机关键帧和运动（PAN · T.U · T.B） |
+| **Camera**（Camera 行） | 各镜头的摄影机关键帧和运动（PAN · T.U · T.B） |
 | **Transition**（Transition 行） | FI · FO · O.L 等转场 |
 | **Video**（视频轨道） | 一个块就是 **一个镜头** |
 | **Conte**（分镜） | 各镜头的 [分镜图层](/zhHans/conte-layer)。一格就是 [分镜用纸](/zhHans/sheets) 上的一格 |
