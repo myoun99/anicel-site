@@ -1,0 +1,13 @@
+## Nouveautés de cette version
+
+- **Premiers réglages** — au premier lancement sur un appareil, une fenêtre fait d'abord choisir la langue du programme et celle des notations, la taille de l'interface, la couleur d'accent et le curseur de dessin. La taille de l'interface va de 50 % à 150 % par pas de 10 %, et les appareils Android et les téléphones commencent à 80 %.
+- **Apparence** — choisissez Sombre ou Clair dans les Préférences. L'application commence en sombre.
+- **Crayons** — les crayons 2H, HB, 2B et 4B et le crayon de couleur sont refaits : des pointes en forme de grain posées à des angles aléatoires, qui entrent dans le grain du papier autant que vous appuyez. Seul le crayon couché répond à l'inclinaison du stylet.
+- **Brosses doubles** — la seconde pointe est dessinée comme un second trait, et le grain du papier vit dans le trait. L'espacement, l'angle, l'aplatissement, la dispersion et le nombre de la seconde pointe se règlent dans le panneau des réglages de la brosse, et les brosses CLIP STUDIO et Photoshop apportent leurs réglages doubles.
+- **Fusionner des calques** — fusionner les calques d'un plan lié les fusionne dans chaque plan où ils sont, et une image qui dépasse du fond est d'abord signalée comme coupée.
+- **Avertissements des blocs** — survolez n'importe quel point d'un bloc marqué d'une ligne rouge pour voir pourquoi il est signalé.
+- **Marque d'un bloc sans nom** — ce réglage des Préférences montre désormais le ○ ou le ● lui-même plutôt que des mots.
+- **Largeur des menus** — les menus et sous-menus s'élargissent à leur plus long élément, et les noms ne sont plus coupés. Dans une fenêtre étroite, un sous-menu s'ouvre à l'intérieur au lieu de déborder. Les mots restés en anglais sur les écrans français et chinois sont traduits.
+- **Envoyer des statistiques d'utilisation (facultatif)** — activé, l'envoi a désormais lieu aussi quand vous quittez l'application, et toutes les 55 minutes pendant l'utilisation. La langue de l'appareil ne part plus qu'une fois par jour, avec quatre réglages (taille de l'interface, couleur d'accent, sauvegarde auto, curseur).
+- **Vitesse** — les images préparées pour la lecture reçoivent maintenant autant de mémoire que les cellulos et suivent l'allocation, et fermer un projet parmi plusieurs ouverts rend sa mémoire. Les calques à effets se dessinent plus légèrement.
+- Corrigé : sur Android, la mémoire restait réduite après un retour d'un autre écran, si bien que la première lecture n'avait qu'une image prête ; passer à un autre plan, ou à un espace vide entre les plans, pendant la saisie d'un texte effaçait les autres dessins de ce cellulo ; le ± du PAN ne bougeait pas d'un côté. Sur tablette, les zones à défilement horizontal affichent aussi une barre de défilement.
