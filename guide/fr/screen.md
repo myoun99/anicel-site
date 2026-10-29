@@ -92,3 +92,4 @@ Nouveau projet · Ouvrir un fichier · Ouvrir un dossier · Enregistrer · Enreg
 | Préférences | Saisie · Sauvegarde auto · Audio · Langue · Display · Mémoire → [Préférences](/fr/preferences) |
 | Panneaux | La liste des panneaux et la disposition ci-dessus |
 | À propos de Anicel | Version |
+| Envoyer un avis | Du texte seul, ou avec des captures d'écran et des vidéos — l'appareil et la version sont déjà remplis |

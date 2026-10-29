@@ -92,3 +92,4 @@ New project · Open File… · Open Folder · Save · Save as · Recent projects
 | Preferences | Input · Autosave · Audio · Language · Display · Memory → [Preferences](/en/preferences) |
 | Panels | The panel list and layout above |
 | About Anicel | Version |
+| Send Feedback | Text alone, or with screenshots and videos — the device and the build are filled in |
