@@ -289,6 +289,56 @@ section p { margin: 0 0 1rem; }
 .prose li { margin-bottom: 0.4rem; }
 .prose .updated { font-size: 0.85rem; color: var(--text-muted); }
 
+/* ---- updates: a rail of builds beside the one shown ------------------- */
+
+/* 유저 10-30: 「프로들처럼 왼쪽에 레일있어서 항목별로 눌러서 보는느낌 … 빌드버전마다」
+   — one build at a time, picked from a list of every build down the left.
+   The page is wider than the prose pages by the rail. */
+.wrap.wide { width: min(100%, calc(var(--measure) + 14rem + 2 * var(--gutter))); }
+
+.updates { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 0 3rem; align-items: start; }
+
+.build-rail {
+  position: sticky;
+  top: 1.5rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  margin: 0;
+  padding: 0 1rem 0 0;
+  list-style: none;
+  border-right: 1px solid var(--line);
+}
+
+.build-rail a {
+  display: block;
+  padding: 0.5rem 0;
+  line-height: 1.4;
+  text-decoration: none;
+  color: var(--text-muted);
+}
+
+.build-rail b { display: block; font-weight: 600; }
+.build-rail small { display: block; font-size: 0.8rem; }
+.build-rail a:hover { color: var(--text); }
+.build-rail a[aria-current="page"] { color: var(--mark); }
+
+.build-shown h2 { margin: 0 0 1rem; font-size: 1.25rem; }
+
+/* A phone has no room beside the notes: the builds run across the top. */
+@media (max-width: 44rem) {
+  .updates { grid-template-columns: 1fr; gap: 1.25rem; }
+  .build-rail {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.5rem;
+    max-height: none;
+    padding: 0 0 0.75rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
 /* ---- footer ---------------------------------------------------------- */
 
 .site-foot {

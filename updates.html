@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="wrap">
+<div class="wrap wide">
   <header class="site-head">
     <a class="wordmark" href="./">Anicel</a>
     <nav class="site-nav">
@@ -36,7 +36,10 @@
         <span data-lang="fr">Mises à jour</span>
         <span data-lang="zhHans">更新记录</span>
       </p>
-      <div class="prose" id="builds"></div>
+      <div class="updates">
+        <ul class="build-rail" id="build-rail"></ul>
+        <div class="prose build-shown" id="builds"></div>
+      </div>
     </section>
   </main>
 
@@ -77,7 +80,9 @@
   // Each build's notes are the very file the app shows in its launch window
   // (assets/launch/<language>/whats_new.md), copied here by the release
   // round under launch/<build>/ — written once, read in both places.
-  // launch/builds.json lists the builds, newest first.
+  // launch/builds.json lists the builds, newest first: the rail lists them
+  // all, and one is shown beside it — the one #build-<n> names, or the
+  // newest (유저 10-30: 「왼쪽에 레일 … 빌드버전마다」).
   const { LANGS, render, fetchText } = window.AnicelLaunch;
   const BUILD = { ja: 'ビルド', ko: '빌드', en: 'Build', fr: 'Build', zhHans: '版本' };
   const NONE = {
@@ -89,6 +94,7 @@
   };
 
   (async () => {
+    const rail = document.getElementById('build-rail');
     const root = document.getElementById('builds');
     let builds = [];
     try {
@@ -99,15 +105,40 @@
       root.innerHTML = '<p>' + LANGS.map((l) => `<span data-lang="${l}">${NONE[l]}</span>`).join('') + '</p>';
       return;
     }
-    const parts = await Promise.all(builds.map(async (b) => {
-      const notes = await Promise.all(LANGS.map((l) => fetchText(`launch/${b.n}/${l}/whats_new.md`)));
-      const when = new Date(`${b.date}T00:00:00`);
-      const head = LANGS.map((l) =>
-        `<span data-lang="${l}">${BUILD[l]} ${b.n} · ${when.toLocaleDateString(DATE[l], { year: 'numeric', month: 'long', day: 'numeric' })}</span>`).join('');
-      const body = LANGS.map((l, i) => (notes[i] ? `<div data-lang="${l}">${render(notes[i])}</div>` : '')).join('');
-      return `<h2 id="build-${b.n}">${head}</h2>${body}`;
-    }));
-    root.innerHTML = parts.join('');
+    const dayOf = (b, l) => new Date(`${b.date}T00:00:00`)
+      .toLocaleDateString(DATE[l], { year: 'numeric', month: 'long', day: 'numeric' });
+    rail.innerHTML = builds.map((b) =>
+      `<li><a href="#build-${b.n}" data-build="${b.n}">` +
+      LANGS.map((l) => `<span data-lang="${l}"><b>${BUILD[l]} ${b.n}</b><small>${dayOf(b, l)}</small></span>`).join('') +
+      '</a></li>').join('');
+
+    // Each build's notes are fetched once, when it is first shown; a pick
+    // made while an earlier one is still on its way is the one that shows.
+    const notes = new Map();
+    let shown = null;
+    const show = async (n, picked) => {
+      const b = builds.find((x) => String(x.n) === n) || builds[0];
+      shown = b.n;
+      rail.querySelectorAll('a').forEach((a) => {
+        if (a.dataset.build === String(b.n)) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
+      if (!notes.has(b.n)) {
+        notes.set(b.n, Promise.all(LANGS.map((l) => fetchText(`launch/${b.n}/${l}/whats_new.md`))));
+      }
+      const texts = await notes.get(b.n);
+      if (shown !== b.n) return;
+      const head = LANGS.map((l) => `<span data-lang="${l}">${BUILD[l]} ${b.n} · ${dayOf(b, l)}</span>`).join('');
+      const body = LANGS.map((l, i) => (texts[i] ? `<div data-lang="${l}">${render(texts[i])}</div>` : '')).join('');
+      root.innerHTML = `<h2>${head}</h2>${body}`;
+      // Picked far down a long build's notes: the next starts at its top.
+      if (picked && root.getBoundingClientRect().top < 0) {
+        window.scrollTo({ top: window.scrollY + root.getBoundingClientRect().top - 24 });
+      }
+    };
+    const named = () => (location.hash.match(/^#build-(\d+)$/) || [])[1];
+    window.addEventListener('hashchange', () => show(named(), true));
+    show(named(), false);
   })();
 </script>
 
