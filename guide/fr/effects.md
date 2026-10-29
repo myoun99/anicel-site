@@ -25,7 +25,7 @@ Sélectionnez un calque et ajoutez des effets depuis le bouton **Fx** de la time
 | **Flou gaussien** | Flou · Dimensions du flou (Horizontale et verticale / Horizontale / Verticale) · **Répéter les pixels du contour** (activé, les bords du canevas restent pleins au lieu de devenir transparents) |
 | **Flou radial** | Quantité · Type (**Rotation** / **Zoom**) · Centre (faites glisser la croix sur le canevas) · Anticrénelage (Optimal / Brouillon) |
 | **Flou directionnel** | Direction (angle) · Longueur du flou |
-| **Flou objectif appareil photo** | Rayon du flou (0–500) · Forme (Triangle – Décagone ; Carré au départ) · Arrondi · Format · Rotation · Frange de diffraction (un anneau lumineux seulement sur son bord) · Répéter les pixels du contour |
+| **Flou d'objectif** | Rayon du flou (0–500) · Forme (Triangle – Décagone ; Carré au départ) · Arrondi · Format · Rotation · Frange de diffraction (un anneau lumineux seulement sur son bord) · Répéter les pixels du contour |
 | **Masquage par couleur** | Opération (**Masquer** : efface la couleur choisie / **Conserver** : ramène la couleur choisie parmi ce que la clé juste avant a effacé) · Couleur de la clé · Tolérance · Quantité |
 | **Numéro de cellulo** | Imprime un numéro de cellulo (A1 …) sur le dessin · Position · Échelle · Encre (animation · storyboard · image seulement) |
 

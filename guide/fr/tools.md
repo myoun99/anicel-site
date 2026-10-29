@@ -55,7 +55,7 @@ Quand vous choisissez un outil, la **Bibliothèque d'outils** (ses types) et les
 | ![](img/tool-fill-library.png ':class=panel') | ![](img/tool-fill-settings.png ':class=panel') |
 
 - **Déplier** — élargit la zone remplie pour remplir sous le trait.
-- **Fermeture des trous** — considère comme fermé un trait avec de petites coupures.
+- **Colmatage** — considère comme fermé un trait avec de petites coupures.
 - **Remplir au-delà du canevas** — désactivé, une zone ouverte sur le bord du papier n'est pas remplie.
 
 ## Texte
