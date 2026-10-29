@@ -24,9 +24,9 @@ Elle fonctionne sur les calques d'animation, storyboard et direction.
 
 | Boutons du haut | Ce qu'ils choisissent |
 |---|---|
-| **Blocks** / **Frames** | Si un cran = un dessin ou une image |
-| **Colors** / **Images** | Fantômes en couleurs fixes / dans les couleurs propres des dessins |
-| **In place** (par défaut) / **On top** | Glissés juste sous le dessin de chaque calque (couverts par les calques au-dessus, en suivant la fusion, le dossier et l'écrêtage de ce calque) / au-dessus de tous les calques |
+| **Blocs** / **Images** | Si un cran = un dessin ou une image |
+| **Couleurs** / **Dessins** | Fantômes en couleurs fixes / dans les couleurs propres des dessins |
+| **Sur place** (par défaut) / **Au-dessus** | Glissés juste sous le dessin de chaque calque (couverts par les calques au-dessus, en suivant la fusion, le dossier et l'écrêtage de ce calque) / au-dessus de tous les calques |
 | Cercles rouge · vert | Les couleurs des dessins d'avant et d'après, avec Colors |
 
 ## Pour voir un autre calque en transparence
