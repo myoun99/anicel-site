@@ -340,6 +340,7 @@ section p { margin: 0 0 1rem; }
 .build-rail a[aria-current="page"] { color: var(--mark); }
 
 .build-shown h2 { margin: 0 0 1rem; font-size: 1.25rem; }
+.build-shown [data-lang] > h3:first-child { display: none; }
 
 /* A phone has no room beside the notes: the builds run across the top. */
 @media (max-width: 44rem) {
