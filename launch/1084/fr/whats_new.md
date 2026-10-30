@@ -1,0 +1,14 @@
+## Nouveautés de cette version
+
+- **Dessiner sur iPhone et iPad** — un trait dessiné sur une image vide ne s'affichait pas pendant le dessin et n'apparaissait qu'après être passé à une autre image et revenu. Corrigé.
+- **Fenêtre Nouveau plan** — le ＋ de la pastille des plans et son raccourci ouvrent une fenêtre pour choisir le nom et la taille du canevas. La taille par défaut est A4 à 200 dpi (2340 × 1654), et un nouveau plan ne reprend plus la taille du plan ouvert. Créer un plan lié ouvre la même fenêtre, avec la taille verrouillée sur celle du plan d'origine.
+- **Lignes fixes du conte** — le haut de la colonne d'action de chaque case écrit désormais les mouvements de caméra (FIX, PAN, T.U, T.B, 回転) avec leur durée (secondes + images), et les transitions comme O.L, F.I et F.O. Un O.L s'écrit sur le plan qui le précède, comme « c1 × c2 カットO.L (1+0) ». Désactivez-les avec Texte fixe dans le Format de la feuille de conte. Une caméra qui ne fait que tourner s'écrit maintenant 回転 au lieu de PAN.
+- **Aimantation des clés du graphe** — avec le bouton Aimanter de la rangée d'outils du graphe d'en-tête, une clé déplacée s'aimante aux temps et aux valeurs des autres clés, à la tête de lecture, et au début et à la fin du plan. Maintenir Ctrl (⌘) pendant le glisser fait l'inverse.
+- **Export Script AE** — l'onglet Script AE de la fenêtre d'export écrit les cellulos en PNG avec un .jsx qui monte les compositions une fois lancé dans After Effects, et le son du plan en WAV.
+- **Fusion de blocs** — les blocs d'une rangée de conte se fusionnent aussi (cette rangée dans ce plan seulement). Une case de conte qui a des rangées de conte synchronisées se fusionne avec elles.
+- **Champs numériques** — le nombre d'images, le numéro de départ du nommage automatique, ainsi que le décalage du dialogue et les images par caractère de la fenêtre SE se règlent tous dans le même champ numérique, en glissant, avec ± ou au crayon. En secondes + images, les images au-delà des fps passent aux secondes.
+- **Zoom à deux doigts** — écartez ou pincez deux doigts sur les images de la timeline pour zoomer.
+- **Volume total de la rangée S** — le volume total de la rangée S se règle aussi depuis le bouton haut-parleur.
+- **Premiers réglages** — la fenêtre du premier lancement fait aussi choisir l'apparence (Sombre ou Clair).
+- **Vitesse** — lire ou parcourir avec toutes les pistes dépliées est maintenant aussi léger que repliées, et zoomer la timeline à la suite saccade moins. Dessiner sur un calque déplacé, agrandi ou retourné est aussi plus léger.
+- Corrigé : après un changement de couleur d'accent, certains boutons gardaient l'ancienne couleur ; les transitions ne suivaient pas un plan pendant qu'on le glissait ; avec le panneau du conte replié, ouvrir un graphe ne redimensionnait pas la rangée repliée ; à des zooms comme 125 % ou 150 %, les bords des rangées de dossier, de fusion et de masque se décalaient d'un pixel ou débordaient sur le fond.
