@@ -275,6 +275,9 @@ section p { margin: 0 0 1rem; }
 .platforms td { padding: 0.6rem 0; border-bottom: 1px solid var(--line); vertical-align: baseline; }
 .platforms tr:first-child td { border-top: 1px solid var(--line); }
 .platforms td.os { width: 8.5rem; font-weight: 600; }
+.platforms a.primary { font-weight: 600; }
+.platforms details.held summary { cursor: pointer; color: var(--text-muted); font-size: 0.85rem; }
+.platforms details.held a { display: inline-block; margin-top: 0.4rem; }
 .platforms td:last-child { text-align: right; color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
 @media (max-width: 36rem) {
   .platforms td.os { width: 5.5rem; }
