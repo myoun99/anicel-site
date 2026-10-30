@@ -153,6 +153,7 @@ section p { margin: 0 0 1rem; }
 .note { font-size: 0.9rem; color: var(--text-muted); }
 .note h3 { margin: 1.5rem 0 0.5rem; font-size: 0.95rem; color: var(--text); }
 .note p { margin: 0 0 0.6rem; }
+.notice { margin: 0.75rem 0 1rem; padding: 0.5rem 0.75rem; border-left: 3px solid var(--mark); font-size: 0.9rem; color: var(--text); }
 
 /* ---- the production line --------------------------------------------- */
 
