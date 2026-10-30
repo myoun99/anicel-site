@@ -333,11 +333,11 @@
     <section id="download">
       <h2><span data-lang="ja">ダウンロード</span><span data-lang="ko">다운로드</span><span data-lang="en">Download</span><span data-lang="fr">Téléchargement</span><span data-lang="zhHans">下载</span></h2>
       <p>
-        <span data-lang="ja">Windows・macOS・Android・Linux 版は下のリンクから直接ダウンロードできます。iPad・iPhone 版は TestFlight から入手できます。ファイルはビルドのたびに新しくなります。</span>
-        <span data-lang="ko">Windows · macOS · Android · Linux 판은 아래 링크에서 바로 받습니다. iPad · iPhone 판은 TestFlight 에서 받습니다. 파일은 빌드가 나올 때마다 새것으로 바뀝니다.</span>
-        <span data-lang="en">Download the Windows, macOS, Android and Linux versions straight from the links below; get the iPad and iPhone version through TestFlight. The files are replaced with every build.</span>
-        <span data-lang="fr">Les versions Windows, macOS, Android et Linux se téléchargent directement depuis les liens ci-dessous ; la version iPad et iPhone s'obtient via TestFlight. Les fichiers sont remplacés à chaque build.</span>
-        <span data-lang="zhHans">Windows、macOS、Android 和 Linux 版可从下方链接直接下载，iPad 和 iPhone 版通过 TestFlight 获取。每次出新版本时文件都会更新。</span>
+        <span data-lang="ja">Windows・macOS・Linux 版は下のリンクから直接ダウンロードできます。Android 版は Google Play、iPad・iPhone 版は TestFlight から入手できます。ファイルはビルドのたびに新しくなります。</span>
+        <span data-lang="ko">Windows · macOS · Linux 판은 아래 링크에서 바로 받습니다. Android 판은 Google Play, iPad · iPhone 판은 TestFlight 에서 받습니다. 파일은 빌드가 나올 때마다 새것으로 바뀝니다.</span>
+        <span data-lang="en">Download the Windows, macOS and Linux versions straight from the links below; get the Android version through Google Play and the iPad and iPhone version through TestFlight. The files are replaced with every build.</span>
+        <span data-lang="fr">Les versions Windows, macOS et Linux se téléchargent directement depuis les liens ci-dessous ; la version Android s'obtient via Google Play et la version iPad et iPhone via TestFlight. Les fichiers sont remplacés à chaque build.</span>
+        <span data-lang="zhHans">Windows、macOS 和 Linux 版可从下方链接直接下载，Android 版通过 Google Play 获取，iPad 和 iPhone 版通过 TestFlight 获取。每次出新版本时文件都会更新。</span>
       </p>
       <p class="latest" id="latest"></p>
 
@@ -358,11 +358,7 @@
           <td>.zip</td>
         </tr>
         <tr>
-          <td class="os" rowspan="2">Android</td>
-          <td><a data-get="android"><span data-lang="ja">ダウンロード</span><span data-lang="ko">다운로드</span><span data-lang="en">Download</span><span data-lang="fr">Télécharger</span><span data-lang="zhHans">下载</span></a></td>
-          <td>.apk</td>
-        </tr>
-        <tr>
+          <td class="os">Android</td>
           <td>
             <span class="play-join">
               <span class="play-join-name">Google Play</span>
@@ -397,11 +393,11 @@
                 <span data-lang="zhHans">从 Play 安装的应用与其他应用一样，通过 Play 商店更新。如需立即更新，请打开「3 从商店安装」并点按「更新」。新版本到达 Play 的时间可能晚于本站。</span>
               </p>
               <p>
-                <span data-lang="ja">Play ストアでインストールできないときは、このサイトの .apk を先に削除してください。削除するとアプリの中のデータも消えるので、必要な作業は先に書き出しておいてください。</span>
-                <span data-lang="ko">Play 스토어에서 설치가 안 되면 이 사이트의 .apk 를 먼저 지워 주세요. 지우면 앱 안의 데이터도 사라지니 필요한 작업은 먼저 내보내 두세요.</span>
-                <span data-lang="en">If the Play Store won't install it, remove the .apk from this site first. Removing it also deletes what's inside the app, so export your work before you do.</span>
-                <span data-lang="fr">Si le Play Store refuse l'installation, supprimez d'abord le .apk de ce site. La suppression efface aussi ce qui se trouve dans l'application : exportez votre travail avant.</span>
-                <span data-lang="zhHans">如果 Play 商店无法安装，请先卸载从本站下载的 .apk。卸载会同时删除应用内的数据，请先导出您的作品。</span>
+                <span data-lang="ja">以前このサイトの .apk を入れた端末で Play ストアからインストールできないときは、その .apk を先に削除してください。削除するとアプリの中のデータも消えるので、必要な作業は先に書き出しておいてください。</span>
+                <span data-lang="ko">예전에 이 사이트의 .apk 를 설치한 기기에서 Play 스토어 설치가 안 되면 그 .apk 를 먼저 지워 주세요. 지우면 앱 안의 데이터도 사라지니 필요한 작업은 먼저 내보내 두세요.</span>
+                <span data-lang="en">If the Play Store won't install it on a device that has the .apk this site used to offer, remove that first. Removing it also deletes what's inside the app, so export your work before you do.</span>
+                <span data-lang="fr">Si le Play Store refuse l'installation sur un appareil qui a le .apk que proposait ce site, supprimez-le d'abord. La suppression efface aussi ce qui se trouve dans l'application : exportez votre travail avant.</span>
+                <span data-lang="zhHans">如果在装过本站此前提供的 .apk 的设备上 Play 商店无法安装，请先卸载该 .apk。卸载会同时删除应用内的数据，请先导出您的作品。</span>
               </p>
             </div>
           </td>
@@ -459,7 +455,6 @@
     windows: DRIVE,
     windowsArm64: DRIVE,
     macOS: DRIVE,
-    android: DRIVE,
     linux: DRIVE,
     testflight: 'https://testflight.apple.com/join/3cpY9P1S',
     // Play's closed test (store-distribution-plan-Q4, 유저 10-30 「a로하자」):
