@@ -354,6 +354,11 @@
           <td>.apk</td>
         </tr>
         <tr>
+          <td>Google Play</td>
+          <td><a data-get="testers"><span data-lang="ja">テスターに参加</span><span data-lang="ko">테스터 참가</span><span data-lang="en">Join the test</span><span data-lang="fr">Rejoindre le test</span><span data-lang="zhHans">参加测试</span></a></td>
+          <td><a href="#play-test"><span data-lang="ja">参加方法</span><span data-lang="ko">참가 방법</span><span data-lang="en">How to join</span><span data-lang="fr">Comment participer</span><span data-lang="zhHans">参加方法</span></a></td>
+        </tr>
+        <tr>
           <td>Linux</td>
           <td><a data-get="linux"><span data-lang="ja">ダウンロード</span><span data-lang="ko">다운로드</span><span data-lang="en">Download</span><span data-lang="fr">Télécharger</span><span data-lang="zhHans">下载</span></a></td>
           <td>.tar.gz</td>
@@ -364,6 +369,16 @@
           <td><a data-get="howto"><span data-lang="ja">入手方法</span><span data-lang="ko">받는 방법</span><span data-lang="en">How to install</span><span data-lang="fr">Comment l'installer</span><span data-lang="zhHans">安装方法</span></a></td>
         </tr>
       </table>
+
+      <div class="note" id="play-test">
+        <p>
+          <span data-lang="ja">Android 版を Google Play で公開するには、テスターが 12 人以上、14 日間続けて参加する必要があります。参加していただけると、Play での公開に直接つながります。① 「テスターに参加」から Google グループに参加します(Play ストアで使っている Google アカウントで)。② <a data-get="playtest">テストのページ</a>でテスターになり、Play ストアからインストールします。③ 14 日間はテストから抜けず、アプリも削除しないでください。テストのページは、テスト版の審査が終わってから開きます。</span>
+          <span data-lang="ko">안드로이드 판을 Google Play 에 올리려면 테스터 12명 이상이 14일 동안 이어서 참가해야 합니다. 참가해 주시면 Play 출시에 직접 도움이 됩니다. ① 「테스터 참가」에서 Google 그룹에 가입합니다(Play 스토어에서 쓰는 Google 계정으로). ② <a data-get="playtest">테스트 페이지</a>에서 테스터가 되고 Play 스토어에서 설치합니다. ③ 14일 동안 테스트에서 나가지 말고 앱도 지우지 말아 주세요. 테스트 페이지는 테스트 버전의 심사가 끝난 뒤에 열립니다.</span>
+          <span data-lang="en">Publishing the Android version on Google Play takes at least 12 testers staying in for 14 days in a row, so joining helps it get there directly. ① Join the Google group through “Join the test”, with the Google account you use on the Play Store. ② On the <a data-get="playtest">test page</a>, become a tester and install from the Play Store. ③ Please stay in the test and keep the app installed for the 14 days. The test page opens once the test build has passed review.</span>
+          <span data-lang="fr">Pour publier la version Android sur Google Play, au moins 12 testeurs doivent participer 14 jours d'affilée : votre participation y contribue directement. ① Rejoignez le groupe Google via « Rejoindre le test », avec le compte Google de votre Play Store. ② Sur la <a data-get="playtest">page du test</a>, devenez testeur et installez l'application depuis le Play Store. ③ Restez dans le test et gardez l'application installée pendant ces 14 jours. La page du test s'ouvre une fois la version de test validée.</span>
+          <span data-lang="zhHans">Android 版要在 Google Play 上架，需要至少 12 名测试者连续参加 14 天。您的参加会直接帮助上架。① 通过「参加测试」加入 Google 群组（使用您在 Play 商店登录的 Google 账号）。② 在<a data-get="playtest">测试页面</a>成为测试者，然后从 Play 商店安装。③ 这 14 天内请不要退出测试，也不要卸载应用。测试页面会在测试版通过审核后开放。</span>
+        </p>
+      </div>
 
       <div class="note" id="pre-release"></div>
     </section>
@@ -397,6 +412,11 @@
     linux: DRIVE,
     testflight: 'https://testflight.apple.com/join/3cpY9P1S',
     howto: 'https://drive.google.com/file/d/1bYQeF5heBR-Sj6c1TyS4s4_MlLSv62KX/view',
+    // Play's closed test (store-distribution-plan-Q4, 유저 10-30 「a로하자」):
+    // joining the Google group makes a tester, and the test page lets them
+    // opt in and install once the test build has passed review.
+    testers: 'https://groups.google.com/g/anicel-testers',
+    playtest: 'https://play.google.com/apps/testing/com.myoun.anicel',
   };
   const link = () => document.querySelectorAll('[data-get]').forEach((a) => { a.href = GET[a.dataset.get]; });
   link();
