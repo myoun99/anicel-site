@@ -139,6 +139,40 @@
       transform: translateX(-50%);
     }
   }
+  /* A phone (유저 10-30 「가이드페이지 폰으로여니 왼쪽 항목들이 안보여」):
+     the theme slides the left menu — and the language buttons, which it
+     moves into the menu there — off the screen, behind a see-through ☰ in
+     the bottom-left corner, where a phone browser keeps its own bar. As
+     most guide sites do, the menu opens from a bar across the top, named
+     in the page's language. */
+  @media screen and (max-width: 768px) {
+    .sidebar-toggle,
+    body.close .sidebar-toggle {
+      top: 0;
+      bottom: auto;
+      left: 0;
+      right: 0;
+      width: auto;
+      height: 44px;
+      padding: 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, .97);
+      border-bottom: 1px solid #e5e8eb;
+      transition: none;
+    }
+    .sidebar-toggle::after { content: '目次'; color: #34495e; font-size: 15px; }
+    html:lang(ko) .sidebar-toggle::after { content: '목차'; }
+    html:lang(en) .sidebar-toggle::after { content: 'Contents'; }
+    html:lang(fr) .sidebar-toggle::after { content: 'Sommaire'; }
+    html:lang(zh-Hans) .sidebar-toggle::after { content: '目录'; }
+    .sidebar { padding-top: 44px; }
+    .content { padding-top: 64px; }
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3 { scroll-margin-top: 52px; }
+  }
 </style>
 </head>
 <body>
