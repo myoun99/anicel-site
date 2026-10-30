@@ -153,7 +153,6 @@ section p { margin: 0 0 1rem; }
 .note { font-size: 0.9rem; color: var(--text-muted); }
 .note h3 { margin: 1.5rem 0 0.5rem; font-size: 0.95rem; color: var(--text); }
 .note p { margin: 0 0 0.6rem; }
-.notice { margin: 0.75rem 0 1rem; padding: 0.5rem 0.75rem; border-left: 3px solid var(--mark); font-size: 0.9rem; color: var(--text); }
 
 /* ---- the production line --------------------------------------------- */
 
@@ -275,9 +274,6 @@ section p { margin: 0 0 1rem; }
 .platforms td { padding: 0.6rem 0; border-bottom: 1px solid var(--line); vertical-align: baseline; }
 .platforms tr:first-child td { border-top: 1px solid var(--line); }
 .platforms td.os { width: 8.5rem; font-weight: 600; }
-.platforms a.primary { font-weight: 600; }
-.platforms details.held summary { cursor: pointer; color: var(--text-muted); font-size: 0.85rem; }
-.platforms details.held a { display: inline-block; margin-top: 0.4rem; }
 .platforms td:last-child { text-align: right; color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
 @media (max-width: 36rem) {
   .platforms td.os { width: 5.5rem; }
