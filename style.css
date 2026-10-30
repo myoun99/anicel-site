@@ -274,10 +274,10 @@ section p { margin: 0 0 1rem; }
 .platforms { width: 100%; margin: 1.25rem 0 1.5rem; border-collapse: collapse; font-size: 0.95rem; }
 .platforms td { padding: 0.6rem 0; border-bottom: 1px solid var(--line); vertical-align: baseline; }
 .platforms tr:first-child td { border-top: 1px solid var(--line); }
-.platforms td:first-child { width: 8.5rem; font-weight: 600; }
+.platforms td.os { width: 8.5rem; font-weight: 600; }
 .platforms td:last-child { text-align: right; color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
 @media (max-width: 36rem) {
-  .platforms td:first-child { width: 5.5rem; }
+  .platforms td.os { width: 5.5rem; }
 }
 
 /* ---- prose (privacy · updates) --------------------------------------- */
