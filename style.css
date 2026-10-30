@@ -283,6 +283,15 @@ section p { margin: 0 0 1rem; }
 .platforms tr:first-child td { border-top: 1px solid var(--line); }
 .platforms td.os { width: 8.5rem; font-weight: 600; }
 .platforms td:last-child { text-align: right; color: var(--text-muted); font-size: 0.85rem; white-space: nowrap; }
+.platforms .play-join { display: flex; flex-wrap: wrap; gap: 0.35rem 1.25rem; }
+.platforms .play-join-name { color: var(--text-muted); }
+.platforms tr.fold-body td { padding: 0.75rem 0 0.25rem; text-align: left; white-space: normal; font-size: inherit; }
+.platforms .fold-body ol { margin: 0 0 0.6rem; padding-left: 1.25rem; }
+.platforms .fold-body li { margin-bottom: 0.3rem; }
+.fold { padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
+.fold::after { content: " ▾"; }
+.fold[aria-expanded="true"]::after { content: " ▴"; }
+.fold:hover { color: var(--mark); }
 @media (max-width: 36rem) {
   .platforms td.os { width: 5.5rem; }
 }
