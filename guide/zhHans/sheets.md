@@ -14,8 +14,14 @@
 
 ## 摄影表
 
-- 在时间轴上修改画稿、台词或摄影机，摄影表会当场写好。[颜色标签](/zhHans/layer-labels) 为 Inbetween 的行进入 CELL 栏；其他绘画行进入 ACTION 栏。
-- SE 栏写入 [SE](/zhHans/sound-layers) 的名称和台词；CAM 栏写入摄影机关键帧的名称和运动（PAN · T.U · T.B），以及 [Direction](/zhHans/camera-section) 和 [Transition](/zhHans/camera-section) 行。
+时间轴与摄影表完全同步。一边实时查看摄影表一边工作。
+
+| 时间轴的栏 | 在这里做什么 | 写到摄影表上的内容 |
+|---|---|---|
+| **ACTION** | 画画 | ACTION 栏（[颜色标签](/zhHans/layer-labels) 为 Inbetween 的行进入 CELL 栏） |
+| **SE** | 制作写有 [SE](/zhHans/sound-layers) 名称和台词的块 | SE 栏写入名称和台词 |
+| **CAM** | 编辑摄影机和摄影指示 | CAM 栏写入摄影机关键帧的名称和运动（PAN · T.U · T.B），以及 [Direction](/zhHans/camera-section) 和 [Transition](/zhHans/camera-section) 行 |
+
 - 哪些行放上摄影表，用各图层行上的摄影表箭头设定。→ [图层一览](/zhHans/layers)
 - 可以在两种显示之间切换：**标注表**（用重复、停格（止め）等文字缩写） / **数据表**（一格一格，与导出完全一致）。
 
@@ -32,7 +38,13 @@
 
 ![](img/conte-paper.png)
 
-- [分镜图层](/zhHans/conte-layer) 的一个块就是用纸上的一格。在格子的画面区域里画，就成为该镜头的分镜画。
+[分镜面板](/zhHans/storyboard) 的时间轴与分镜用纸完全同步。分镜工作不用切换到时间轴面板，在分镜面板中完成。
+
+| 分镜面板的栏 | 在这里做什么 | 写到分镜用纸上的内容 |
+|---|---|---|
+| **Conte** | 用 [分镜图层](/zhHans/conte-layer) 的块分格 | 一个块就是用纸上的一格。在格子的画面区域里画，就成为该镜头的分镜画 |
+| **CAM** | 编辑摄影机和转场 | 格内的摄影机方框，内容栏的运动（PAN · T.U · FIX）和转场（FI · FO · O.L） |
+| **SE** | 制作台词块 | 台词栏写入名称和台词 |
 
 **分镜用纸格式**
 

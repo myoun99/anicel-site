@@ -14,8 +14,14 @@ Your work is printed on the paper forms as you go, so you work while seeing it *
 
 ## Timesheet
 
-- Change drawings, dialogue or the camera on the timeline and the sheet is written on the spot. Rows whose [color label](/en/layer-labels) is Inbetween go into the CELL column; other drawing rows go into the ACTION column.
-- The SE column gets the [SE](/en/sound-layers) names and dialogue; the CAM column gets the camera keys' names and moves (PAN · T.U · T.B) and the [direction](/en/camera-section) and [transition](/en/camera-section) rows.
+The timeline and the timesheet are fully in sync. You work with the timesheet live in front of you.
+
+| Timeline section | What you do there | What goes on the timesheet |
+|---|---|---|
+| **ACTION** | Draw | The ACTION column (the CELL column for rows whose [color label](/en/layer-labels) is Inbetween) |
+| **SE** | Make blocks with an [SE](/en/sound-layers)'s name and dialogue | Names and dialogue in the SE column |
+| **CAM** | Edit the camera and shooting directions | In the CAM column: the camera keys' names and moves (PAN · T.U · T.B), and the [direction](/en/camera-section) and [transition](/en/camera-section) rows |
+
 - Which rows go on the sheet is set with the sheet arrow on each layer row. → [Layers at a glance](/en/layers)
 - You can switch between two views: **Notation Sheet** (shortened with words such as repeat and *tome* (止め, a hold)) / **Data Sheet** (one cell at a time, exactly as exported).
 
@@ -32,7 +38,13 @@ Your work is printed on the paper forms as you go, so you work while seeing it *
 
 ![](img/conte-paper.png)
 
-- One block of the [storyboard layer](/en/conte-layer) is one panel of the sheet. Draw in a panel's picture area and it becomes that cut's conte drawing.
+The [Conte panel](/en/storyboard)'s timeline and the conte sheet are fully in sync. Storyboard work happens in the Conte panel, with no trip to the timeline panel.
+
+| Conte panel section | What you do there | What goes on the conte sheet |
+|---|---|---|
+| **Conte** | Divide panels with the blocks of the [storyboard layer](/en/conte-layer) | One block is one panel of the sheet. Draw in a panel's picture area and it becomes that cut's conte drawing |
+| **CAM** | Edit the camera and scene changes | The camera frames in the panel, and the moves (PAN · T.U · FIX) and scene changes (FI · FO · O.L) in the ACTION column |
+| **SE** | Make dialogue blocks | Names and dialogue in the dialogue column |
 
 **Conte sheet format**
 

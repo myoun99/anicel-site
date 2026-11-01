@@ -1,6 +1,6 @@
 # Camera · Direction · Transition
 
-时间轴顶部的 **CAM** 区段负责摄影机运动和转场。从上到下的顺序 **Camera · Transition · Direction** 是固定的。三者都会直接写进 [摄影表](/zhHans/sheets) 的 CAM 栏。
+时间轴顶部的 **CAM** 区段负责摄影机运动和转场。从上到下的顺序 **Camera · Transition · Direction** 是固定的。三者都会直接写进 [摄影表](/zhHans/sheets) 的 CAM 栏。摄影机和转场也会实时进入 [分镜用纸](/zhHans/sheets)。
 
 ![](img/timeline-cut2.png)
 

@@ -2,6 +2,8 @@
 
 The panel that **lines up the cuts** of the whole work. If the timeline is the inside of one cut, the Conte panel is the outside that joins cut to cut. It plays the cuts in a row even when their sizes differ. Switch to it with the tabs at the bottom of the timeline panel.
 
+The Conte panel's timeline and the [conte sheet](/en/sheets) are fully in sync. Storyboard work happens here, with no trip to the timeline panel. What you do on the Conte, CAM and SE rows goes onto the sheet on the spot.
+
 ![](img/storyboard.png)
 
 ## The rows of the Conte panel

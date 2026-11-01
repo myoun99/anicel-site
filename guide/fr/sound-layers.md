@@ -1,6 +1,6 @@
 # Calques son (SE)
 
-Le calque des bruitages et des dialogues. Calez-les sur les dessins grâce à leur forme d'onde ; les noms et les dialogues vont directement sur la [feuille de temps](/fr/sheets).
+Le calque des bruitages et des dialogues. Calez-les sur les dessins grâce à leur forme d'onde ; les noms et les dialogues vont directement sur la [feuille de temps et la feuille de conte](/fr/sheets).
 
 ![](img/sound.png)
 

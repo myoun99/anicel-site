@@ -1,6 +1,6 @@
 # Caméra, direction, transition
 
-La section **CAM** en haut de la timeline gère le mouvement de caméra et les changements de scène. Depuis le haut, l'ordre **caméra · transition · direction** est fixe. Les trois vont directement dans la colonne CAM de la [feuille de temps](/fr/sheets).
+La section **CAM** en haut de la timeline gère le mouvement de caméra et les changements de scène. Depuis le haut, l'ordre **caméra · transition · direction** est fixe. Les trois vont directement dans la colonne CAM de la [feuille de temps](/fr/sheets). La caméra et les transitions passent aussi sur la [feuille de conte](/fr/sheets) en temps réel.
 
 ![](img/timeline-cut2.png)
 

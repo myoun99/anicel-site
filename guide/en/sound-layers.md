@@ -1,6 +1,6 @@
 # Sound (SE) layers
 
-The layer for sound effects and dialogue. Time them against the drawings by their waveform; the names and dialogue go straight onto the [timesheet](/en/sheets).
+The layer for sound effects and dialogue. Time them against the drawings by their waveform; the names and dialogue go straight onto the [timesheet and the conte sheet](/en/sheets).
 
 ![](img/sound.png)
 

@@ -2,6 +2,8 @@
 
 Le panneau qui **aligne les plans** de toute l'œuvre. Si la timeline est l'intérieur d'un plan, le panneau Conte est l'extérieur qui relie les plans entre eux. Il lit les plans à la suite même quand leurs tailles diffèrent. On y passe avec les onglets en bas du panneau timeline.
 
+La timeline du panneau Conte et la [feuille de conte](/fr/sheets) sont entièrement synchronisées. Le travail de storyboard se fait ici, sans passer par le panneau timeline. Ce que vous faites sur les lignes Conte, CAM et SE s'écrit aussitôt sur la feuille.
+
 ![](img/storyboard.png)
 
 ## Les lignes du panneau Conte

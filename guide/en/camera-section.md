@@ -1,6 +1,6 @@
 # Camera, direction, transition
 
-The **CAM** section at the top of the timeline handles camerawork and scene changes. From the top, the order **camera · transition · direction** is fixed. All three go straight into the CAM column of the [timesheet](/en/sheets).
+The **CAM** section at the top of the timeline handles camerawork and scene changes. From the top, the order **camera · transition · direction** is fixed. All three go straight into the CAM column of the [timesheet](/en/sheets). The camera and transitions also go onto the [conte sheet](/en/sheets) in real time.
 
 ![](img/timeline-cut2.png)
 

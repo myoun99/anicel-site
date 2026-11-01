@@ -71,8 +71,8 @@
       </div>
       <div class="shots-track">
         <figure class="shot" style="--ar:1.778">
-          <img data-shot="overview" width="1920" height="1080" alt="">
-          <figcaption><span data-lang="ja">作業画面</span><span data-lang="ko">작업 화면</span><span data-lang="en">The workspace</span><span data-lang="fr">L'espace de travail</span><span data-lang="zhHans">工作界面</span></figcaption>
+          <img data-shot="overview-conte" width="1920" height="1080" alt="">
+          <figcaption><span data-lang="ja">コンテの作業画面 — コンテパネルとコンテ用紙が同期します</span><span data-lang="ko">콘티 작업 화면 — 콘티 패널과 콘티 용지가 동기화됩니다</span><span data-lang="en">The storyboard workspace — the Conte panel and the conte sheet in sync</span><span data-lang="fr">L'espace de travail du storyboard — le panneau Conte et la feuille de conte synchronisés</span><span data-lang="zhHans">分镜工作界面 — 分镜面板与分镜用纸同步</span></figcaption>
         </figure>
         <figure class="shot" style="--ar:0.884">
           <img data-shot="conte-paper" width="1358" height="1536" alt="" loading="lazy">
@@ -81,6 +81,10 @@
         <figure class="shot" style="--ar:3.062">
           <img data-shot="sound" width="2376" height="776" alt="" loading="lazy">
           <figcaption><span data-lang="ja">セリフ・効果音を波形を見ながら絵に合わせる</span><span data-lang="ko">대사 · 효과음을 파형을 보며 그림에 맞춥니다</span><span data-lang="en">Time dialogue and sound effects to the drawings by their waveform</span><span data-lang="fr">Calez dialogues et bruitages sur les dessins grâce à leur forme d'onde</span><span data-lang="zhHans">对着波形，让台词和音效与画面对上时间</span></figcaption>
+        </figure>
+        <figure class="shot" style="--ar:1.778">
+          <img data-shot="overview" width="1920" height="1080" alt="" loading="lazy">
+          <figcaption><span data-lang="ja">原画の作業画面 — タイムラインとタイムシートが同期します</span><span data-lang="ko">원화 작업 화면 — 타임라인과 타임시트가 동기화됩니다</span><span data-lang="en">The key animation workspace — the timeline and the timesheet in sync</span><span data-lang="fr">L'espace de travail de l'animation clé — la timeline et la feuille de temps synchronisées</span><span data-lang="zhHans">原画工作界面 — 时间轴与摄影表同步</span></figcaption>
         </figure>
         <figure class="shot" style="--ar:0.884">
           <img data-shot="timesheet" width="1358" height="1536" alt="" loading="lazy">
@@ -115,37 +119,47 @@
           </div>
           <div>
             <ul class="feats" data-lang="ja">
-              <li>コンテ用紙パネルで、出力されるそのままの姿を見ながら描きます。用紙の上に直接描くこともできます。</li>
-              <li>セリフはマイクでその場で録音するか、音声ファイルをタイムラインに置いて、絵とタイミングを合わせます。セリフはコンテ用紙のセリフ欄にそのまま入ります。</li>
-              <li>コンテパネルでカットを分け、O.L をかけ、再生して尺を確かめます。</li>
+              <li>コンテパネルのタイムラインとコンテ用紙パネルは完全に同期します。出力されるそのままの用紙を見ながら作業します。</li>
+              <li><b>カット欄</b> — カットが順に並びます。順番と尺はここで変え、再生するとカットを続けて見せます。</li>
+              <li><b>絵コンテレイヤー</b> — タイムラインパネルへ移らず、コンテパネルで作業します。ブロックひとつがコンテ用紙の1コマで、用紙のコマに直接描くこともできます。</li>
+              <li><b>CAM 欄</b> — カメラと画面転換(FI・FO・O.L)を編集します。作業した内容はすべてコンテ用紙にリアルタイムで入ります。</li>
+              <li><b>SE 欄</b> — セリフをマイクでその場で録音するか、音声ファイルを置いて、絵とタイミングを合わせます。作ったセリフはコンテ用紙のセリフ欄にそのまま記入されます。</li>
               <li>カットごとにカンバスサイズを別々に決められます。長い PAN の背景が必要なカットだけを広くする、といった使い方です。</li>
               <li>兼用カットは絵をひとつの素材として共有します。あるカットで直すとつながったカットにも反映され、タイミングはカットごとに決めます。</li>
             </ul>
             <ul class="feats" data-lang="ko">
-              <li>콘티 용지 패널에서 출력될 모습 그대로 보며 그립니다. 용지 위에 바로 그려도 됩니다.</li>
-              <li>대사는 마이크로 바로 녹음하거나 소리 파일을 타임라인에 놓아 그림과 타이밍을 맞춥니다. 대사는 콘티 용지의 대사 칸에 그대로 들어갑니다.</li>
-              <li>콘티 패널에서 컷을 나누고 O.L 을 걸고, 재생해서 길이를 봅니다.</li>
+              <li>콘티 패널의 타임라인과 콘티 용지 패널은 완전히 동기화됩니다. 출력될 모습 그대로의 용지를 보면서 작업합니다.</li>
+              <li><b>컷 란</b> — 컷이 순서대로 늘어섭니다. 순서와 길이를 여기서 바꾸고, 재생하면 컷을 이어서 보여 줍니다.</li>
+              <li><b>콘티 레이어</b> — 타임라인 패널로 옮겨 가지 않고 콘티 패널에서 작업합니다. 블록 하나가 콘티 용지의 한 칸이고, 용지의 칸에 바로 그려도 됩니다.</li>
+              <li><b>CAM 란</b> — 카메라와 화면 전환(FI · FO · O.L)을 편집합니다. 작업한 내용이 전부 콘티 용지에 실시간으로 들어갑니다.</li>
+              <li><b>SE 란</b> — 대사를 마이크로 바로 녹음하거나 소리 파일을 놓아 그림과 타이밍을 맞춥니다. 만든 대사는 콘티 용지의 대사 칸에 그대로 찍힙니다.</li>
               <li>컷마다 캔버스 크기를 따로 정합니다. 긴 PAN 배경이 필요한 컷만 넓게 만드는 식입니다.</li>
               <li>겸용컷은 그림을 하나의 소재로 같이 씁니다. 한 컷에서 고치면 이어진 컷에도 반영되고, 타이밍은 컷마다 따로 정합니다.</li>
             </ul>
             <ul class="feats" data-lang="en">
-              <li>Draw on the conte sheet panel, seeing it exactly as it will be exported — or draw right on the sheet.</li>
-              <li>Record dialogue with the microphone on the spot, or place sound files on the timeline, and time them to the drawings. The dialogue goes straight into the conte sheet's dialogue column.</li>
-              <li>Split cuts, add O.L overlaps and play the storyboard back to check its timing in the storyboard panel.</li>
+              <li>The Conte panel's timeline and the conte sheet panel are fully in sync. You work while seeing the sheet exactly as it will be exported.</li>
+              <li><b>Cut row</b> — the cuts line up in order. Change their order and length here; playback runs them one after another.</li>
+              <li><b>Storyboard layer</b> — work right in the Conte panel, with no trip to the timeline panel. One block is one panel of the conte sheet, and you can also draw right on the sheet.</li>
+              <li><b>CAM section</b> — edit the camera and scene changes (FI · FO · O.L). Everything you do here goes onto the conte sheet in real time.</li>
+              <li><b>SE section</b> — record dialogue with the microphone on the spot, or place sound files, and time them to the drawings. The dialogue you make is written straight into the conte sheet's dialogue column.</li>
               <li>Give each cut its own canvas size — make only the cut that needs a long PAN background wider.</li>
               <li>Linked cuts share their drawings as one source: fix a drawing in one cut and the fix shows in the cuts linked to it, while each cut keeps its own timing.</li>
             </ul>
             <ul class="feats" data-lang="fr">
-              <li>Dessinez dans le panneau de la feuille de conte en la voyant exactement telle qu'elle sera exportée — ou directement sur la feuille.</li>
-              <li>Enregistrez les dialogues au micro sur-le-champ, ou placez des fichiers son sur la timeline, et calez-les sur les dessins. Les dialogues vont directement dans la colonne dialogues de la feuille de conte.</li>
-              <li>Dans le panneau storyboard, découpez les plans, ajoutez des fondus enchaînés (O.L) et relisez le storyboard pour vérifier ses durées.</li>
+              <li>La timeline du panneau Conte et le panneau de la feuille de conte sont entièrement synchronisés. Vous travaillez en voyant la feuille exactement telle qu'elle sera exportée.</li>
+              <li><b>Ligne des plans</b> — les plans s'alignent dans l'ordre. Leur ordre et leur durée se changent ici, et la lecture les enchaîne.</li>
+              <li><b>Calque storyboard</b> — travaillez directement dans le panneau Conte, sans passer par le panneau timeline. Un bloc = une vignette de la feuille de conte, et vous pouvez aussi dessiner directement sur la feuille.</li>
+              <li><b>Section CAM</b> — modifiez la caméra et les changements de scène (FI · FO · O.L). Tout ce que vous y faites passe sur la feuille de conte en temps réel.</li>
+              <li><b>Section SE</b> — enregistrez les dialogues au micro sur-le-champ, ou placez des fichiers son, et calez-les sur les dessins. Les dialogues créés s'écrivent tels quels dans la colonne dialogues de la feuille de conte.</li>
               <li>Donnez à chaque plan sa propre taille de canevas — n'élargissez que le plan qui a besoin d'un long décor de PAN.</li>
               <li>Les plans liés partagent leurs dessins comme une seule source : corrigez un dessin dans un plan et la correction apparaît dans les plans liés, chaque plan gardant son propre timing.</li>
             </ul>
             <ul class="feats" data-lang="zhHans">
-              <li>在分镜用纸面板上，一边看导出后的样子一边画，也可以直接画在用纸上。</li>
-              <li>台词可以用麦克风当场录音，也可以把声音文件放到时间轴上，与画面对上时间。台词会直接进入分镜用纸的台词栏。</li>
-              <li>在分镜面板中分镜头、加 O.L（叠化），播放确认长度。</li>
+              <li>分镜面板的时间轴与分镜用纸面板完全同步。一边看与导出一致的用纸一边工作。</li>
+              <li><b>镜头栏</b> — 镜头按顺序排列。在这里调整顺序和长度，播放时连续放映。</li>
+              <li><b>分镜图层</b> — 不用切换到时间轴面板，直接在分镜面板中工作。一个块就是分镜用纸上的一格，也可以直接画在用纸上。</li>
+              <li><b>CAM 栏</b> — 编辑摄影机和转场（FI · FO · O.L）。在这里做的一切都会实时进入分镜用纸。</li>
+              <li><b>SE 栏</b> — 台词可以用麦克风当场录音，也可以放入声音文件，与画面对上时间。做好的台词会直接写进分镜用纸的台词栏。</li>
               <li>每个镜头可以有自己的画布尺寸，比如只把需要长 PAN 背景的镜头加宽。</li>
               <li>链接镜头把画稿作为同一份素材共用：在一个镜头里修改，与它链接的镜头也会反映，时间则由各个镜头分别设定。</li>
             </ul>
@@ -158,8 +172,10 @@
           </div>
           <div>
             <ul class="feats" data-lang="ja">
-              <li>絵を変えると、タイムシートの ACTION 欄にその場で記入されます。シートを見ながらタイミングを取れます。</li>
-              <li>音の波形を見ながらタイミングを合わせ、SE の名前とセリフはシートの SE 欄に記入されます。</li>
+              <li>タイムラインとタイムシートは完全に同期します。タイムシートをリアルタイムで見ながら作業します。</li>
+              <li><b>ACTION 欄</b> — 絵を描きます。絵を変えると、タイムシートの ACTION 欄にそのまま記入されます。</li>
+              <li><b>SE 欄</b> — SE の名前とセリフを決めたブロックを作り、波形を見ながらタイミングを合わせます。タイムシートの SE 欄にそのまま記入されます。</li>
+              <li><b>CAM 欄</b> — カメラと撮影指示を編集します。タイムシートの CAM 欄にそのまま記入されます。</li>
               <li>シートにも紙のように直接書き込めます。</li>
               <li>中割りマーク(○・●)をコマごとに、または n コマおきにまとめて付けます。</li>
               <li>レイヤーにラフ原・原画・作画監督修正などの工程ラベルを付けて分けます。</li>
@@ -167,8 +183,10 @@
               <li>兼用カットは絵をひとつの素材として共有します。あるカットで直すとつながったカットにも反映され、タイミングはカットごとに決めます。</li>
             </ul>
             <ul class="feats" data-lang="ko">
-              <li>그림을 바꾸면 타임시트의 ACTION 칸에 그 자리에서 찍힙니다. 시트를 보면서 타이밍을 잡습니다.</li>
-              <li>소리 파형을 보며 타이밍을 맞추고, SE 이름과 대사는 시트의 SE 칸에 찍힙니다.</li>
+              <li>타임라인과 타임시트는 완전히 동기화됩니다. 타임시트를 실시간으로 보면서 작업합니다.</li>
+              <li><b>ACTION 란</b> — 그림을 그립니다. 그림을 바꾸면 타임시트의 ACTION 란에 그대로 찍힙니다.</li>
+              <li><b>SE 란</b> — SE 의 이름과 대사를 정한 블록을 만들고 파형을 보며 타이밍을 맞춥니다. 타임시트의 SE 란에 그대로 찍힙니다.</li>
+              <li><b>CAM 란</b> — 카메라와 촬영 지시를 편집합니다. 타임시트의 CAM 란에 그대로 찍힙니다.</li>
               <li>시트에도 종이처럼 바로 써넣습니다.</li>
               <li>중간나누기 마크(○ · ●)를 칸마다, 또는 n코마 간격으로 한 번에 찍습니다.</li>
               <li>레이어에 러프원화 · 원화 · 작화감독 수정 같은 공정 라벨을 붙여 나눕니다.</li>
@@ -176,8 +194,10 @@
               <li>겸용컷은 그림을 하나의 소재로 같이 씁니다. 한 컷에서 고치면 이어진 컷에도 반영되고, 타이밍은 컷마다 따로 정합니다.</li>
             </ul>
             <ul class="feats" data-lang="en">
-              <li>Change a drawing and it is written into the timesheet's ACTION column on the spot — time the cut while looking at the sheet.</li>
-              <li>Time to the sound by its waveform; SE names and dialogue go into the sheet's SE column.</li>
+              <li>The timeline and the timesheet are fully in sync. You work with the timesheet live in front of you.</li>
+              <li><b>ACTION section</b> — draw here. Change a drawing and it goes straight into the timesheet's ACTION column.</li>
+              <li><b>SE section</b> — make blocks that carry an SE's name and dialogue, and time them by the waveform. They go straight into the timesheet's SE column.</li>
+              <li><b>CAM section</b> — edit the camera and shooting directions. They go straight into the timesheet's CAM column.</li>
               <li>Write on the sheet itself, as on paper.</li>
               <li>Put in-between marks (○ · ●) cell by cell, or every n frames in one go.</li>
               <li>Split layers by process with labels such as Rough Key, Key and Animation Director corrections.</li>
@@ -185,8 +205,10 @@
               <li>Linked cuts share their drawings as one source: fix a drawing in one cut and the fix shows in the cuts linked to it, while each cut keeps its own timing.</li>
             </ul>
             <ul class="feats" data-lang="fr">
-              <li>Changez un dessin et il s'écrit aussitôt dans la colonne ACTION de la feuille de temps — réglez le timing en regardant la feuille.</li>
-              <li>Calez le timing sur la forme d'onde ; les noms des SE et les dialogues vont dans la colonne SE de la feuille.</li>
+              <li>La timeline et la feuille de temps sont entièrement synchronisées. Vous travaillez en suivant la feuille de temps en direct.</li>
+              <li><b>Section ACTION</b> — dessinez. Changez un dessin et il s'écrit tel quel dans la colonne ACTION de la feuille de temps.</li>
+              <li><b>Section SE</b> — créez des blocs portant le nom d'un SE et ses dialogues, et calez-les sur la forme d'onde. Ils s'écrivent tels quels dans la colonne SE de la feuille de temps.</li>
+              <li><b>Section CAM</b> — modifiez la caméra et les indications de prise de vue. Elles s'écrivent telles quelles dans la colonne CAM de la feuille de temps.</li>
               <li>Écrivez directement sur la feuille, comme sur du papier.</li>
               <li>Posez des repères d'intervalle (○ · ●) case par case, ou toutes les n images d'un coup.</li>
               <li>Séparez les calques par étape avec des étiquettes comme Clé brute, Animation clé ou corrections du directeur d'animation.</li>
@@ -194,8 +216,10 @@
               <li>Les plans liés partagent leurs dessins comme une seule source : corrigez un dessin dans un plan et la correction apparaît dans les plans liés, chaque plan gardant son propre timing.</li>
             </ul>
             <ul class="feats" data-lang="zhHans">
-              <li>改动画稿会当场写进摄影表的 ACTION 栏，一边看摄影表一边排时间。</li>
-              <li>对着声音波形对时间，SE 的名称和台词写进摄影表的 SE 栏。</li>
+              <li>时间轴与摄影表完全同步。一边实时查看摄影表一边工作。</li>
+              <li><b>ACTION 栏</b> — 在这里画画。改动画稿，会直接写进摄影表的 ACTION 栏。</li>
+              <li><b>SE 栏</b> — 制作写有 SE 名称和台词的块，对着波形对时间。会直接写进摄影表的 SE 栏。</li>
+              <li><b>CAM 栏</b> — 编辑摄影机和摄影指示。会直接写进摄影表的 CAM 栏。</li>
               <li>也可以像在纸上一样，直接在摄影表上书写。</li>
               <li>中间画标记（○ · ●）可以逐格加，也可以每隔 n 格一次加好。</li>
               <li>给图层加上 Rough Key、Key、作画监督修正等工序标签来区分。</li>
