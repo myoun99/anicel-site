@@ -12,13 +12,13 @@ La timeline du panneau Conte et la [feuille de conte](/fr/sheets) sont entièrem
 |---|---|
 | **Camera** (la ligne caméra) | Les clés et les mouvements caméra de chaque plan (PAN · T.U · T.B) |
 | **Transition** (la ligne transition) | Les changements de scène comme FI · FO · O.L |
-| **Piste vidéo** | Un bloc = **un plan** |
+| **Cut** (la ligne des plans) | Un bloc = **un plan** |
 | **Conte** (le storyboard) | Le [calque storyboard](/fr/conte-layer) de chaque plan. Une case = une vignette de la [feuille de conte](/fr/sheets) |
 | **S1 · S2 …** | [SE](/fr/sound-layers) — un son qui s'étend sur plusieurs plans forme aussi un seul bloc |
 
 ## Travailler les plans
 
-- Sur la ligne **Piste vidéo**, sélectionnez des plans, faites-les glisser pour changer l'ordre, et faites glisser leurs bouts pour changer leur durée.
+- Sur la ligne **Cut**, sélectionnez des plans, faites-les glisser pour changer l'ordre, et faites glisser leurs bouts pour changer leur durée.
 - Un nouveau plan, c'est le **＋** de la pilule **Plan** ; dupliquer et supprimer, c'est **Dupliquer** · **Supprimer** dans la pilule commune.
 - Double-cliquez sur un plan (ou utilisez **Modifier**) pour le renommer.
 - Les [plans liés](/fr/linked-cuts) ont 🔗 à côté du nom du plan.
@@ -40,6 +40,6 @@ Appuyez sur **▶** dans le panneau Conte pour lire **tous les plans à la suite
 
 ## Bon à savoir
 
-- Il y a une seule piste vidéo.
+- Il y a une seule ligne **Cut**.
 - Faites glisser les lignes dans l'en-tête pour changer leur ordre (l'ordre de la section CAM est fixe).
 - Les menus solo et d'affichage sont les mêmes que dans la timeline. → [Les calques en bref](/fr/layers)

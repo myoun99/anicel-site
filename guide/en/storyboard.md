@@ -12,13 +12,13 @@ The Conte panel's timeline and the [conte sheet](/en/sheets) are fully in sync. 
 |---|---|
 | **Camera** (the camera row) | Each cut's camera keys and moves (PAN · T.U · T.B) |
 | **Transition** (the transition row) | Scene changes such as FI · FO · O.L |
-| **Video** (the video track) | One block is **one cut** |
+| **Cut** (the cut row) | One block is **one cut** |
 | **Conte** (the storyboard) | Each cut's [storyboard layer](/en/conte-layer). One cell is one panel of the [conte sheet](/en/sheets) |
 | **S1 · S2 …** | [SE](/en/sound-layers) — a sound that runs across cuts is one block too |
 
 ## Working with cuts
 
-- On the **Video** row, select cuts, drag them to change the order, and drag their ends to change their length.
+- On the **Cut** row, select cuts, drag them to change the order, and drag their ends to change their length.
 - A new cut is the **＋** of the **Cut** pill; duplicate and delete are **Duplicate** · **Delete** in the **Shared** pill.
 - Double-click a cut (or use **Edit**) to rename it.
 - [Linked cuts](/en/linked-cuts) have 🔗 beside the cut name.
@@ -40,6 +40,6 @@ Press **▶** on the Conte panel to play **all the cuts in a row** (on the timel
 
 ## Good to know
 
-- There is one video track.
+- There is one **Cut** row.
 - Drag rows on the rail to change their order (the CAM section's order is fixed).
 - The solo and show menus are the same as on the timeline. → [Layers at a glance](/en/layers)
