@@ -29,7 +29,7 @@ Les blocs, les cases, les calques, les clés et les blocs de plan du [panneau Co
 
 | Action | Contenu |
 |---|---|
-| ＋ Nouveau plan | Un nouveau plan après le plan courant |
+| ＋ Nouveau plan | Un nouveau plan après le plan courant, à sa taille ; là où il n'y a pas de plan, à la valeur par défaut |
 | Modifier la note du plan | Une note sur le plan |
 | Repère de calque | L'étiquette du plan → [Étiquettes de couleur et prises](/fr/layer-labels) |
 | Réglages du plan | L'équipe de ce plan |

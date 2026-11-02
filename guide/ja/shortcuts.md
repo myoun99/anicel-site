@@ -34,6 +34,8 @@
 | テキストツール | <span data-k="tool-text"></span> |
 | 図形ツール | <span data-k="tool-shape"></span> |
 | ガイドツール | <span data-k="tool-guide"></span> |
+| ブラシサイズを上げる | <span data-k="brush-size-up"></span> |
+| ブラシサイズを下げる | <span data-k="brush-size-down"></span> |
 | 選択ツール | <span data-k="tool-select"></span> |
 | 切り抜きツール | <span data-k="tool-cut"></span> |
 
@@ -67,7 +69,7 @@
 | 合成: 比較（明） | <span data-k="tool-blend-lighten"></span> |
 | 合成: スクリーン | <span data-k="tool-blend-screen"></span> |
 | 合成: 覆い焼きカラー | <span data-k="tool-blend-colorDodge"></span> |
-| 合成: 加算 | <span data-k="tool-blend-add"></span> |
+| 合成: 覆い焼き(発光) | <span data-k="tool-blend-glowDodge"></span> |
 
 ### カンバス › 選択
 

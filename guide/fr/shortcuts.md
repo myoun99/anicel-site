@@ -34,6 +34,8 @@ Choisissez le fichier de raccourcis de l'application que vous utilisiez avec **O
 | Outil texte | <span data-k="tool-text"></span> |
 | Outil forme | <span data-k="tool-shape"></span> |
 | Outil repère | <span data-k="tool-guide"></span> |
+| Augmenter la taille du pinceau | <span data-k="brush-size-up"></span> |
+| Réduire la taille du pinceau | <span data-k="brush-size-down"></span> |
 | Outil sélection | <span data-k="tool-select"></span> |
 | Outil découpe | <span data-k="tool-cut"></span> |
 
@@ -67,7 +69,7 @@ Choisissez le fichier de raccourcis de l'application que vous utilisiez avec **O
 | Fusion: Éclaircir | <span data-k="tool-blend-lighten"></span> |
 | Fusion: Superposition | <span data-k="tool-blend-screen"></span> |
 | Fusion: Densité couleur - | <span data-k="tool-blend-colorDodge"></span> |
-| Fusion: Densité linéaire - (Ajout) | <span data-k="tool-blend-add"></span> |
+| Fusion: Densité couleur - (lueur) | <span data-k="tool-blend-glowDodge"></span> |
 
 ### Canevas › Sélection
 

@@ -36,6 +36,12 @@ Les calques attachés à une même base peuvent être rangés dans des dossiers 
 - Des dossiers peuvent y entrer. Un calque ordinaire déposé dedans devient une attache de cette base.
 - Les attaches d'un [calque storyboard](/fr/conte-layer) peuvent aussi être rangées dans des dossiers, et le [panneau Conte](/fr/storyboard) les affiche comme la timeline (repli, retrait, glisser dedans).
 
+## Couper et coller
+
+- Coupez un calque de base et ses calques attachés partent avec lui ; collez-le et ils reviennent au-dessus ou en dessous, synchronisés ou libres, comme avant.
+- Coupez un seul calque attaché et la base reste.
+- Collez un bloc de frame sur une ligne synchronisée : le bloc reste, seule son image change. Un collage lié saute les lignes synchronisées.
+
 ## Détacher
 
 Menu de la pilule **Calque** → **Détacher de la base**. Un calque détaché devient un calque ordinaire. Les calques attachés à un [calque storyboard](/fr/conte-layer) ne peuvent pas être détachés.

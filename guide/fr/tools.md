@@ -84,6 +84,8 @@ Quand vous choisissez un outil, la **Bibliothèque d'outils** (ses types) et les
 
 - **Chaque plan** a les siens. Un seul repère de symétrie agit à la fois ; plusieurs repères de perspective peuvent agir ensemble.
 - Faites glisser les poignées sur le canevas pour déplacer l'origine, l'angle, les points de fuite et la ligne d'horizon.
+- Réglez la couleur et l'opacité sur la ligne du repère dans la bibliothèque d'outils. Les lignes restent les mêmes quand vous changez d'outil.
+- Dans les réglages d'un repère de perspective, réglez l'affichage, la couleur et la position de la ligne d'horizon, et pour chaque point de fuite sa position et sa densité (jusqu'à 192).
 
 ## Sélection
 

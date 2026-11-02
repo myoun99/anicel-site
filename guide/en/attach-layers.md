@@ -36,6 +36,12 @@ The attach layers of one base layer can be gathered into folders — for instanc
 - Folders can go inside it. A plain layer dropped in becomes an attach of that base.
 - The attaches of a [Storyboard layer](/en/conte-layer) can be gathered into folders as well, and the [Conte panel](/en/storyboard) shows them as the timeline does (fold, indent, drag in).
 
+## Cutting and pasting
+
+- Cut a base layer and its attach layers go with it; paste it and they come back above or below, synced or free, as they were.
+- Cut one attach layer alone and the base stays.
+- Paste a frame block onto a synced row and the block stays; only its picture changes. A linked paste skips synced rows.
+
 ## Detaching
 
 **Layer** pill menu → **Detach from base**. A detached layer becomes an ordinary layer. Attach layers on a [storyboard layer](/en/conte-layer) can't be detached.

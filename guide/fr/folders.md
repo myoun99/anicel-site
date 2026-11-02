@@ -23,7 +23,7 @@ Regroupez plusieurs calques pour les afficher et les masquer ensemble, et pour l
 
 - On ne dessine pas dans un dossier (il n'a pas de cases).
 - Sélectionnez un dossier avec l'outil transformation et tous les calques qu'il contient bougent ensemble.
-- Les dossiers ne peuvent pas être copiés et collés.
+- Les dossiers se coupent, se copient et se collent entiers, avec leur contenu. Après une copie, un collage lié fait des calques du dedans des copies liées.
 
 ## Transfert et autres modes de fusion
 

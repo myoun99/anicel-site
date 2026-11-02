@@ -34,6 +34,8 @@
 | 文字工具 | <span data-k="tool-text"></span> |
 | 形状工具 | <span data-k="tool-shape"></span> |
 | 参考线工具 | <span data-k="tool-guide"></span> |
+| 增大画笔大小 | <span data-k="brush-size-up"></span> |
+| 减小画笔大小 | <span data-k="brush-size-down"></span> |
 | 选择工具 | <span data-k="tool-select"></span> |
 | 裁剪工具 | <span data-k="tool-cut"></span> |
 
@@ -67,7 +69,7 @@
 | 混合: 变亮 | <span data-k="tool-blend-lighten"></span> |
 | 混合: 滤色 | <span data-k="tool-blend-screen"></span> |
 | 混合: 颜色减淡 | <span data-k="tool-blend-colorDodge"></span> |
-| 混合: 线性减淡（添加） | <span data-k="tool-blend-add"></span> |
+| 混合: 颜色减淡（发光） | <span data-k="tool-blend-glowDodge"></span> |
 
 ### 画布 › 选区
 

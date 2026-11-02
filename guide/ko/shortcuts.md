@@ -34,6 +34,8 @@
 | 텍스트 도구 | <span data-k="tool-text"></span> |
 | 도형 도구 | <span data-k="tool-shape"></span> |
 | 가이드 도구 | <span data-k="tool-guide"></span> |
+| 브러시 크기 올리기 | <span data-k="brush-size-up"></span> |
+| 브러시 크기 내리기 | <span data-k="brush-size-down"></span> |
 | 선택 도구 | <span data-k="tool-select"></span> |
 | 잘라내기 도구 | <span data-k="tool-cut"></span> |
 
@@ -67,7 +69,7 @@
 | 합성: 밝게 하기 | <span data-k="tool-blend-lighten"></span> |
 | 합성: 스크린 | <span data-k="tool-blend-screen"></span> |
 | 합성: 색상 닷지 | <span data-k="tool-blend-colorDodge"></span> |
-| 합성: 선형 닷지(추가) | <span data-k="tool-blend-add"></span> |
+| 합성: 색상 닷지(발광) | <span data-k="tool-blend-glowDodge"></span> |
 
 ### 캔버스 › 선택
 

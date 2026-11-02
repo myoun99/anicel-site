@@ -29,7 +29,7 @@ Blocks, cells, layers, keys and the cut blocks of the [Conte panel](/en/storyboa
 
 | Action | Contents |
 |---|---|
-| ＋ New cut | A new cut after the current one |
+| ＋ New cut | A new cut after the current one, at its size; where there is no cut, at the default |
 | Edit cut note | A note on the cut |
 | Layer mark | The cut label → [Color labels and takes](/en/layer-labels) |
 | Cut settings | This cut's staff |

@@ -23,7 +23,7 @@ Group several layers to show and hide them together, and to give them opacity, b
 
 - You don't draw in a folder (it has no cells).
 - Select a folder with the transform tool and all the layers inside move together.
-- Folders can't be copied and pasted.
+- Folders are cut, copied and pasted whole, with what is inside them. After a copy, a linked paste makes the layers inside linked copies.
 
 ## Pass Through and other blends
 

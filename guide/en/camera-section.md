@@ -12,7 +12,7 @@ A row that every cut has by itself, one each (named **Camera**). Select the came
 
 - Set the camera's **Position · Scale** (zoom) **· Rotation** with keys. Open the row and the three become separate lanes. The canvas, playback and export all move with it.
 - Drag or turn the camera frame directly on the canvas, and a key appears on that frame too.
-- Keys are placed only inside that cut's frames. Change the cut's length and the last key follows the end.
+- Keys are placed only inside that cut's frames. Shorten a cut and its end pushes each key it meets; it stops when only as many frames as keys are left.
 - A key's speed (In · Out: Linear · Ease · Fast · Smooth · Hold) and **Influence**, and a position key's **Path** (Linear · Bezier · Continuous Bezier · Auto Bezier) and **Roving**, are set in the key edit window. → [Effects and transform](/en/effects?id=key-edit-window)
 - Bend a Bezier path with its handles on the canvas.
 - The camera row's **Graph** button shows the **Value · Speed** graphs.

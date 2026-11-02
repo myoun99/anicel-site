@@ -34,6 +34,8 @@ Pick the shortcut file of the app you used with **Open File**, or drop it onto t
 | Text Tool | <span data-k="tool-text"></span> |
 | Shape Tool | <span data-k="tool-shape"></span> |
 | Guide Tool | <span data-k="tool-guide"></span> |
+| Brush Size Up | <span data-k="brush-size-up"></span> |
+| Brush Size Down | <span data-k="brush-size-down"></span> |
 | Select Tool | <span data-k="tool-select"></span> |
 | Cut Tool | <span data-k="tool-cut"></span> |
 
@@ -67,7 +69,7 @@ Pick the shortcut file of the app you used with **Open File**, or drop it onto t
 | Blend: Lighten | <span data-k="tool-blend-lighten"></span> |
 | Blend: Screen | <span data-k="tool-blend-screen"></span> |
 | Blend: Color Dodge | <span data-k="tool-blend-colorDodge"></span> |
-| Blend: Add | <span data-k="tool-blend-add"></span> |
+| Blend: Glow Dodge | <span data-k="tool-blend-glowDodge"></span> |
 
 ### Canvas › Selection
 

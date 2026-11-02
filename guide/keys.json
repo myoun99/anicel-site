@@ -326,6 +326,18 @@
      "Z",
      "Z"
     ]
+   ],
+   "clipStudio": [
+    [
+     "Z",
+     "Z"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Z",
+     "Z"
+    ]
    ]
   },
   "edit-cut": {
@@ -780,6 +792,58 @@
     ]
    ]
   },
+  "brush-size-up": {
+   "anicel": [
+    [
+     "]",
+     "]"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "]",
+     "]"
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Numpad Add",
+     "Numpad Add"
+    ],
+    [
+     "Shift+;",
+     "⇧;"
+    ],
+    [
+     "Shift+=",
+     "⇧="
+    ]
+   ]
+  },
+  "brush-size-down": {
+   "anicel": [
+    [
+     "[",
+     "["
+    ]
+   ],
+   "clipStudio": [
+    [
+     "[",
+     "["
+    ]
+   ],
+   "tvpaint": [
+    [
+     "Numpad Subtract",
+     "Numpad Subtract"
+    ],
+    [
+     "-",
+     "-"
+    ]
+   ]
+  },
   "tool-select": {
    "clipStudio": [
     [
@@ -1002,7 +1066,7 @@
     ]
    ]
   },
-  "tool-blend-add": {
+  "tool-blend-glowDodge": {
    "anicel": [
     [
      "F12",
@@ -1163,12 +1227,6 @@
      "H"
     ]
    ],
-   "clipStudio": [
-    [
-     "[",
-     "["
-    ]
-   ],
    "tvpaint": [
     [
      "[",
@@ -1177,12 +1235,6 @@
    ]
   },
   "canvas-flip-vertical": {
-   "clipStudio": [
-    [
-     "]",
-     "]"
-    ]
-   ],
    "tvpaint": [
     [
      "]",

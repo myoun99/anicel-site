@@ -22,6 +22,7 @@ La timeline et la feuille de temps sont entièrement synchronisées. Vous travai
 | **SE** | Créer des blocs portant le nom et les dialogues d'un [SE](/fr/sound-layers) | Noms et dialogues dans la colonne SE |
 | **CAM** | Modifier la caméra et les indications de prise de vue | Dans la colonne CAM : les noms et mouvements des clés caméra (PAN · T.U · T.B), et les lignes de [direction](/fr/camera-section) et de [transition](/fr/camera-section) |
 
+- Les mouvements et changements de scène de la section CAM vont aussi dans la **colonne mémo** en texte fixe : les mêmes lignes que la feuille de conte, sans les durées. La colonne mémo a deux côtés ; quand la gauche est pleine, elle continue en haut de la droite.
 - Les lignes qui vont sur la feuille se règlent avec la flèche de feuille de chaque ligne de calque. → [Les calques en bref](/fr/layers)
 - Vous pouvez passer d'un affichage à l'autre : **Feuille de notation** (abrégée avec des mots comme répétition et maintien — *tome*, 止め) / **Feuille de données** (une case à la fois, exactement comme à l'export).
 
@@ -33,6 +34,7 @@ La timeline et la feuille de temps sont entièrement synchronisées. Vous travai
 | Cases visibles | Lesquelles des cases d'en-tête Titre · Épisode · Scène · Plan · Durée · Animateur · Feuille s'affichent |
 | Trait d'extension · ACTION / CELL | Oui / Non + N — quand le même dessin (*tome*) ou un × dure N commas ou plus, trace un trait à partir du (N+1)e comma |
 | Plages sans dialogue | Grisées / Vides |
+| Texte fixe | Activé / désactivé, réglé pour toute l'œuvre et pour le plan actuel |
 
 ## Feuille de conte
 
@@ -43,7 +45,7 @@ La timeline du [panneau Conte](/fr/storyboard) et la feuille de conte sont enti�
 | Section du panneau Conte | Ce que vous y faites | Ce qui va sur la feuille de conte |
 |---|---|---|
 | **Conte** | Découper les vignettes avec les blocs du [calque storyboard](/fr/conte-layer) | Un bloc = une vignette de la feuille. Dessinez dans la zone image d'une vignette et cela devient le dessin de conte de ce plan |
-| **CAM** | Modifier la caméra et les changements de scène | Les cadres de caméra dans la vignette, et dans la colonne ACTION les mouvements (PAN · T.U · FIX) et changements de scène (FI · FO · O.L) |
+| **CAM** | Modifier la caméra et les changements de scène | Les cadres de caméra dans la vignette, et dans la colonne ACTION les mouvements (PAN · T.U · FIX) et changements de scène (FI · FO · O.L). FI et FO portent « Début de plan » et « Fin de plan », en haut de la première vignette et en bas de la dernière |
 | **SE** | Créer des blocs de dialogue | Noms et dialogues dans la colonne dialogues |
 
 **Format de la feuille de conte**
@@ -53,6 +55,8 @@ La timeline du [panneau Conte](/fr/storyboard) et la feuille de conte sont enti�
 | Modèle | Analogique / Numérique |
 | Cadre noir des images | Oui / Non |
 | Couverture · Page blanche | Incluse / Retirée |
+| Texte fixe | Activé / désactivé, réglé pour toute l'œuvre et pour le plan actuel |
+| Mouvements de caméra | Agrandir la case / Dans la case, réglé pour toute l'œuvre et pour le plan actuel |
 
 ## Enveloppe de plan
 

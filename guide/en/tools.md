@@ -84,6 +84,8 @@ When you pick a tool, the **Tool library** (its kinds) and **Tool settings** (it
 
 - **Each cut** has its own. One symmetry guide acts at a time; several perspective guides can act together.
 - Drag the handles on the canvas to move the origin, angle, vanishing points and eye level.
+- Set a guide's color and opacity on its row in the tool library. Lines stay the same when you move to another tool.
+- In a perspective guide's tool settings, set the eye level's display, color and position, and each vanishing point's position and line density (up to 192).
 
 ## Select
 

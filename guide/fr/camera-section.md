@@ -12,7 +12,7 @@ Une ligne que chaque plan a d'office, une par plan (nommée **Camera**). Sélect
 
 - Réglez la **Position · l'Échelle** (zoom) **· la Rotation** de la caméra avec des clés. Ouvrez la ligne et les trois deviennent des pistes séparées. Le canevas, la lecture et l'export bougent tous avec elle.
 - Faites glisser ou tournez directement le cadre caméra sur le canevas : une clé apparaît aussi sur cette image.
-- Les clés ne se placent qu'à l'intérieur des images de ce plan. Changez la durée du plan et la dernière clé suit la fin.
+- Les clés ne se placent qu'à l'intérieur des images de ce plan. Raccourcissez un plan et sa fin pousse chaque clé qu'elle rencontre ; elle s'arrête quand il reste autant d'images que de clés.
 - La vitesse d'une clé (Entrée · Sortie : Linéaire · Lissage · Vite · Fluide · Maintien) et l'**Influence**, ainsi que la **Trajectoire** d'une clé de position (Linéaire · Bézier · Bézier continue · Bézier auto) et l'**Itinérance**, se règlent dans la fenêtre de modification de clé. → [Effets et transformation](/fr/effects?id=fenêtre-de-modification-de-clé)
 - Courbez une trajectoire de Bézier avec ses poignées sur le canevas.
 - Le bouton **Graphique** de la ligne caméra affiche les graphiques **Valeur · Vitesse**.
