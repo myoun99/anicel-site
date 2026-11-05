@@ -679,12 +679,6 @@
    ]
   },
   "tool-fill": {
-   "anicel": [
-    [
-     "F",
-     "F"
-    ]
-   ],
    "clipStudio": [
     [
      "G",
@@ -699,6 +693,12 @@
    ]
   },
   "tool-fill-bucket": {
+   "anicel": [
+    [
+     "F",
+     "F"
+    ]
+   ],
    "clipStudio": [
     [
      "F",
