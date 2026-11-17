@@ -31,26 +31,21 @@ Pick the shortcut file of the app you used with **Open File**, or drop it onto t
 | Eraser Tool | <span data-k="tool-eraser"></span> |
 | Eyedropper Tool | <span data-k="tool-eyedropper"></span> |
 | Fill Tool | <span data-k="tool-fill"></span> |
+| Bucket | <span data-k="tool-fill-bucket"></span> |
+| Rectangle Fill | <span data-k="tool-fill-rect"></span> |
+| Lasso Fill | <span data-k="tool-fill-lasso"></span> |
 | Text Tool | <span data-k="tool-text"></span> |
 | Shape Tool | <span data-k="tool-shape"></span> |
+| Draw Rectangle | <span data-k="tool-shape-rect"></span> |
+| Draw Line | <span data-k="tool-shape-line"></span> |
 | Guide Tool | <span data-k="tool-guide"></span> |
 | Brush Size Up | <span data-k="brush-size-up"></span> |
 | Brush Size Down | <span data-k="brush-size-down"></span> |
 | Select Tool | <span data-k="tool-select"></span> |
-| Cut Tool | <span data-k="tool-cut"></span> |
-
-### Canvas › Sub tools
-
-| Action | Key |
-|---|---|
-| Bucket | <span data-k="tool-fill-bucket"></span> |
-| Rectangle Fill | <span data-k="tool-fill-rect"></span> |
-| Lasso Fill | <span data-k="tool-fill-lasso"></span> |
-| Draw Rectangle | <span data-k="tool-shape-rect"></span> |
-| Draw Line | <span data-k="tool-shape-line"></span> |
 | Lasso Select | <span data-k="tool-select-lasso"></span> |
 | Normal Transform | <span data-k="tool-transform-normal"></span> |
 | Free Transform | <span data-k="tool-transform-free"></span> |
+| Cut Tool | <span data-k="tool-cut"></span> |
 | Lasso Cut | <span data-k="tool-cut-lasso"></span> |
 | Stamp | <span data-k="tool-cut-stamp"></span> |
 

@@ -31,26 +31,21 @@
 | 消しゴムツール | <span data-k="tool-eraser"></span> |
 | スポイトツール | <span data-k="tool-eyedropper"></span> |
 | 塗りつぶしツール | <span data-k="tool-fill"></span> |
+| 塗りつぶし | <span data-k="tool-fill-bucket"></span> |
+| 矩形塗り | <span data-k="tool-fill-rect"></span> |
+| 投げ縄塗り | <span data-k="tool-fill-lasso"></span> |
 | テキストツール | <span data-k="tool-text"></span> |
 | 図形ツール | <span data-k="tool-shape"></span> |
+| 矩形描画 | <span data-k="tool-shape-rect"></span> |
+| 直線描画 | <span data-k="tool-shape-line"></span> |
 | ガイドツール | <span data-k="tool-guide"></span> |
 | ブラシサイズを上げる | <span data-k="brush-size-up"></span> |
 | ブラシサイズを下げる | <span data-k="brush-size-down"></span> |
 | 選択ツール | <span data-k="tool-select"></span> |
-| 切り抜きツール | <span data-k="tool-cut"></span> |
-
-### カンバス › サブツール
-
-| 操作 | キー |
-|---|---|
-| 塗りつぶし | <span data-k="tool-fill-bucket"></span> |
-| 矩形塗り | <span data-k="tool-fill-rect"></span> |
-| 投げ縄塗り | <span data-k="tool-fill-lasso"></span> |
-| 矩形描画 | <span data-k="tool-shape-rect"></span> |
-| 直線描画 | <span data-k="tool-shape-line"></span> |
 | 投げ縄選択 | <span data-k="tool-select-lasso"></span> |
 | 通常変形 | <span data-k="tool-transform-normal"></span> |
 | 自由変形 | <span data-k="tool-transform-free"></span> |
+| 切り抜きツール | <span data-k="tool-cut"></span> |
 | 投げ縄カット | <span data-k="tool-cut-lasso"></span> |
 | スタンプ | <span data-k="tool-cut-stamp"></span> |
 

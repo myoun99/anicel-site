@@ -31,26 +31,21 @@
 | 지우개 도구 | <span data-k="tool-eraser"></span> |
 | 스포이트 도구 | <span data-k="tool-eyedropper"></span> |
 | 채우기 도구 | <span data-k="tool-fill"></span> |
+| 채우기 | <span data-k="tool-fill-bucket"></span> |
+| 사각형 채우기 | <span data-k="tool-fill-rect"></span> |
+| 올가미 채우기 | <span data-k="tool-fill-lasso"></span> |
 | 텍스트 도구 | <span data-k="tool-text"></span> |
 | 도형 도구 | <span data-k="tool-shape"></span> |
+| 사각형 그리기 | <span data-k="tool-shape-rect"></span> |
+| 직선 그리기 | <span data-k="tool-shape-line"></span> |
 | 가이드 도구 | <span data-k="tool-guide"></span> |
 | 브러시 크기 올리기 | <span data-k="brush-size-up"></span> |
 | 브러시 크기 내리기 | <span data-k="brush-size-down"></span> |
 | 선택 도구 | <span data-k="tool-select"></span> |
-| 잘라내기 도구 | <span data-k="tool-cut"></span> |
-
-### 캔버스 › 세부 도구
-
-| 동작 | 키 |
-|---|---|
-| 채우기 | <span data-k="tool-fill-bucket"></span> |
-| 사각형 채우기 | <span data-k="tool-fill-rect"></span> |
-| 올가미 채우기 | <span data-k="tool-fill-lasso"></span> |
-| 사각형 그리기 | <span data-k="tool-shape-rect"></span> |
-| 직선 그리기 | <span data-k="tool-shape-line"></span> |
 | 올가미 선택 | <span data-k="tool-select-lasso"></span> |
 | 일반 변형 | <span data-k="tool-transform-normal"></span> |
 | 자유 변형 | <span data-k="tool-transform-free"></span> |
+| 잘라내기 도구 | <span data-k="tool-cut"></span> |
 | 올가미 잘라내기 | <span data-k="tool-cut-lasso"></span> |
 | 스탬프 | <span data-k="tool-cut-stamp"></span> |
 

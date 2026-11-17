@@ -31,26 +31,21 @@ Choisissez le fichier de raccourcis de l'application que vous utilisiez avec **O
 | Outil gomme | <span data-k="tool-eraser"></span> |
 | Outil pipette | <span data-k="tool-eyedropper"></span> |
 | Outil remplissage | <span data-k="tool-fill"></span> |
+| Pot de peinture | <span data-k="tool-fill-bucket"></span> |
+| Remplissage Rectangle | <span data-k="tool-fill-rect"></span> |
+| Remplissage Lasso | <span data-k="tool-fill-lasso"></span> |
 | Outil texte | <span data-k="tool-text"></span> |
 | Outil forme | <span data-k="tool-shape"></span> |
+| Tracé Rectangle | <span data-k="tool-shape-rect"></span> |
+| Tracé Ligne | <span data-k="tool-shape-line"></span> |
 | Outil repère | <span data-k="tool-guide"></span> |
 | Augmenter la taille du pinceau | <span data-k="brush-size-up"></span> |
 | Réduire la taille du pinceau | <span data-k="brush-size-down"></span> |
 | Outil sélection | <span data-k="tool-select"></span> |
-| Outil découpe | <span data-k="tool-cut"></span> |
-
-### Canevas › Sous-outils
-
-| Action | Touche |
-|---|---|
-| Pot de peinture | <span data-k="tool-fill-bucket"></span> |
-| Remplissage Rectangle | <span data-k="tool-fill-rect"></span> |
-| Remplissage Lasso | <span data-k="tool-fill-lasso"></span> |
-| Tracé Rectangle | <span data-k="tool-shape-rect"></span> |
-| Tracé Ligne | <span data-k="tool-shape-line"></span> |
 | Sélection Lasso | <span data-k="tool-select-lasso"></span> |
 | Transformation normale | <span data-k="tool-transform-normal"></span> |
 | Transformation libre | <span data-k="tool-transform-free"></span> |
+| Outil découpe | <span data-k="tool-cut"></span> |
 | Découpe Lasso | <span data-k="tool-cut-lasso"></span> |
 | Tampon | <span data-k="tool-cut-stamp"></span> |
 

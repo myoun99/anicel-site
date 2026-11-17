@@ -807,16 +807,12 @@
    ],
    "tvpaint": [
     [
+     "+",
+     "+"
+    ],
+    [
      "Numpad Add",
      "Numpad Add"
-    ],
-    [
-     "Shift+;",
-     "⇧;"
-    ],
-    [
-     "Shift+=",
-     "⇧="
     ]
    ]
   },
@@ -835,12 +831,12 @@
    ],
    "tvpaint": [
     [
-     "Numpad Subtract",
-     "Numpad Subtract"
-    ],
-    [
      "-",
      "-"
+    ],
+    [
+     "Numpad Subtract",
+     "Numpad Subtract"
     ]
    ]
   },

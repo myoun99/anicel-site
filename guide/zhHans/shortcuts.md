@@ -31,26 +31,21 @@
 | 橡皮工具 | <span data-k="tool-eraser"></span> |
 | 吸管工具 | <span data-k="tool-eyedropper"></span> |
 | 填充工具 | <span data-k="tool-fill"></span> |
+| 油漆桶 | <span data-k="tool-fill-bucket"></span> |
+| 矩形填充 | <span data-k="tool-fill-rect"></span> |
+| 套索填充 | <span data-k="tool-fill-lasso"></span> |
 | 文字工具 | <span data-k="tool-text"></span> |
 | 形状工具 | <span data-k="tool-shape"></span> |
+| 矩形绘制 | <span data-k="tool-shape-rect"></span> |
+| 直线绘制 | <span data-k="tool-shape-line"></span> |
 | 参考线工具 | <span data-k="tool-guide"></span> |
 | 增大画笔大小 | <span data-k="brush-size-up"></span> |
 | 减小画笔大小 | <span data-k="brush-size-down"></span> |
 | 选择工具 | <span data-k="tool-select"></span> |
-| 裁剪工具 | <span data-k="tool-cut"></span> |
-
-### 画布 › 子工具
-
-| 操作 | 按键 |
-|---|---|
-| 油漆桶 | <span data-k="tool-fill-bucket"></span> |
-| 矩形填充 | <span data-k="tool-fill-rect"></span> |
-| 套索填充 | <span data-k="tool-fill-lasso"></span> |
-| 矩形绘制 | <span data-k="tool-shape-rect"></span> |
-| 直线绘制 | <span data-k="tool-shape-line"></span> |
 | 套索选择 | <span data-k="tool-select-lasso"></span> |
 | 普通变换 | <span data-k="tool-transform-normal"></span> |
 | 自由变换 | <span data-k="tool-transform-free"></span> |
+| 裁剪工具 | <span data-k="tool-cut"></span> |
 | 套索裁剪 | <span data-k="tool-cut-lasso"></span> |
 | 图章 | <span data-k="tool-cut-stamp"></span> |
 
