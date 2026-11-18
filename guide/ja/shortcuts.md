@@ -30,6 +30,7 @@
 | ブラシツール | <span data-k="tool-brush"></span> |
 | 消しゴムツール | <span data-k="tool-eraser"></span> |
 | スポイトツール | <span data-k="tool-eyedropper"></span> |
+| スポイト（押している間） | <span data-k="eyedropper-hold"></span> |
 | 塗りつぶしツール | <span data-k="tool-fill"></span> |
 | 塗りつぶし | <span data-k="tool-fill-bucket"></span> |
 | 矩形塗り | <span data-k="tool-fill-rect"></span> |

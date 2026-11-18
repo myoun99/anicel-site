@@ -30,6 +30,7 @@ Choisissez le fichier de raccourcis de l'application que vous utilisiez avec **O
 | Outil pinceau | <span data-k="tool-brush"></span> |
 | Outil gomme | <span data-k="tool-eraser"></span> |
 | Outil pipette | <span data-k="tool-eyedropper"></span> |
+| Pipette (maintenir) | <span data-k="eyedropper-hold"></span> |
 | Outil remplissage | <span data-k="tool-fill"></span> |
 | Pot de peinture | <span data-k="tool-fill-bucket"></span> |
 | Remplissage Rectangle | <span data-k="tool-fill-rect"></span> |

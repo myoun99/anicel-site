@@ -30,6 +30,7 @@ Pick the shortcut file of the app you used with **Open File**, or drop it onto t
 | Brush Tool | <span data-k="tool-brush"></span> |
 | Eraser Tool | <span data-k="tool-eraser"></span> |
 | Eyedropper Tool | <span data-k="tool-eyedropper"></span> |
+| Eyedropper (hold) | <span data-k="eyedropper-hold"></span> |
 | Fill Tool | <span data-k="tool-fill"></span> |
 | Bucket | <span data-k="tool-fill-bucket"></span> |
 | Rectangle Fill | <span data-k="tool-fill-rect"></span> |

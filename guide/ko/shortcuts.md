@@ -30,6 +30,7 @@
 | 브러시 도구 | <span data-k="tool-brush"></span> |
 | 지우개 도구 | <span data-k="tool-eraser"></span> |
 | 스포이트 도구 | <span data-k="tool-eyedropper"></span> |
+| 스포이트(누르는 동안) | <span data-k="eyedropper-hold"></span> |
 | 채우기 도구 | <span data-k="tool-fill"></span> |
 | 채우기 | <span data-k="tool-fill-bucket"></span> |
 | 사각형 채우기 | <span data-k="tool-fill-rect"></span> |

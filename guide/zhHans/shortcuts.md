@@ -30,6 +30,7 @@
 | 画笔工具 | <span data-k="tool-brush"></span> |
 | 橡皮工具 | <span data-k="tool-eraser"></span> |
 | 吸管工具 | <span data-k="tool-eyedropper"></span> |
+| 吸管（按住） | <span data-k="eyedropper-hold"></span> |
 | 填充工具 | <span data-k="tool-fill"></span> |
 | 油漆桶 | <span data-k="tool-fill-bucket"></span> |
 | 矩形填充 | <span data-k="tool-fill-rect"></span> |

@@ -196,6 +196,12 @@
      "Space",
      "Space"
     ]
+   ],
+   "tvpaint": [
+    [
+     "Alt",
+     "⌥"
+    ]
    ]
   },
   "canvas-rotate-hold": {
@@ -213,8 +219,8 @@
    ],
    "tvpaint": [
     [
-     "Shift+Space",
-     "⇧Space"
+     "Ctrl+Alt",
+     "⌥⌘"
     ]
    ]
   },
@@ -675,6 +681,20 @@
     [
      ";",
      ";"
+    ]
+   ]
+  },
+  "eyedropper-hold": {
+   "anicel": [
+    [
+     "Alt",
+     "⌥"
+    ]
+   ],
+   "clipStudio": [
+    [
+     "Alt",
+     "⌥"
     ]
    ]
   },
